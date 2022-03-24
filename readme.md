@@ -4,6 +4,9 @@ iracing-data-api is a simple Python wrapper around the General Data API released
 
 The client allows easy access to some of the most useful endpoints of the data API. 
 
+# Installation
+`pip install iracingdataapi`
+
 # Examples
 
 ```python
