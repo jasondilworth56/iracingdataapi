@@ -99,6 +99,14 @@ class irDataClient:
         resource = self._get_resource("/data/results/lap_data", payload=payload)
         return self._get_chunks(resource['chunk_info'])
 
+    def get_result_event_log(self, subsession_id=None, simsession_number=0):
+        if not subsession_id:
+            raise RuntimeError("Please supply a subsession_id")
+
+        payload = {"subsession_id": subsession_id, "simsession_number": simsession_number}
+        resource = self._get_resource("/data/results/event_log", payload=payload)
+        return self._get_chunks(resource['chunk_info'])
+
     def get_member(self, cust_id=None, include_licenses=False):
         if not cust_id:
             raise RuntimeError("Please supply a cust_id")
