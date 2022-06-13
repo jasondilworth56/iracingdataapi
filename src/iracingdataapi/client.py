@@ -1,4 +1,6 @@
 import requests
+import hashlib
+import base64
 
 class irDataClient:
     def __init__(self, username=None, password=None):
@@ -15,10 +17,14 @@ class irDataClient:
     def _login(self, username=None, password=None):
         if not username or not password:
             raise RuntimeError("Please supply a username and password")
-        
+
+        # iRacing requires Base64 encoded string as of 2022 season 3
+        password_hash = hashlib.sha256((password + username.lower()).encode('utf-8')).digest()
+        password_b64 = base64.b64encode(password_hash).decode('utf-8')
+
         payload = {
             "email": username,
-            "password": password
+            "password": password_b64
         }
 
         r = self.session.post(self._build_url("/auth"), json=payload)
