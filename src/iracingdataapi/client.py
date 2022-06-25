@@ -13,7 +13,15 @@ class irDataClient:
         self._login(username=username, password=password)
 
         self.cars = self.get_cars()
-        self.tracks = self.get_tracks()
+        tracks = self.get_tracks()
+        track_assets = self.get_tracks_assets()
+        for track in tracks:
+            a = track_assets[str(track['track_id'])]
+            for key in a.keys():
+                track[key] = a[key]
+
+        self.tracks = tracks
+
 
     def _login(self, username=None, password=None):
         if not username or not password:
