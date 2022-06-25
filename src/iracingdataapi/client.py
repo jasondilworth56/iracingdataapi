@@ -67,6 +67,9 @@ class irDataClient:
     def get_tracks(self):
         return self._get_resource("/data/track/get")
 
+    def get_tracks_assets(self):
+        return self._get_resource("/data/track/assets")
+
     def league(self, league_id=None, include_licenses=False):
         if not league_id:
             raise RuntimeError("Please supply a league_id")
