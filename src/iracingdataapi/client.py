@@ -42,15 +42,20 @@ class irDataClient:
         r = self.session.get(url, params=payload)
         if r.status_code != 200:
             raise RuntimeError(r.json())
-        return r.json()["link"]
+        if "link" in r.json().keys():
+            return [r.json()["link"], True]
+        else:
+            return [r.json(), False]
+        #return r.json()["link"]
 
     def _get_resource(self, endpoint, payload=None):
         request_url = self._build_url(endpoint)
         resource_link = self._get_resource_link(request_url, payload=payload)
-        r = self.session.get(resource_link)
+        if not resource_link[1]:
+            return resource_link[0]
+        r = self.session.get(resource_link[0])
         if r.status_code != 200:
             raise RuntimeError(r.json())
-
         return r.json()
 
     def _get_chunks(self, chunks):
@@ -243,3 +248,26 @@ class irDataClient:
 
     def series_stats(self):
         return self._get_resource("/data/series/stats_series")
+
+    def search_series(
+            self,
+            season_year=None,
+            season_quarter=None,
+            start_range_begin=None,
+            start_range_end=None,
+            finish_range_begin=None, finish_range_end=None,
+            cust_id=None, series_id=None, race_week_num=None,
+            official_only=True,
+            event_types=None,
+            category_ids=None):
+        if not(season_year or season_quarter):
+            raise RuntimeError("Please supply Season Year and Season Quarter")
+
+        params = locals()
+        payload = {}
+        for x in params.keys():
+            if x != 'self' and params[x]:
+                payload[x] = params[x]
+
+        resource = self._get_resource("/data/results/search_series", payload=payload)
+        return self._get_chunks(resource["data"]["chunk_info"])
