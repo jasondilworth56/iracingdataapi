@@ -38,7 +38,7 @@ class irDataClient:
     def _build_url(self, endpoint):
         return self.base_url + endpoint
 
-    def _get_resource_link(self, url, payload=None):
+    def _get_resource_or_link(self, url, payload=None):
         r = self.session.get(url, params=payload)
         if r.status_code != 200:
             raise RuntimeError(r.json())
@@ -50,10 +50,10 @@ class irDataClient:
 
     def _get_resource(self, endpoint, payload=None):
         request_url = self._build_url(endpoint)
-        resource_link = self._get_resource_link(request_url, payload=payload)
-        if not resource_link[1]:
-            return resource_link[0]
-        r = self.session.get(resource_link[0])
+        resource_obj, is_link = self._get_resource_or_link(request_url, payload=payload)
+        if not is_link:
+            return resource_obj
+        r = self.session.get(resource_obj)
         if r.status_code != 200:
             raise RuntimeError(r.json())
         return r.json()
