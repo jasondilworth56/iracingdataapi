@@ -126,7 +126,9 @@ class irDataClient:
             payload["team_id"] = team_id
 
         resource = self._get_resource("/data/results/lap_data", payload=payload)
-        return self._get_chunks(resource["chunk_info"])
+        if resource["chunk_info"]:
+            return self._get_chunks(resource["chunk_info"])
+        return None
 
     def result_event_log(self, subsession_id=None, simsession_number=0):
         if not subsession_id:
@@ -137,7 +139,9 @@ class irDataClient:
             "simsession_number": simsession_number,
         }
         resource = self._get_resource("/data/results/event_log", payload=payload)
-        return self._get_chunks(resource["chunk_info"])
+        if resource["chunk_info"]:
+            return self._get_chunks(resource["chunk_info"])
+        return None
 
     def result_search_hosted(
         self,
@@ -222,7 +226,9 @@ class irDataClient:
         resource = self._get_resource(
             "/data/stats/season_driver_standings", payload=payload
         )
-        return self._get_chunks(resource["chunk_info"])
+        if resource["chunk_info"]:
+            return self._get_chunks(resource["chunk_info"])
+        return None
 
     def stats_season_supersession_standings(
         self, season_id, car_class_id, race_week_num=None
@@ -234,7 +240,9 @@ class irDataClient:
         resource = self._get_resource(
             "/data/stats/season_supersession_standings", payload=payload
         )
-        return self._get_chunks(resource["chunk_info"])
+        if resource["chunk_info"]:
+            return self._get_chunks(resource["chunk_info"])
+        return None
 
     def stats_season_team_standings(self, season_id, car_class_id, race_week_num=None):
         payload = {"season_id": season_id, "car_class_id": car_class_id}
@@ -244,7 +252,9 @@ class irDataClient:
         resource = self._get_resource(
             "/data/stats/season_team_standings", payload=payload
         )
-        return self._get_chunks(resource["chunk_info"])
+        if resource["chunk_info"]:
+            return self._get_chunks(resource["chunk_info"])
+        return None
 
     def team(self, team_id, include_licenses=False):
         payload = {"team_id": team_id, "include_licenses": include_licenses}
@@ -261,15 +271,15 @@ class irDataClient:
         return self._get_resource("/data/series/stats_series")
 
     def search_series(
-            self,
-            season_year=None,
-            season_quarter=None,
-            start_range_begin=None,
-            start_range_end=None,
-            finish_range_begin=None, finish_range_end=None,
+            self, 
+            season_year=None, 
+            season_quarter=None, 
+            start_range_begin=None, 
+            start_range_end=None, 
+            finish_range_begin=None, finish_range_end=None, 
             cust_id=None, series_id=None, race_week_num=None,
-            official_only=True,
-            event_types=None,
+            official_only=True, 
+            event_types=None, 
             category_ids=None):
         if not(season_year or season_quarter):
             raise RuntimeError("Please supply Season Year and Season Quarter")
@@ -281,4 +291,6 @@ class irDataClient:
                 payload[x] = params[x]
 
         resource = self._get_resource("/data/results/search_series", payload=payload)
-        return self._get_chunks(resource["data"]["chunk_info"])
+        if resource["chunk_info"]:
+            return self._get_chunks(resource["chunk_info"])
+        return None
