@@ -1,3 +1,4 @@
+import os
 import base64
 import hashlib
 
@@ -22,6 +23,11 @@ class irDataClient:
                 track[key] = a[key]
 
         self.tracks = tracks
+
+    def _encode_password(self, username, password):
+        initial_hash = hashlib.sha256((password + username.lower()).encode('utf-8')).digest()
+
+        return base64.b64encode(initial_hash).decode('utf-8')
 
     def _login(self, username=None, password=None, cookie_file=None):
         if cookie_file:
