@@ -91,7 +91,7 @@ class irDataClient:
     def get_cars(self):
         return self._get_resource("/data/car/get")
 
-    def get_carclasses(self):
+    def get_carclass(self):
         return self._get_resource("/data/carclass/get")
 
     def get_tracks(self):
