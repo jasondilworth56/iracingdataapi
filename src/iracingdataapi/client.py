@@ -319,7 +319,10 @@ class irDataClient:
             payload["cust_id"] = cust_id
 
         return self._get_resource("/data/member/chart_data", payload=payload)
-
+    
+    def member_info(self):
+        return self._get_resource("/data/member/info")
+    
     def stats_member_career(self, cust_id=None):
         if not cust_id:
             raise RuntimeError("Please supply a cust_id")
