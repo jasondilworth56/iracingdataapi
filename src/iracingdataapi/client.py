@@ -433,6 +433,10 @@ class irDataClient:
         payload = {"team_id": team_id, "include_licenses": include_licenses}
         return self._get_resource("/data/team/get", payload=payload)
 
+    def season_list(self, season_year, season_quarter):
+        payload = {"season_year": season_year, "season_quarter": season_quarter}
+        return self._get_resource("/data/season/list", payload=payload)
+    
     def series(self):
         return self._get_resource("/data/series/get")
 
