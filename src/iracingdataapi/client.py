@@ -272,8 +272,8 @@ class irDataClient:
         event_types=None,
         category_ids=None,
     ):
-        if not (season_year or season_quarter):
-            raise RuntimeError("Please supply Season Year and Season Quarter")
+        if not ((season_year and season_quarter) or (start_range_begin)):
+            raise RuntimeError("Please supply Season Year and Season Quarter or a date range")
 
         params = locals()
         payload = {}
