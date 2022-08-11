@@ -1,11 +1,13 @@
+import os
 import base64
 import hashlib
 
 import requests
+from http.cookiejar import LWPCookieJar
 
 
 class irDataClient:
-    def __init__(self, username=None, password=None):
+    def __init__(self, username=None, password=None, cookie_file=None):
         self.authenticated = False
         self.session = requests.Session()
         self.base_url = "https://members-ng.iracing.com"
@@ -22,25 +24,36 @@ class irDataClient:
 
         self.tracks = tracks
 
-    def _login(self, username=None, password=None):
-        if not username or not password:
-            raise RuntimeError("Please supply a username and password")
+    def _encode_password(self, username, password):
+        initial_hash = hashlib.sha256((password + username.lower()).encode('utf-8')).digest()
 
-        # iRacing requires Base64 encoded string as of 2022 season 3
-        password_hash = hashlib.sha256(
-            (password + username.lower()).encode("utf-8")
-        ).digest()
-        password_b64 = base64.b64encode(password_hash).decode("utf-8")
+        return base64.b64encode(initial_hash).decode('utf-8')
 
-        payload = {"email": username, "password": password_b64}
+    def _login(self, username=None, password=None, cookie_file=None):
+        if cookie_file:
+            self.session.cookies = LWPCookieJar(cookie_file)
+            if not os.path.exists(cookie_file):
+                self.session.cookies.save()
+            else:
+                self.session.cookies.load(ignore_discard=True)
+        headers = {'Content-Type': 'application/json'}
+        password = self._encode_password(username, password)
+        data = {"email": username, "password": password}
 
-        r = self.session.post(self._build_url("/auth"), json=payload)
-
-        if r.status_code != 200:
-            raise RuntimeError("Error from iRacing: ", r.json())
-
-        self.authenticated = True
-        return True
+        try:
+            r = self.session.post('https://members-ng.iracing.com/auth', headers=headers, json=data, timeout=5.0)
+        except requests.Timeout:
+            raise RuntimeError("Login timed out")
+        except requests.ConnectionError:
+            raise RuntimeError("Connection error")
+        else:
+            if r.status_code == 200:
+                if cookie_file:
+                    self.session.cookies.save(ignore_discard=True)
+                self.authenticated = True
+                return True
+            else:
+                raise RuntimeError("Error from iRacing: ", r.json())
 
     def _build_url(self, endpoint):
         return self.base_url + endpoint
@@ -306,7 +319,10 @@ class irDataClient:
             payload["cust_id"] = cust_id
 
         return self._get_resource("/data/member/chart_data", payload=payload)
-
+    
+    def member_info(self):
+        return self._get_resource("/data/member/info")
+    
     def stats_member_career(self, cust_id=None):
         if not cust_id:
             raise RuntimeError("Please supply a cust_id")
@@ -417,6 +433,10 @@ class irDataClient:
         payload = {"team_id": team_id, "include_licenses": include_licenses}
         return self._get_resource("/data/team/get", payload=payload)
 
+    def season_list(self, season_year, season_quarter):
+        payload = {"season_year": season_year, "season_quarter": season_quarter}
+        return self._get_resource("/data/season/list", payload=payload)
+    
     def series(self):
         return self._get_resource("/data/series/get")
 
