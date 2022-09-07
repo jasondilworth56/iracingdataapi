@@ -33,6 +33,11 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.0.2**
+
+-   Adjusted login flow to avoid logging in on instantiation of an `irDataClient` object
+-   Login now happens either on the initial call to an iRacing endpoint, or whenever a `401 Unauthorized` response is received form iRacing
+
 **1.0.1**
 
 -   Adjusted `result_search_series` to allow searches by date range without using season years and quarters.

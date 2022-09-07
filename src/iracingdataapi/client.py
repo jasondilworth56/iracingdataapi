@@ -1,9 +1,9 @@
-import os
 import base64
 import hashlib
+import os
+from http.cookiejar import LWPCookieJar
 
 import requests
-from http.cookiejar import LWPCookieJar
 
 
 class irDataClient:
@@ -12,24 +12,15 @@ class irDataClient:
         self.session = requests.Session()
         self.base_url = "https://members-ng.iracing.com"
 
-        self._login(username=username, password=password)
-
-        self.cars = self.get_cars()
-        tracks = self.get_tracks()
-        track_assets = self.get_tracks_assets()
-        for track in tracks:
-            a = track_assets[str(track["track_id"])]
-            for key in a.keys():
-                track[key] = a[key]
-
-        self.tracks = tracks
+        self.username = username
+        self.encoded_password = self._encode_password(username, password)
 
     def _encode_password(self, username, password):
         initial_hash = hashlib.sha256((password + username.lower()).encode('utf-8')).digest()
 
         return base64.b64encode(initial_hash).decode('utf-8')
 
-    def _login(self, username=None, password=None, cookie_file=None):
+    def _login(self, cookie_file=None):
         if cookie_file:
             self.session.cookies = LWPCookieJar(cookie_file)
             if not os.path.exists(cookie_file):
@@ -37,8 +28,7 @@ class irDataClient:
             else:
                 self.session.cookies.load(ignore_discard=True)
         headers = {'Content-Type': 'application/json'}
-        password = self._encode_password(username, password)
-        data = {"email": username, "password": password}
+        data = {"email": self.username, "password": self.encoded_password}
 
         try:
             r = self.session.post('https://members-ng.iracing.com/auth', headers=headers, json=data, timeout=5.0)
@@ -47,25 +37,36 @@ class irDataClient:
         except requests.ConnectionError:
             raise RuntimeError("Connection error")
         else:
-            if r.status_code == 200:
+            response_data = r.json()
+            if r.status_code == 200 and response_data['authcode']:
                 if cookie_file:
                     self.session.cookies.save(ignore_discard=True)
                 self.authenticated = True
-                return True
+                return "Logged in"
             else:
-                raise RuntimeError("Error from iRacing: ", r.json())
+                raise RuntimeError("Error from iRacing: ", response_data)
 
     def _build_url(self, endpoint):
         return self.base_url + endpoint
 
     def _get_resource_or_link(self, url, payload=None):
+        if not self.authenticated:
+            self._login()
+            return self._get_resource_or_link(url, payload=payload)
+
         r = self.session.get(url, params=payload)
+
+        if r.status_code == 401:
+            # unauthorised, likely due to a timeout, retry after a login
+            self.authenticated = False
+            
         if r.status_code != 200:
             raise RuntimeError(r.json())
-        if "link" in r.json().keys():
-            return [r.json()["link"], True]
+        data = r.json()
+        if not isinstance(data, list) and "link" in data.keys():
+            return [data["link"], True]
         else:
-            return [r.json(), False]
+            return [data, False]
 
     def _get_resource(self, endpoint, payload=None):
         request_url = self._build_url(endpoint)
@@ -84,6 +85,21 @@ class irDataClient:
         output = [item for sublist in list_of_chunks for item in sublist]
 
         return output
+
+    @property
+    def cars(self):
+        return self.get_cars()
+
+    @property
+    def tracks(self):
+        tracks = self.get_tracks()
+        track_assets = self.get_tracks_assets()
+        for track in tracks:
+            a = track_assets[str(track["track_id"])]
+            for key in a.keys():
+                track[key] = a[key]
+
+        return tracks
 
     def constants_categories(self):
         return self._get_resource("/data/constants/categories")
