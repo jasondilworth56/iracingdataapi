@@ -125,6 +125,15 @@ class irDataClient:
     def get_tracks_assets(self):
         return self._get_resource("/data/track/assets")
 
+    def hosted_combined_sessions(self, package_id=None):
+        payload = {}
+        if package_id:
+            payload["package_id"] = package_id
+        return self._get_resource("/data/hosted/combined_sessions", payload=payload)
+
+    def hosted_sessions(self):
+        return self._get_resource("/data/hosted/sessions")
+
     def league_get(self, league_id=None, include_licenses=False):
         if not league_id:
             raise RuntimeError("Please supply a league_id")
@@ -168,6 +177,10 @@ class irDataClient:
 
         return self._get_resource("/data/league/get_points_systems", payload=payload)
 
+    def league_membership(self, include_league=False):
+        payload = {"include_league": include_league}
+        return self._get_resource("/data/league/membership", payload=payload)
+
     def league_seasons(self, league_id, retired=False):
         payload = {"league_id": league_id, "retired": retired}
         return self._get_resource("/data/league/seasons", payload=payload)
@@ -197,6 +210,13 @@ class irDataClient:
 
     def lookup_countries(self):
         return self._get_resource("/data/lookup/countries")
+
+    def lookup_drivers(self, search_term=None, league_id=None):
+        payload = {"search_term": search_term}
+        if league_id:
+            payload["league_id"] = league_id
+
+        return self._get_resource("/data/lookup/drivers", payload=payload)
 
     def lookup_get(self):
         return self._get_resource("/data/lookup/get")
@@ -338,7 +358,22 @@ class irDataClient:
     
     def member_info(self):
         return self._get_resource("/data/member/info")
-    
+
+    def member_profile(self, cust_id=None):
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
+        return self._get_resource("/data/member/profile", payload=payload)
+
+    def stats_member_bests(self, cust_id=None, car_id=None):
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
+        if car_id:
+            payload["car_id"] = car_id
+
+        return self._get_resource("/data/stats/member_bests", payload=payload)
+
     def stats_member_career(self, cust_id=None):
         if not cust_id:
             raise RuntimeError("Please supply a cust_id")
@@ -368,11 +403,15 @@ class irDataClient:
         return self._get_resource("/data/stats/member_yearly", payload=payload)
 
     def stats_season_driver_standings(
-        self, season_id, car_class_id, race_week_num=None
+        self, season_id, car_class_id, race_week_num=None, club_id=None, division=None
     ):
         payload = {"season_id": season_id, "car_class_id": car_class_id}
         if race_week_num:
             payload["race_week_num"] = race_week_num
+        if club_id:
+            payload["club_id"] = club_id
+        if division:
+            payload["division"] = division
 
         resource = self._get_resource(
             "/data/stats/season_driver_standings", payload=payload
@@ -380,11 +419,15 @@ class irDataClient:
         return self._get_chunks(resource["chunk_info"])
 
     def stats_season_supersession_standings(
-        self, season_id, car_class_id, race_week_num=None
+        self, season_id, car_class_id, race_week_num=None, club_id=None, division=None
     ):
         payload = {"season_id": season_id, "car_class_id": car_class_id}
         if race_week_num:
             payload["race_week_num"] = race_week_num
+        if club_id:
+            payload["club_id"] = club_id
+        if division:
+            payload["division"] = division
 
         resource = self._get_resource(
             "/data/stats/season_supersession_standings", payload=payload
@@ -401,32 +444,50 @@ class irDataClient:
         )
         return self._get_chunks(resource["chunk_info"])
 
-    def stats_season_tt_standings(self, season_id, car_class_id, race_week_num=None):
+    def stats_season_tt_standings(
+        self, season_id, car_class_id, race_week_num=None, club_id=None, division=None
+    ):
         payload = {"season_id": season_id, "car_class_id": car_class_id}
         if race_week_num:
             payload["race_week_num"] = race_week_num
+        if club_id:
+            payload["club_id"] = club_id
+        if division:
+            payload["division"] = division
 
         resource = self._get_resource(
             "/data/stats/season_tt_standings", payload=payload
         )
         return self._get_chunks(resource["chunk_info"])
 
-    def stats_season_tt_results(self, season_id, car_class_id, race_week_num):
+    def stats_season_tt_results(
+        self, season_id, car_class_id, race_week_num, club_id=None, division=None
+    ):
         payload = {
             "season_id": season_id,
             "car_class_id": car_class_id,
             "race_week_num": race_week_num,
         }
+        if club_id:
+            payload["club_id"] = club_id
+        if division:
+            payload["division"] = division
 
         resource = self._get_resource("/data/stats/season_tt_results", payload=payload)
         return self._get_chunks(resource["chunk_info"])
 
-    def stats_season_qualify_results(self, season_id, car_class_id, race_week_num):
+    def stats_season_qualify_results(
+        self, season_id, car_class_id, race_week_num, club_id=None, division=None
+    ):
         payload = {
             "season_id": season_id,
             "car_class_id": car_class_id,
             "race_week_num": race_week_num,
         }
+        if club_id:
+            payload["club_id"] = club_id
+        if division:
+            payload["division"] = division
 
         resource = self._get_resource(
             "/data/stats/season_qualify_results", payload=payload
@@ -452,7 +513,16 @@ class irDataClient:
     def season_list(self, season_year, season_quarter):
         payload = {"season_year": season_year, "season_quarter": season_quarter}
         return self._get_resource("/data/season/list", payload=payload)
-    
+
+    def season_race_guide(self, start_from=None, include_end_after_from=None):
+        payload = {}
+        if start_from:
+            payload["from"] = start_from
+        if include_end_after_from:
+            payload["include_end_after_from"] = include_end_after_from
+
+        return self._get_resource("/data/season/race_guide", payload=payload)
+
     def series(self):
         return self._get_resource("/data/series/get")
 
