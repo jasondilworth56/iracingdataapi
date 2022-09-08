@@ -16,9 +16,11 @@ class irDataClient:
         self.encoded_password = self._encode_password(username, password)
 
     def _encode_password(self, username, password):
-        initial_hash = hashlib.sha256((password + username.lower()).encode('utf-8')).digest()
+        initial_hash = hashlib.sha256(
+            (password + username.lower()).encode("utf-8")
+        ).digest()
 
-        return base64.b64encode(initial_hash).decode('utf-8')
+        return base64.b64encode(initial_hash).decode("utf-8")
 
     def _login(self, cookie_file=None):
         if cookie_file:
@@ -27,18 +29,23 @@ class irDataClient:
                 self.session.cookies.save()
             else:
                 self.session.cookies.load(ignore_discard=True)
-        headers = {'Content-Type': 'application/json'}
+        headers = {"Content-Type": "application/json"}
         data = {"email": self.username, "password": self.encoded_password}
 
         try:
-            r = self.session.post('https://members-ng.iracing.com/auth', headers=headers, json=data, timeout=5.0)
+            r = self.session.post(
+                "https://members-ng.iracing.com/auth",
+                headers=headers,
+                json=data,
+                timeout=5.0,
+            )
         except requests.Timeout:
             raise RuntimeError("Login timed out")
         except requests.ConnectionError:
             raise RuntimeError("Connection error")
         else:
             response_data = r.json()
-            if r.status_code == 200 and response_data['authcode']:
+            if r.status_code == 200 and response_data["authcode"]:
                 if cookie_file:
                     self.session.cookies.save(ignore_discard=True)
                 self.authenticated = True
@@ -59,7 +66,7 @@ class irDataClient:
         if r.status_code == 401:
             # unauthorised, likely due to a timeout, retry after a login
             self.authenticated = False
-            
+
         if r.status_code != 200:
             raise RuntimeError(r.json())
         data = r.json()
@@ -322,7 +329,9 @@ class irDataClient:
         category_ids=None,
     ):
         if not ((season_year and season_quarter) or (start_range_begin)):
-            raise RuntimeError("Please supply Season Year and Season Quarter or a date range")
+            raise RuntimeError(
+                "Please supply Season Year and Season Quarter or a date range"
+            )
 
         params = locals()
         payload = {}
@@ -355,7 +364,7 @@ class irDataClient:
             payload["cust_id"] = cust_id
 
         return self._get_resource("/data/member/chart_data", payload=payload)
-    
+
     def member_info(self):
         return self._get_resource("/data/member/info")
 
