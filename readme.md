@@ -33,6 +33,10 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.0.3**
+
+-   Added the endpoints described in the [August 22nd update](https://forums.iracing.com/discussion/comment/219438/#Comment_219438)
+
 **1.0.2**
 
 -   Adjusted login flow to avoid logging in on instantiation of an `irDataClient` object
