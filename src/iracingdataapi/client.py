@@ -66,6 +66,7 @@ class irDataClient:
         if r.status_code == 401:
             # unauthorised, likely due to a timeout, retry after a login
             self.authenticated = False
+            return self._get_resource_or_link(url, payload=payload)
 
         if r.status_code != 200:
             raise RuntimeError(r.json())
