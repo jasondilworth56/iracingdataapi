@@ -33,6 +33,9 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.0.4**
+-   Bug fix: Previously an attempt wouldn't be retried if the authentication data became stale. This release fixes that
+
 **1.0.3**
 
 -   Added the endpoints described in the [August 22nd update](https://forums.iracing.com/discussion/comment/219438/#Comment_219438)
