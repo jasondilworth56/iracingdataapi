@@ -1,6 +1,8 @@
 import base64
 import hashlib
 import os
+import time
+from datetime import datetime, timedelta
 from http.cookiejar import LWPCookieJar
 
 import requests
@@ -66,6 +68,13 @@ class irDataClient:
         if r.status_code == 401:
             # unauthorised, likely due to a timeout, retry after a login
             self.authenticated = False
+            return self._get_resource_or_link(url, payload=payload)
+
+        if r.status_code == 429:
+            print("Rate limited, waiting")
+            reset_datetime = datetime.fromtimestamp(r.header["x-ratelimit-reset"])
+            delta = reset_datetime - datetime.now()
+            time.sleep(delta.total_seconds())
             return self._get_resource_or_link(url, payload=payload)
 
         if r.status_code != 200:
