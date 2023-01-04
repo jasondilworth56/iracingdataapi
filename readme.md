@@ -33,6 +33,9 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.0.5**
+-   Added a wait when hitting a rate limit
+
 **1.0.4**
 -   Bug fix: Previously an attempt wouldn't be retried if the authentication data became stale. This release fixes that
 
