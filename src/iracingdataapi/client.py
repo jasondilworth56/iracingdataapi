@@ -278,7 +278,12 @@ class irDataClient:
             payload["team_id"] = team_id
 
         resource = self._get_resource("/data/results/lap_data", payload=payload)
-        return self._get_chunks(resource["chunk_info"])
+        if resource["chunk_info"]:
+            return self._get_chunks(resource["chunk_info"])
+        
+        # if there are no chunks to get, that's because no laps were done by this cust_id
+        # on this subsession, return an empty list for compatibility
+        return []
 
     def result_event_log(self, subsession_id=None, simsession_number=0):
         if not subsession_id:
