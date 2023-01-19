@@ -33,6 +33,9 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.0.6**
+-   Bug fix in `result_lap_data` method, which will now return an empty list for any `cust_id`/`subsession_id` combinations for which laps were not turned.
+
 **1.0.5**
 -   Added a wait when hitting a rate limit
 
