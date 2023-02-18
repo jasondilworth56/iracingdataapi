@@ -1,15 +1,13 @@
 import base64
 import hashlib
-import os
 import time
 from datetime import datetime, timedelta
-from http.cookiejar import LWPCookieJar
 
 import requests
 
 
 class irDataClient:
-    def __init__(self, username=None, password=None, cookie_file=None):
+    def __init__(self, username=None, password=None):
         self.authenticated = False
         self.session = requests.Session()
         self.base_url = "https://members-ng.iracing.com"
@@ -24,13 +22,7 @@ class irDataClient:
 
         return base64.b64encode(initial_hash).decode("utf-8")
 
-    def _login(self, cookie_file=None):
-        if cookie_file:
-            self.session.cookies = LWPCookieJar(cookie_file)
-            if not os.path.exists(cookie_file):
-                self.session.cookies.save()
-            else:
-                self.session.cookies.load(ignore_discard=True)
+    def _login(self):
         headers = {"Content-Type": "application/json"}
         data = {"email": self.username, "password": self.encoded_password}
 
@@ -48,8 +40,6 @@ class irDataClient:
         else:
             response_data = r.json()
             if r.status_code == 200 and response_data["authcode"]:
-                if cookie_file:
-                    self.session.cookies.save(ignore_discard=True)
                 self.authenticated = True
                 return "Logged in"
             else:
