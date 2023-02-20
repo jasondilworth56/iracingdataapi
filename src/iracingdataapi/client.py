@@ -123,8 +123,12 @@ class irDataClient:
     def get_cars_assets(self):
         return self._get_resource("/data/car/assets")
 
-    def get_carclass(self):
+    def get_carclasses(self):
         return self._get_resource("/data/carclass/get")
+
+    def get_carclass(self):
+        print("get_carclass() is deprecated and will be removed in a future release, please use get_carclasses()")
+        return self.get_carclasses()
 
     def get_tracks(self):
         return self._get_resource("/data/track/get")
