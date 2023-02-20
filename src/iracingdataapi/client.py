@@ -93,20 +93,30 @@ class irDataClient:
 
         return output
 
+    def _add_assets(self, objects, assets, id_key):
+        for obj in objects:
+            a = assets[str(obj[id_key])]
+            for key in a.keys():
+                obj[key] = a[key]
+        return objects
+
     @property
     def cars(self):
-        return self.get_cars()
+        cars = self.get_cars()
+        car_assets = self.get_cars_assets()
+        return self._add_assets(cars, car_assets, "car_id")
 
     @property
     def tracks(self):
         tracks = self.get_tracks()
         track_assets = self.get_tracks_assets()
-        for track in tracks:
-            a = track_assets[str(track["track_id"])]
-            for key in a.keys():
-                track[key] = a[key]
+        return self._add_assets(tracks, track_assets, "track_id")
 
-        return tracks
+    @property
+    def series(self):
+        series = self.get_series()
+        series_assets = self.get_series_assets()
+        return self._add_assets(series, series_assets, "series_id")
 
     def constants_categories(self):
         return self._get_resource("/data/constants/categories")
@@ -127,7 +137,9 @@ class irDataClient:
         return self._get_resource("/data/carclass/get")
 
     def get_carclass(self):
-        print("get_carclass() is deprecated and will be removed in a future release, please use get_carclasses()")
+        print(
+            "get_carclass() is deprecated and will be removed in a future release, please use get_carclasses()"
+        )
         return self.get_carclasses()
 
     def get_tracks(self):
@@ -274,7 +286,7 @@ class irDataClient:
         resource = self._get_resource("/data/results/lap_data", payload=payload)
         if resource["chunk_info"]:
             return self._get_chunks(resource["chunk_info"])
-        
+
         # if there are no chunks to get, that's because no laps were done by this cust_id
         # on this subsession, return an empty list for compatibility
         return []
@@ -541,11 +553,17 @@ class irDataClient:
 
         return self._get_resource("/data/season/race_guide", payload=payload)
 
-    def series(self):
+    def get_series(self):
         return self._get_resource("/data/series/get")
 
-    def series_assets(self):
+    def get_series_assets(self):
         return self._get_resource("/data/series/assets")
+
+    def series_assets(self):
+        print(
+            "series_assets() is deprecated and will be removed in a future release, please update to use get_series_assets"
+        )
+        return self.get_series_assets()
 
     def series_seasons(self, include_series=False):
         payload = {"include_series": include_series}
