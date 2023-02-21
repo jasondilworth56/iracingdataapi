@@ -64,7 +64,7 @@ class irDataClient:
             print("Rate limited, waiting")
             reset_datetime = datetime.fromtimestamp(int(r.headers["x-ratelimit-reset"]))
             delta = reset_datetime - datetime.now()
-            if delta > 0:
+            if delta.total_seconds() > 0:
                 time.sleep(delta.total_seconds())
             return self._get_resource_or_link(url, payload=payload)
 
@@ -429,7 +429,7 @@ class irDataClient:
     def stats_member_yearly(self, cust_id=None):
         if not cust_id:
             raise RuntimeError("Please supply a cust_id")
-
+        
         payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_yearly", payload=payload)
 
