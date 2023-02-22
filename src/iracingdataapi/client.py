@@ -87,8 +87,11 @@ class irDataClient:
         return r.json()
 
     def _get_chunks(self, chunks):
-        base_url = chunks["base_download_url"]
-        urls = [base_url + x for x in chunks["chunk_file_names"]]
+        if not isinstance(chunks, dict):
+            # if there are no chunks, return an empty list for compatibility
+            return []
+        base_url = chunks.get("base_download_url")
+        urls = [base_url + x for x in chunks.get("chunk_file_names")]
         list_of_chunks = [self.session.get(url).json() for url in urls]
         output = [item for sublist in list_of_chunks for item in sublist]
 
