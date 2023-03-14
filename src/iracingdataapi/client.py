@@ -66,7 +66,7 @@ class irDataClient:
             if ratelimit_reset:
                 reset_datetime = datetime.fromtimestamp(int(ratelimit_reset))
                 delta = reset_datetime - datetime.now()
-                if delta > 0:
+                if delta.total_seconds() > 0:
                     time.sleep(delta.total_seconds())
             return self._get_resource_or_link(url, payload=payload)
 
@@ -888,7 +888,6 @@ class irDataClient:
         """
         if not cust_id:
             raise RuntimeError("Please supply a cust_id")
-
         payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_yearly", payload=payload)
 
