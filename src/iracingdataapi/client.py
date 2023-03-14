@@ -434,7 +434,6 @@ class irDataClient:
     def stats_member_yearly(self, cust_id=None):
         if not cust_id:
             raise RuntimeError("Please supply a cust_id")
-        
         payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_yearly", payload=payload)
 
