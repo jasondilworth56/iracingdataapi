@@ -32,6 +32,17 @@ All available methods of `irDataClient` are included in `client.py`.
 I welcome all pull requests for improvements or missing endpoints over time as they are added by iRacing.
 
 # Changelog
+**1.1.0**
+-   Added docstrings to all methods for developer experience
+-   Renamed `series()` to `get_series()` for consistency. **Breaking change:** For that same consistency, `series` has been reimplemented as a property which returns the series with their assets. To amend your implementation, either switch to `get_series()` or remove any brackets in your call of `series`.
+-   Renamed `get_carclass()` to `get_carclasses()` to be more consistent with other endpoints. **NOTE:** `get_carclass()` will be removed in a future release.
+-   Added assets to the returned data of `tracks`. If you prefer not to get those assets, use `get_tracks()`.
+-   Removed redundant cookie handling code, as that is all handled within `requests.Session`
+-   Fixed a ratelimiting error
+-   Fixed a ratelimiting bug
+-   Fixed a bug related to empty results
+-   Improved handling of results
+
 
 **1.0.6**
 -   Bug fix in `result_lap_data` method, which will now return an empty list for any `cust_id`/`subsession_id` combinations for which laps were not turned.
