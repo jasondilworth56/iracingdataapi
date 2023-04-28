@@ -71,7 +71,7 @@ class irDataClient:
             return self._get_resource_or_link(url, payload=payload)
 
         if r.status_code != 200:
-            raise RuntimeError(r.json())
+            raise RuntimeError("Unhandled Non-200 response", r)
         data = r.json()
         if not isinstance(data, list) and "link" in data.keys():
             return [data.get("link"), True]
@@ -85,7 +85,7 @@ class irDataClient:
             return resource_obj
         r = self.session.get(resource_obj)
         if r.status_code != 200:
-            raise RuntimeError(r.json())
+            raise RuntimeError("Unhandled Non-200 response", r)
         return r.json()
 
     def _get_chunks(self, chunks):
