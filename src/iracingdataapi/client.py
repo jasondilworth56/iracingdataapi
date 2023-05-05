@@ -1133,6 +1133,25 @@ class irDataClient:
 
         return self._get_resource("/data/season/race_guide", payload=payload)
 
+    def season_spectator_subsessionids(self, event_types:list=[2,3,4,5]):
+        """Get the current list of subsession IDs for a given event type
+        
+        Args:
+            event_types (list): A list of integers that match with iRacing event types as follows:
+                2: Practise
+                3: Qualify
+                4: Time Trial
+                5: Race
+
+        Returns:
+            list: a list of the matching subsession IDs
+        """
+        payload = {}
+        if event_types:
+            payload["event_types": ",".join(event_types)]
+        
+        return self._get_resource("/data/season/spectator_subsessionids", payload=payload)
+
     def get_series(self):
         """Get all the current official iRacing series.
 
