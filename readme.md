@@ -33,7 +33,7 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
-**1.1.1**
+**1.1.2**
 -   Bug fix for some 5xx errors that are thrown by iRacing
 -   Added the `season_spectator_subsessionids()` endpoint
 
