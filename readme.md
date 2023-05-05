@@ -32,6 +32,11 @@ All available methods of `irDataClient` are included in `client.py`.
 I welcome all pull requests for improvements or missing endpoints over time as they are added by iRacing.
 
 # Changelog
+
+**1.1.1**
+-   Bug fix for some 5xx errors that are thrown by iRacing
+-   Added the `season_spectator_subsessionids()` endpoint
+
 **1.1.0**
 -   Added docstrings to all methods for developer experience
 -   Renamed `series()` to `get_series()` for consistency. **Breaking change:** For that same consistency, `series` has been reimplemented as a property which returns the series with their assets. To amend your implementation, either switch to `get_series()` or remove any brackets in your call of `series`.
