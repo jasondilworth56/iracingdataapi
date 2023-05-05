@@ -1150,7 +1150,7 @@ class irDataClient:
         if event_types:
             payload["event_types"] = ",".join([str(x) for x in event_types])
         
-        return self._get_resource("/data/season/spectator_subsessionids", payload=payload)
+        return self._get_resource("/data/season/spectator_subsessionids", payload=payload)["subsession_ids"]
 
     def get_series(self):
         """Get all the current official iRacing series.
