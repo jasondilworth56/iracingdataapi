@@ -1148,7 +1148,7 @@ class irDataClient:
         """
         payload = {}
         if event_types:
-            payload["event_types": ",".join(event_types)]
+            payload["event_types": ",".join([str(x) for x in event_types])]
         
         return self._get_resource("/data/season/spectator_subsessionids", payload=payload)
 
