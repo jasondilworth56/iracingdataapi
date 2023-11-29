@@ -16,13 +16,13 @@ from iracingdataapi.client import irDataClient
 idc = irDataClient(username=[YOUR iRACING USERNAME], password=[YOUR iRACING PASSWORD])
 
 # get the summary data of a member
-idc.get_member_summary(cust_id=20979)
+idc.stats_member_summary(cust_id=20979)
 
 # get latest results of a member
-idc.get_member_recent_races(cust_id=209179)
+idc.stats_member_recent_races(cust_id=209179)
 
 # get all laps for a specific driver in a race
-idc.get_result_lap_data(subsession_id=43720351, cust_id=209179)
+idc.result_lap_data(subsession_id=43720351, cust_id=209179)
 ```
 
 All available methods of `irDataClient` are included in `client.py`.
