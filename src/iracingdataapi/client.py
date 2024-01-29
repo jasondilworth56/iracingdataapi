@@ -712,7 +712,9 @@ class irDataClient:
             list: a list containing all the hosted results matching criteria.
 
         """
-        if not ((season_year and season_quarter) or (start_range_begin)):
+        if not (
+            (season_year and season_quarter) or start_range_begin or finish_range_begin
+        ):
             raise RuntimeError(
                 "Please supply Season Year and Season Quarter or a date range"
             )
@@ -1133,9 +1135,9 @@ class irDataClient:
 
         return self._get_resource("/data/season/race_guide", payload=payload)
 
-    def season_spectator_subsessionids(self, event_types=[2,3,4,5]):
+    def season_spectator_subsessionids(self, event_types=[2, 3, 4, 5]):
         """Get the current list of subsession IDs for a given event type
-        
+
         Args:
             event_types (list[int]): A list of integers that match with iRacing event types as follows:
                 2: Practise
@@ -1149,8 +1151,10 @@ class irDataClient:
         payload = {}
         if event_types:
             payload["event_types"] = ",".join([str(x) for x in event_types])
-        
-        return self._get_resource("/data/season/spectator_subsessionids", payload=payload)["subsession_ids"]
+
+        return self._get_resource(
+            "/data/season/spectator_subsessionids", payload=payload
+        )["subsession_ids"]
 
     def get_series(self):
         """Get all the current official iRacing series.
