@@ -32,6 +32,12 @@ All available methods of `irDataClient` are included in `client.py`.
 I welcome all pull requests for improvements or missing endpoints over time as they are added by iRacing.
 
 # Changelog
+**1.1.5**
+-   Add rate limiting to `_get_resource`
+
+**1.1.4**
+-   Fix `result_search_series` to correctly include `finish_range_begin` as an option
+-   Fix `season_spectator_subsessionids` to correctly return the IDs rather than the object
 
 **1.1.3**
 -   Bug fix for some 5xx errors that are thrown by iRacing
