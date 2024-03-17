@@ -33,6 +33,15 @@ class irDataClient:
                 json=data,
                 timeout=5.0,
             )
+            if r.status_code == 429:
+                print("Rate limited, waiting")
+                ratelimit_reset = r.headers.get("x-ratelimit-reset")
+                if ratelimit_reset:
+                    reset_datetime = datetime.fromtimestamp(int(ratelimit_reset))
+                    delta = reset_datetime - datetime.now()
+                    if delta.total_seconds() > 0:
+                        time.sleep(delta.total_seconds())
+                return self._login()
         except requests.Timeout:
             raise RuntimeError("Login timed out")
         except requests.ConnectionError:
@@ -84,8 +93,6 @@ class irDataClient:
         if not is_link:
             return resource_obj
         r = self.session.get(resource_obj)
-        if r.status_code != 200:
-            raise RuntimeError("Unhandled Non-200 response", r)
 
         if r.status_code == 401:
             # unauthorised, likely due to a timeout, retry after a login
@@ -101,6 +108,9 @@ class irDataClient:
                 if delta.total_seconds() > 0:
                     time.sleep(delta.total_seconds())
             return self._get_resource(endpoint, payload=payload)
+
+        if r.status_code != 200:
+            raise RuntimeError("Unhandled Non-200 response", r)
 
         return r.json()
 
