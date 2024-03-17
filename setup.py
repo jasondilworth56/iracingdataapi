@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="iracingdataapi",
-    version="1.1.5",
+    version="1.1.6",
     author="Jason Dilworth",
     author_email="hello@jasondilworth.co.uk",
     description="A simple wrapper around the iRacing General Data API",

@@ -32,6 +32,9 @@ All available methods of `irDataClient` are included in `client.py`.
 I welcome all pull requests for improvements or missing endpoints over time as they are added by iRacing.
 
 # Changelog
+**1.1.6**
+-   More rate limiting fixes
+
 **1.1.5**
 -   Add rate limiting to `_get_resource`
 
