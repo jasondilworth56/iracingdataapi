@@ -401,7 +401,7 @@ class irDataClient:
         return self._get_resource("/data/league/membership", payload=payload)
 
     def league_roster(self, league_id, include_licenses=False):
-        """
+        """Fetches a dict containing information about the league roster.
         Args:
             league_id (int): the league to retrieve the roster
             include_licenses (bool): if ``True``, also receives license information.
@@ -808,6 +808,19 @@ class irDataClient:
 
         payload = {"cust_ids": cust_id, "include_licenses": include_licenses}
         return self._get_resource("/data/member/get", payload=payload)
+
+    def member_awards(self, cust_id=None):
+        """Fetches a dict containing information on the members awards.
+        Args:
+            cust_id (int): the iRacing cust_id. Defaults to the authenticated member.
+
+        Returns:
+            dict: A dict containing information about the members awards.
+        """
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
+        return self._get_resource("/data/member/awards", payload=payload)
 
     def member_chart_data(self, cust_id=None, category_id=2, chart_type=1):
         """Get the irating, ttrating or safety rating chart data of a certain category.
