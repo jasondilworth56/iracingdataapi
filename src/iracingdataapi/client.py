@@ -400,6 +400,21 @@ class irDataClient:
         payload = {"include_league": include_league}
         return self._get_resource("/data/league/membership", payload=payload)
 
+    def league_roster(self, league_id, include_licenses=False):
+        """
+        Args:
+            league_id (int): the league to retrieve the roster
+            include_licenses (bool): if ``True``, also receives license information.
+                                    For faster responses, only request when necessary.
+
+        Returns:
+            dict: A dict containing information about the league roster
+        """
+        payload = {"league_id": league_id}
+        if include_licenses:
+            payload["include_licenses"] = include_licenses
+        return self._get_resource("/data/league/roster", payload=payload)
+
     def league_seasons(self, league_id, retired=False):
         """Fetches a list containing all the seasons from a league.
 
