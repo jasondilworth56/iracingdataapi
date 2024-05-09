@@ -405,7 +405,7 @@ class irDataClient:
         Args:
             league_id (int): the league to retrieve the roster
             include_licenses (bool): if ``True``, also receives license information.
-                                    For faster responses, only request when necessary.
+             For faster responses, only request when necessary.
 
         Returns:
             dict: A dict containing information about the league roster
@@ -813,8 +813,8 @@ class irDataClient:
         """Get the irating, ttrating or safety rating chart data of a certain category.
 
         Args:
-            cust_id (int): the iRacing cust_id
-            category_id (int): 1 - Oval; 2 - Road; 3 - Dirt oval; 4 - Dirt road
+            cust_id (int): the iRacing cust_id. Defaults to the authenticated member.
+            category_id (int): 1 - Oval; 2 - Road; 3 - Dirt oval; 4 - Dirt road; 5 - Sports Car; 6 - Formula Car
             chart_type (int): 1 - iRating; 2 - TT Rating; 3 - License/SR
 
         Returns:
