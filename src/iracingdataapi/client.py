@@ -54,15 +54,6 @@ class irDataClient:
             else:
                 raise RuntimeError("Error from iRacing: ", response_data)
 
-
-
-
-
-
-
-
-
-
     def _build_url(self, endpoint):
         return self.base_url + endpoint
 
@@ -190,7 +181,7 @@ class irDataClient:
         Qualify, Time Trial or Race)
 
         Returns:
-            A list of dicts representing each event type.
+            list: A list of dicts representing each event type.
 
         """
         return self._get_resource("/data/constants/event_types")
@@ -449,23 +440,6 @@ class irDataClient:
             payload["car_id"] = car_id
 
         return self._get_resource("/data/league/season_standings", payload=payload)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     def league_season_sessions(self, league_id, season_id, results_only=False):
         """Fetches a dict containing all the sessions from a league session.
