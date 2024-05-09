@@ -54,6 +54,15 @@ class irDataClient:
             else:
                 raise RuntimeError("Error from iRacing: ", response_data)
 
+
+
+
+
+
+
+
+
+
     def _build_url(self, endpoint):
         return self.base_url + endpoint
 
@@ -441,6 +450,23 @@ class irDataClient:
 
         return self._get_resource("/data/league/season_standings", payload=payload)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def league_season_sessions(self, league_id, season_id, results_only=False):
         """Fetches a dict containing all the sessions from a league session.
 
@@ -763,7 +789,7 @@ class irDataClient:
             race_week_num (int): The first race week of a season is 0.
 
         Returns:
-            list: a list of sessions within the matching criteria.
+            dict: a dict containing a list of sessions within the matching criteria.
 
         """
         payload = {"season_id": season_id}
