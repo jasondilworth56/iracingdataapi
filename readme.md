@@ -32,6 +32,21 @@ All available methods of `irDataClient` are included in `client.py`.
 I welcome all pull requests for improvements or missing endpoints over time as they are added by iRacing.
 
 # Changelog
+
+**1.2.0**
+Thanks to @ablesm2 for these changes.
+
+-   Added missing endpoints
+    -   `time_attack_member_season_results()`
+        `stats_member_recap()`
+        `stats_member_division()`
+        `series_past_seasons()`
+        `league_roster()`
+-   Removed check for cust_id on methods that default the currently logged in member:
+    -   `stats_member_summary()`
+        `stats_member_yearly()`
+        `stats_member_recent_races()`
+
 **1.1.6**
 -   More rate limiting fixes
 
