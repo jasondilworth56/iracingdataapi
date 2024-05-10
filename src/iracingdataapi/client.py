@@ -906,10 +906,9 @@ class irDataClient:
             dict: a dict containing the member career stats
 
         """
-        if not cust_id:
-            raise RuntimeError("Please supply a cust_id")
-
-        payload = {"cust_id": cust_id}
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
         return self._get_resource("/data/stats/member_career", payload=payload)
 
     def stats_member_recap(self, cust_id=None, year=None, quarter=None):
