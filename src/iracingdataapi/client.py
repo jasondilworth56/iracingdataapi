@@ -861,14 +861,6 @@ class irDataClient:
         """
         return self._get_resource("/data/member/info")
 
-    def member_participation_credits(self):
-        """Participation credit info from the authenticated member.
-
-        Returns:
-            list: a list of dicts containing participation credit information.
-        """
-        return self._get_resource("/data/member/participation_credits")
-
     def member_profile(self, cust_id=None):
         """Detailed profile info from a member.
 
@@ -920,26 +912,11 @@ class irDataClient:
         payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_career", payload=payload)
 
-    def stats_member_division(self, season_id, event_type):
-        """Get the member division for a season and event type.
-
-        Divisions are 0-based: 0 is Division 1, 10 is Rookie. Always for the authenticated member.
-
-        Args:
-            season_id (int): The ID for the season being requested.
-            event_type (int): The event type code for the division type: 4 - Time Trial; 5 - Race
-
-        Returns:
-            dict: a dict containing the division the member is in for the requested season.
-        """
-        payload = {"season_id": season_id, "event_type": event_type}
-        return self._get_resource("/data/stats/member_division", payload=payload)
-
     def stats_member_recap(self, cust_id=None, year=None, quarter=None):
         """Get a recap for the member.
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults  to the authenticated member.
             year (int): Season year; if not supplied the current calendar year (UTC) is used.
             quarter (int): Season (quarter) within the year; if not supplied the recap will be fore the entire year.
 
@@ -959,7 +936,7 @@ class irDataClient:
         """Get the latest member races from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the latest member races
@@ -975,7 +952,7 @@ class irDataClient:
         """Get the member stats summary from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the member stats summary
@@ -991,7 +968,7 @@ class irDataClient:
         """Get the member stats yearly from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the member stats yearly
@@ -1211,20 +1188,6 @@ class irDataClient:
         """
         payload = {"team_id": team_id, "include_licenses": include_licenses}
         return self._get_resource("/data/team/get", payload=payload)
-
-    def time_attack_member_season_results(self, ta_comp_season_id):
-        """Get the member time attack results for a competition season.
-
-        Results for the authenticated member, if any.
-
-        Args:
-            ta_comp_season_id (int): Time Attack Competition Season ID
-
-        Returns:
-            list: a list of results, if any.
-        """
-        payload = {"ta_comp_season_id": ta_comp_season_id}
-        return self._get_resource("/data/time_attack/member_season_results", payload=payload)
 
     def season_list(self, season_year, season_quarter):
         """Get the list of iRacing Official seasons given a year and quarter.
