@@ -861,6 +861,14 @@ class irDataClient:
         """
         return self._get_resource("/data/member/info")
 
+    def member_participation_credits(self):
+        """Participation credit info from the authenticated member.
+
+        Returns:
+            list: a list of dicts containing participation credit information.
+        """
+        return self._get_resource("/data/member/participation_credits")
+
     def member_profile(self, cust_id=None):
         """Detailed profile info from a member.
 
