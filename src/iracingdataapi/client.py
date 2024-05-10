@@ -1322,7 +1322,7 @@ class irDataClient:
             dict: a dict containing information about the series and a list of seasons.
         """
         payload = {"series_id": series_id}
-        return self._get_resource("/data/series/past_seasons", payload=payload)
+        return self._get_resource("/data/series/past_seasons", payload=payload).get('series')
 
     def series_seasons(self, include_series=False):
         """Get the all the seasons.
