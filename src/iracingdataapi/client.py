@@ -920,7 +920,7 @@ class irDataClient:
         payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_career", payload=payload)
 
-    def stats_member_division(self, season_id=None, event_type=None):
+    def stats_member_division(self, season_id, event_type):
         """Get the member division for a season and event type.
 
         Divisions are 0-based: 0 is Division 1, 10 is Rookie. Always for the authenticated member.
@@ -932,10 +932,6 @@ class irDataClient:
         Returns:
             dict: a dict containing the division the member is in for the requested season.
         """
-
-        if not season_id and event_type:
-            raise RuntimeError("Please supply both a season_id and an event_type")
-
         payload = {"season_id": season_id, "event_type": event_type}
         return self._get_resource("/data/stats/member_division", payload=payload)
 
@@ -1297,7 +1293,7 @@ class irDataClient:
         )
         return self.get_series_assets()
 
-    def series_past_seasons(self, series_id=None):
+    def series_past_seasons(self, series_id):
         """Get all seasons for a series.
 
         Filter list by ``'official'``: ``True`` for seasons with standings.
@@ -1308,9 +1304,6 @@ class irDataClient:
         Returns:
             dict: a dict containing information about the series and a list of seasons.
         """
-        if not series_id:
-            raise RuntimeError("Please supply a series_id")
-
         payload = {"series_id": series_id}
         return self._get_resource("/data/series/past_seasons", payload=payload)
 
