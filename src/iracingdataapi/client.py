@@ -416,10 +416,7 @@ class irDataClient:
 
         resource = self._get_resource("/data/league/roster", payload=payload)
 
-        if resource.get('data', {}).get('success'):
-            return self._get_resource_or_link(resource['data_url'])[0]
-        else:
-            return {}
+        return self._get_resource_or_link(resource['data_url'])[0]
 
     def league_seasons(self, league_id, retired=False):
         """Fetches a list containing all the seasons from a league.
@@ -829,10 +826,7 @@ class irDataClient:
 
         resource = self._get_resource("/data/member/awards", payload=payload)
 
-        if resource.get('data', {}).get('success'):
-            return self._get_resource_or_link(resource['data_url'])[0]
-        else:
-            return []
+        return self._get_resource_or_link(resource['data_url'])[0]
 
     def member_chart_data(self, cust_id=None, category_id=2, chart_type=1):
         """Get the irating, ttrating or safety rating chart data of a certain category.
