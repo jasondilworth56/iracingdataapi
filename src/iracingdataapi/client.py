@@ -1,7 +1,7 @@
 import base64
 import hashlib
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import requests
 
@@ -181,7 +181,7 @@ class irDataClient:
         Qualify, Time Trial or Race)
 
         Returns:
-            A list of dicts representing each event type.
+            list: A list of dicts representing each event type.
 
         """
         return self._get_resource("/data/constants/event_types")
@@ -399,6 +399,24 @@ class irDataClient:
         """
         payload = {"include_league": include_league}
         return self._get_resource("/data/league/membership", payload=payload)
+
+    def league_roster(self, league_id, include_licenses=False):
+        """Fetches a dict containing information about the league roster.
+        Args:
+            league_id (int): the league to retrieve the roster
+            include_licenses (bool): if ``True``, also receives license information.
+             For faster responses, only request when necessary.
+
+        Returns:
+            dict: A dict containing the league roster.
+        """
+        payload = {"league_id": league_id}
+        if include_licenses:
+            payload["include_licenses"] = include_licenses
+
+        resource = self._get_resource("/data/league/roster", payload=payload)
+
+        return self._get_resource_or_link(resource['data_url'])[0]
 
     def league_seasons(self, league_id, retired=False):
         """Fetches a list containing all the seasons from a league.
@@ -763,7 +781,7 @@ class irDataClient:
             race_week_num (int): The first race week of a season is 0.
 
         Returns:
-            list: a list of sessions within the matching criteria.
+            dict: a dict containing a list of sessions within the matching criteria.
 
         """
         payload = {"season_id": season_id}
@@ -794,12 +812,28 @@ class irDataClient:
         payload = {"cust_ids": cust_id, "include_licenses": include_licenses}
         return self._get_resource("/data/member/get", payload=payload)
 
+    def member_awards(self, cust_id=None):
+        """Fetches a dict containing information on the members awards.
+        Args:
+            cust_id (int): the iRacing cust_id. Defaults to the authenticated member.
+
+        Returns:
+            list: A list of dicts containing all the members awards.  On failure, returns an empty list.
+        """
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
+
+        resource = self._get_resource("/data/member/awards", payload=payload)
+
+        return self._get_resource_or_link(resource['data_url'])[0]
+
     def member_chart_data(self, cust_id=None, category_id=2, chart_type=1):
         """Get the irating, ttrating or safety rating chart data of a certain category.
 
         Args:
-            cust_id (int): the iRacing cust_id
-            category_id (int): 1 - Oval; 2 - Road; 3 - Dirt oval; 4 - Dirt road
+            cust_id (int): the iRacing cust_id. Defaults to the authenticated member.
+            category_id (int): 1 - Oval; 2 - Road; 3 - Dirt oval; 4 - Dirt road; 5 - Sports Car; 6 - Formula Car
             chart_type (int): 1 - iRating; 2 - TT Rating; 3 - License/SR
 
         Returns:
@@ -825,7 +859,7 @@ class irDataClient:
         """Detailed profile info from a member.
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the detailed profile info from the member requested.
@@ -840,7 +874,7 @@ class irDataClient:
         """Get the member best laptimes from a certain cust_id and car_id.
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
             car_id (int): The car id. First call should exclude car_id;
              use cars_driven list in return for subsequent calls.
 
@@ -860,63 +894,83 @@ class irDataClient:
         """Get the member career stats from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the member career stats
 
         """
-        if not cust_id:
-            raise RuntimeError("Please supply a cust_id")
-
-        payload = {"cust_id": cust_id}
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
         return self._get_resource("/data/stats/member_career", payload=payload)
+
+    def stats_member_recap(self, cust_id=None, year=None, quarter=None):
+        """Get a recap for the member.
+
+        Args:
+            cust_id (int): The iRacing cust_id. Defaults  to the authenticated member.
+            year (int): Season year; if not supplied the current calendar year (UTC) is used.
+            quarter (int): Season (quarter) within the year; if not supplied the recap will be fore the entire year.
+
+        Returns:
+            dict: a dict containing a recap from the requested season/quarter/member
+        """
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
+        if year:
+            payload["year"] = year
+        if quarter:
+            payload["season"] = quarter
+        return self._get_resource("/data/stats/member_recap", payload=payload)
 
     def stats_member_recent_races(self, cust_id=None):
         """Get the latest member races from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the latest member races
 
         """
-        if not cust_id:
-            raise RuntimeError("Please supply a cust_id")
+        payload = {}
+        if cust_id:
+            payload = {"cust_id": cust_id}
 
-        payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_recent_races", payload=payload)
 
     def stats_member_summary(self, cust_id=None):
         """Get the member stats summary from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the member stats summary
 
         """
-        if not cust_id:
-            raise RuntimeError("Please supply a cust_id")
+        payload = {}
+        if cust_id:
+            payload = {"cust_id": cust_id}
 
-        payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_summary", payload=payload)
 
     def stats_member_yearly(self, cust_id=None):
         """Get the member stats yearly from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the member stats yearly
 
         """
-        if not cust_id:
-            raise RuntimeError("Please supply a cust_id")
-        payload = {"cust_id": cust_id}
+        payload = {}
+        if cust_id:
+            payload = {"cust_id": cust_id}
+
         return self._get_resource("/data/stats/member_yearly", payload=payload)
 
     def stats_season_driver_standings(
@@ -928,8 +982,9 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12). Default 0.
-            club_id (int): the iRacing club id.
-            division (int): the iRacing division.
+            club_id (int): the iRacing club id. Defaults to all (-1).
+            division (int): the iRacing division. Divisions are 0-based: 0 is Division 1, 10 is Rookie.
+                            See /data/constants/divisons for more information. Defaults to all.
 
         Returns:
             dict: a dict containing the season driver standings
@@ -957,8 +1012,9 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12). Default 0.
-            club_id (int): the iRacing club id.
-            division (int): the iRacing division.
+            club_id (int): the iRacing club id. Defaults to all (-1).
+            division (int): the iRacing division. Divisions are 0-based: 0 is Division 1, 10 is Rookie.
+                            See /data/constants/divisons for more information. Defaults to all.
 
         Returns:
             dict: a dict containing the season supersession standings
@@ -1195,6 +1251,7 @@ class irDataClient:
         """Get all the current official iRacing series assets.
 
         Get the images, description and logos from the current official iRacing series.
+        Image paths are relative to https://images-static.iracing.com/
 
         Returns:
             dict: a dict containing all the current official iRacing series assets.
@@ -1204,9 +1261,24 @@ class irDataClient:
 
     def series_assets(self):
         print(
-            "series_assets() is deprecated and will be removed in a future release, please update to use get_series_assets"
+            "series_assets() is deprecated and will be removed in a future release, "
+            "please update to use get_series_assets"
         )
         return self.get_series_assets()
+
+    def series_past_seasons(self, series_id):
+        """Get all seasons for a series.
+
+        Filter list by ``'official'``: ``True`` for seasons with standings.
+
+        Args:
+            series_id ():
+
+        Returns:
+            dict: a dict containing information about the series and a list of seasons.
+        """
+        payload = {"series_id": series_id}
+        return self._get_resource("/data/series/past_seasons", payload=payload).get('series')
 
     def series_seasons(self, include_series=False):
         """Get the all the seasons.
