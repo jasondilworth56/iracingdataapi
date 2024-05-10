@@ -1012,8 +1012,9 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12). Default 0.
-            club_id (int): the iRacing club id.
-            division (int): the iRacing division.
+            club_id (int): the iRacing club id. Defaults to all (-1).
+            division (int): the iRacing division. Divisions are 0-based: 0 is Division 1, 10 is Rookie.
+                            See /data/constants/divisons for more information. Defaults to all.
 
         Returns:
             dict: a dict containing the season driver standings
@@ -1041,8 +1042,9 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12). Default 0.
-            club_id (int): the iRacing club id.
-            division (int): the iRacing division.
+            club_id (int): the iRacing club id. Defaults to all (-1).
+            division (int): the iRacing division. Divisions are 0-based: 0 is Division 1, 10 is Rookie.
+                            See /data/constants/divisons for more information. Defaults to all.
 
         Returns:
             dict: a dict containing the season supersession standings
@@ -1209,6 +1211,20 @@ class irDataClient:
         """
         payload = {"team_id": team_id, "include_licenses": include_licenses}
         return self._get_resource("/data/team/get", payload=payload)
+
+    def time_attack_member_season_results(self, ta_comp_season_id):
+        """Get the member time attack results for a competition season.
+
+        Results for the authenticated member, if any.
+
+        Args:
+            ta_comp_season_id (int): Time Attack Competition Season ID
+
+        Returns:
+            list: a list of results, if any.
+        """
+        payload = {"ta_comp_season_id": ta_comp_season_id}
+        return self._get_resource("/data/time_attack/member_season_results", payload=payload)
 
     def season_list(self, season_year, season_quarter):
         """Get the list of iRacing Official seasons given a year and quarter.
