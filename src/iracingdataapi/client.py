@@ -888,7 +888,7 @@ class irDataClient:
         """Get the member best laptimes from a certain cust_id and car_id.
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
             car_id (int): The car id. First call should exclude car_id;
              use cars_driven list in return for subsequent calls.
 
@@ -908,7 +908,7 @@ class irDataClient:
         """Get the member career stats from a certain cust_id
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the member career stats
@@ -919,6 +919,25 @@ class irDataClient:
 
         payload = {"cust_id": cust_id}
         return self._get_resource("/data/stats/member_career", payload=payload)
+
+    def stats_member_division(self, season_id=None, event_type=None):
+        """Get the member division for a season and event type.
+
+        Divisions are 0-based: 0 is Division 1, 10 is Rookie. Always for the authenticated member.
+
+        Args:
+            season_id (int): The ID for the season being requested.
+            event_type (int): The event type code for the division type: 4 - Time Trial; 5 - Race
+
+        Returns:
+            dict: a dict containing the division the member is in for the requested season.
+        """
+
+        if not season_id and event_type:
+            raise RuntimeError("Please supply both a season_id and an event_type")
+
+        payload = {"season_id": season_id, "event_type": event_type}
+        return self._get_resource("/data/stats/member_division", payload=payload)
 
     def stats_member_recent_races(self, cust_id=None):
         """Get the latest member races from a certain cust_id
@@ -1258,7 +1277,7 @@ class irDataClient:
         )
         return self.get_series_assets()
 
-    def series_past_seasons(self, series_id):
+    def series_past_seasons(self, series_id=None):
         """Get all seasons for a series.
 
         Filter list by ``'official'``: ``True`` for seasons with standings.
