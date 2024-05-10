@@ -408,12 +408,18 @@ class irDataClient:
              For faster responses, only request when necessary.
 
         Returns:
-            dict: A dict containing information about the league roster
+            dict: A dict containing the league roster.
         """
         payload = {"league_id": league_id}
         if include_licenses:
             payload["include_licenses"] = include_licenses
-        return self._get_resource("/data/league/roster", payload=payload)
+
+        resource = self._get_resource("/data/league/roster", payload=payload)
+
+        if resource.get('data', {}).get('success'):
+            return self._get_resource_or_link(resource['data_url'])[0]
+        else:
+            return {}
 
     def league_seasons(self, league_id, retired=False):
         """Fetches a list containing all the seasons from a league.
@@ -815,12 +821,18 @@ class irDataClient:
             cust_id (int): the iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
-            dict: A dict containing information about the members awards.
+            list: A list of dicts containing all the members awards.  On failure, returns an empty list.
         """
         payload = {}
         if cust_id:
             payload["cust_id"] = cust_id
-        return self._get_resource("/data/member/awards", payload=payload)
+
+        resource = self._get_resource("/data/member/awards", payload=payload)
+
+        if resource.get('data', {}).get('success'):
+            return self._get_resource_or_link(resource['data_url'])[0]
+        else:
+            return []
 
     def member_chart_data(self, cust_id=None, category_id=2, chart_type=1):
         """Get the irating, ttrating or safety rating chart data of a certain category.
@@ -1232,7 +1244,8 @@ class irDataClient:
 
     def series_assets(self):
         print(
-            "series_assets() is deprecated and will be removed in a future release, please update to use get_series_assets"
+            "series_assets() is deprecated and will be removed in a future release, "
+            "please update to use get_series_assets"
         )
         return self.get_series_assets()
 
