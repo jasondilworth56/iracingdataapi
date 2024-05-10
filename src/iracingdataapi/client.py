@@ -873,7 +873,7 @@ class irDataClient:
         """Detailed profile info from a member.
 
         Args:
-            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            cust_id (int): The iRacing cust_id. Defaults to the authenticated member.
 
         Returns:
             dict: a dict containing the detailed profile info from the member requested.
@@ -1243,6 +1243,7 @@ class irDataClient:
         """Get all the current official iRacing series assets.
 
         Get the images, description and logos from the current official iRacing series.
+        Image paths are relative to https://images-static.iracing.com/
 
         Returns:
             dict: a dict containing all the current official iRacing series assets.
@@ -1256,6 +1257,23 @@ class irDataClient:
             "please update to use get_series_assets"
         )
         return self.get_series_assets()
+
+    def series_past_seasons(self, series_id):
+        """Get all seasons for a series.
+
+        Filter list by ``'official'``: ``True`` for seasons with standings.
+
+        Args:
+            series_id ():
+
+        Returns:
+            dict: a dict containing information about the series and a list of seasons.
+        """
+        if not series_id:
+            raise RuntimeError("Please supply a series_id")
+
+        payload = {"series_id": series_id}
+        return self._get_resource("/data/series/past_seasons", payload=payload)
 
     def series_seasons(self, include_series=False):
         """Get the all the seasons.
