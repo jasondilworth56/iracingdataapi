@@ -939,6 +939,26 @@ class irDataClient:
         payload = {"season_id": season_id, "event_type": event_type}
         return self._get_resource("/data/stats/member_division", payload=payload)
 
+    def stats_member_recap(self, cust_id=None, year=None, quarter=None):
+        """Get a recap for the member.
+
+        Args:
+            cust_id (int): The iRacing cust_id. Default the authenticated member.
+            year (int): Season year; if not supplied the current calendar year (UTC) is used.
+            quarter (int): Season (quarter) within the year; if not supplied the recap will be fore the entire year.
+
+        Returns:
+            dict: a dict containing a recap from the requested season/quarter/member
+        """
+        payload = {}
+        if cust_id:
+            payload["cust_id"] = cust_id
+        if year:
+            payload["year"] = year
+        if quarter:
+            payload["season"] = quarter
+        return self._get_resource("/data/stats/member_recap", payload=payload)
+
     def stats_member_recent_races(self, cust_id=None):
         """Get the latest member races from a certain cust_id
 
