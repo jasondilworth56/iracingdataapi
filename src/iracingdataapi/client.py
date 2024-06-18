@@ -75,7 +75,7 @@ class irDataClient:
             ratelimit_reset = r.headers.get("x-ratelimit-reset")
             if ratelimit_reset:
                 reset_datetime = datetime.fromtimestamp(int(ratelimit_reset))
-                delta = (reset_datetime - datetime.now() + timedelta(milliseconds=500)).replace(microsecond=0)
+                delta = (reset_datetime - datetime.now() + timedelta(milliseconds=500))
                 if not self.silent:
                     print(f"Rate limited, waiting {delta.total_seconds()} seconds")
                 if delta.total_seconds() > 0:
