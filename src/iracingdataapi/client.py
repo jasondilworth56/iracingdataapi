@@ -72,11 +72,12 @@ class irDataClient:
             return self._get_resource_or_link(url, payload=payload)
 
         if r.status_code == 429:
-            print("Rate limited, waiting")
             ratelimit_reset = r.headers.get("x-ratelimit-reset")
             if ratelimit_reset:
                 reset_datetime = datetime.fromtimestamp(int(ratelimit_reset))
-                delta = reset_datetime - datetime.now()
+                delta = (reset_datetime - datetime.now() + timedelta(milliseconds=500)).replace(microsecond=0)
+                if not self.silent:
+                    print(f"Rate limited, waiting {delta.total_seconds()} seconds")
                 if delta.total_seconds() > 0:
                     time.sleep(delta.total_seconds())
             return self._get_resource_or_link(url, payload=payload)
