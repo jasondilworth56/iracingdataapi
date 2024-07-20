@@ -2,6 +2,8 @@ import base64
 import hashlib
 import time
 from datetime import datetime
+import csv
+from io import StringIO
 
 import requests
 
@@ -112,7 +114,17 @@ class irDataClient:
         if r.status_code != 200:
             raise RuntimeError("Unhandled Non-200 response", r)
 
-        return r.json()
+        content_type = r.headers.get('Content-Type')
+        
+        if 'application/json' in content_type:
+            return r.json()
+
+        elif 'text/csv' in content_type or 'text/plain' in content_type:
+            return self._parse_csv_response(r.text)
+
+        else:
+            print("Error: Unsupported Content-Type")
+            return None
 
     def _get_chunks(self, chunks):
         if not isinstance(chunks, dict):
@@ -131,6 +143,20 @@ class irDataClient:
             for key in a.keys():
                 obj[key] = a[key]
         return objects
+    
+    def _parse_csv_response(self, text):
+        csv_data = []
+        reader = csv.reader(StringIO(text), delimiter=',')
+
+        headers = [header.lower() for header in next(reader)]
+
+        for row in reader:
+            if len(row) == len(headers):
+                csv_data.append(dict(zip(headers, row)))
+            else:
+                print("Warning: Row length does not match headers length")
+                
+        return csv_data
 
     @property
     def cars(self):
@@ -185,6 +211,31 @@ class irDataClient:
 
         """
         return self._get_resource("/data/constants/event_types")
+    
+    def driver_list(self, category_id=None):
+        """Fetches driver list by racing category
+
+        Retrieves a list containing the driver data by category 
+        (category_id (int): 1 - Oval; 2 - Road; 3 - Dirt oval; 4 - Dirt road; 5 - Sports Car; 6 - Formula Car)
+
+        Returns:
+            list: A list of dicts representing driver data.
+
+        """
+        category_endpoints = {
+        1: "/data/driver_stats_by_category/oval",
+        2: "/data/driver_stats_by_category/road",
+        3: "/data/driver_stats_by_category/dirt_oval",
+        4: "/data/driver_stats_by_category/dirt_road",
+        5: "/data/driver_stats_by_category/sports_car",
+        6: "/data/driver_stats_by_category/formula_car"
+        }
+
+        if category_id not in category_endpoints:
+            raise ValueError(f"Invalid category_id '{category_id}'. Available categories are: {list(category_endpoints.keys())}")
+
+        endpoint = category_endpoints[category_id]
+        return self._get_resource(endpoint)
 
     def get_cars(self):
         """Fetches a list containing all the cars in the service.
