@@ -855,7 +855,7 @@ class irDataClient:
         payload = {"season_id": season_id}
         if event_type:
             payload["event_type"] = event_type
-        if race_week_num:
+        if race_week_num is not None:
             payload["race_week_num"] = race_week_num
 
         return self._get_resource("/data/results/season_results", payload=payload)
@@ -1067,11 +1067,11 @@ class irDataClient:
 
         """
         payload = {"season_id": season_id, "car_class_id": car_class_id}
-        if race_week_num:
+        if race_week_num is not None:
             payload["race_week_num"] = race_week_num
         if club_id:
             payload["club_id"] = club_id
-        if division:
+        if division is not None:
             payload["division"] = division
 
         resource = self._get_resource(
@@ -1102,11 +1102,11 @@ class irDataClient:
 
         """
         payload = {"season_id": season_id, "car_class_id": car_class_id}
-        if race_week_num:
+        if race_week_num is not None:
             payload["race_week_num"] = race_week_num
         if club_id:
             payload["club_id"] = club_id
-        if division:
+        if division is not None:
             payload["division"] = division
 
         resource = self._get_resource(
@@ -1122,14 +1122,14 @@ class irDataClient:
         Args:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
-            race_week_num (int): the race week number (0-12). Default 0.
+            race_week_num (int): the race week number (0-12).
 
         Returns:
             dict: a dict containing the season team standings
 
         """
         payload = {"season_id": season_id, "car_class_id": car_class_id}
-        if race_week_num:
+        if race_week_num is not None:
             payload["race_week_num"] = race_week_num
 
         resource = self._get_resource(
@@ -1150,7 +1150,7 @@ class irDataClient:
         Args:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
-            race_week_num (int): the race week number (0-12). Default 0.
+            race_week_num (int): the race week number (0-12).
             club_id (int): the iRacing club id.
             division (int): the iRacing division.
 
@@ -1159,11 +1159,11 @@ class irDataClient:
 
         """
         payload = {"season_id": season_id, "car_class_id": car_class_id}
-        if race_week_num:
+        if race_week_num is not None:
             payload["race_week_num"] = race_week_num
         if club_id:
             payload["club_id"] = club_id
-        if division:
+        if division is not None:
             payload["division"] = division
 
         resource = self._get_resource(
@@ -1184,7 +1184,7 @@ class irDataClient:
         Args:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
-            race_week_num (int): the race week number (0-12). Default 0.
+            race_week_num (int): the race week number (0-12).
             club_id (int): the iRacing club id.
             division (int): the iRacing division.
 
@@ -1199,7 +1199,7 @@ class irDataClient:
         }
         if club_id:
             payload["club_id"] = club_id
-        if division:
+        if division is not None:
             payload["division"] = division
 
         resource = self._get_resource("/data/stats/season_tt_results", payload=payload)
@@ -1218,7 +1218,7 @@ class irDataClient:
         Args:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
-            race_week_num (int): the race week number (0-12). Default 0.
+            race_week_num (int): the race week number (0-12).
             club_id (int): the iRacing club id.
             division (int): the iRacing division.
 
@@ -1233,7 +1233,7 @@ class irDataClient:
         }
         if club_id:
             payload["club_id"] = club_id
-        if division:
+        if division is not None:
             payload["division"] = division
 
         resource = self._get_resource(
