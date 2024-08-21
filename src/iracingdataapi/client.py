@@ -1,9 +1,10 @@
 import base64
+import csv
 import hashlib
 import time
-from datetime import datetime
-import csv
+from datetime import datetime, timedelta
 from io import StringIO
+from typing import Dict, Optional, Union
 
 import requests
 
@@ -18,14 +19,14 @@ class irDataClient:
         self.username = username
         self.encoded_password = self._encode_password(username, password)
 
-    def _encode_password(self, username, password):
+    def _encode_password(self, username: str, password: str) -> str:
         initial_hash = hashlib.sha256(
             (password + username.lower()).encode("utf-8")
         ).digest()
 
         return base64.b64encode(initial_hash).decode("utf-8")
 
-    def _login(self):
+    def _login(self) -> str:
         headers = {"Content-Type": "application/json"}
         data = {"email": self.username, "password": self.encoded_password}
 
@@ -40,7 +41,9 @@ class irDataClient:
                 ratelimit_reset = r.headers.get("x-ratelimit-reset")
                 if ratelimit_reset:
                     reset_datetime = datetime.fromtimestamp(int(ratelimit_reset))
-                    delta = (reset_datetime - datetime.now() + timedelta(milliseconds=500))
+                    delta = (
+                        reset_datetime - datetime.now() + timedelta(milliseconds=500)
+                    )
                     if not self.silent:
                         print(f"Rate limited, waiting {delta.total_seconds()} seconds")
                     if delta.total_seconds() > 0:
@@ -58,10 +61,12 @@ class irDataClient:
             else:
                 raise RuntimeError("Error from iRacing: ", response_data)
 
-    def _build_url(self, endpoint):
+    def _build_url(self, endpoint: str) -> str:
         return self.base_url + endpoint
 
-    def _get_resource_or_link(self, url, payload=None):
+    def _get_resource_or_link(
+        self, url: str, payload: dict = None
+    ) -> list[Union[Dict, str], bool]:
         if not self.authenticated:
             self._login()
             return self._get_resource_or_link(url, payload=payload)
@@ -77,7 +82,7 @@ class irDataClient:
             ratelimit_reset = r.headers.get("x-ratelimit-reset")
             if ratelimit_reset:
                 reset_datetime = datetime.fromtimestamp(int(ratelimit_reset))
-                delta = (reset_datetime - datetime.now() + timedelta(milliseconds=500))
+                delta = reset_datetime - datetime.now() + timedelta(milliseconds=500)
                 if not self.silent:
                     print(f"Rate limited, waiting {delta.total_seconds()} seconds")
                 if delta.total_seconds() > 0:
@@ -92,7 +97,9 @@ class irDataClient:
         else:
             return [data, False]
 
-    def _get_resource(self, endpoint, payload=None):
+    def _get_resource(
+        self, endpoint: str, payload: Optional[dict] = None
+    ) -> Optional[Union[list, dict]]:
         request_url = self._build_url(endpoint)
         resource_obj, is_link = self._get_resource_or_link(request_url, payload=payload)
         if not is_link:
@@ -117,19 +124,19 @@ class irDataClient:
         if r.status_code != 200:
             raise RuntimeError("Unhandled Non-200 response", r)
 
-        content_type = r.headers.get('Content-Type')
-        
-        if 'application/json' in content_type:
+        content_type = r.headers.get("Content-Type")
+
+        if "application/json" in content_type:
             return r.json()
 
-        elif 'text/csv' in content_type or 'text/plain' in content_type:
+        elif "text/csv" in content_type or "text/plain" in content_type:
             return self._parse_csv_response(r.text)
 
         else:
             print("Error: Unsupported Content-Type")
             return None
 
-    def _get_chunks(self, chunks):
+    def _get_chunks(self, chunks) -> list:
         if not isinstance(chunks, dict):
             # if there are no chunks, return an empty list for compatibility
             return []
@@ -140,16 +147,16 @@ class irDataClient:
 
         return output
 
-    def _add_assets(self, objects, assets, id_key):
+    def _add_assets(self, objects: list, assets: dict, id_key: str) -> list:
         for obj in objects:
             a = assets[str(obj[id_key])]
             for key in a.keys():
                 obj[key] = a[key]
         return objects
-    
-    def _parse_csv_response(self, text):
+
+    def _parse_csv_response(self, text: str) -> list:
         csv_data = []
-        reader = csv.reader(StringIO(text), delimiter=',')
+        reader = csv.reader(StringIO(text), delimiter=",")
 
         headers = [header.lower() for header in next(reader)]
 
@@ -158,28 +165,28 @@ class irDataClient:
                 csv_data.append(dict(zip(headers, row)))
             else:
                 print("Warning: Row length does not match headers length")
-                
+
         return csv_data
 
     @property
-    def cars(self):
+    def cars(self) -> list[Dict]:
         cars = self.get_cars()
         car_assets = self.get_cars_assets()
         return self._add_assets(cars, car_assets, "car_id")
 
     @property
-    def tracks(self):
+    def tracks(self) -> list[Dict]:
         tracks = self.get_tracks()
         track_assets = self.get_tracks_assets()
         return self._add_assets(tracks, track_assets, "track_id")
 
     @property
-    def series(self):
+    def series(self) -> list[Dict]:
         series = self.get_series()
         series_assets = self.get_series_assets()
         return self._add_assets(series, series_assets, "series_id")
 
-    def constants_categories(self):
+    def constants_categories(self) -> list[Dict]:
         """Fetches a list containing the racing categories.
 
         Retrieves a list containing the racing categories and
@@ -191,7 +198,7 @@ class irDataClient:
         """
         return self._get_resource("/data/constants/categories")
 
-    def constants_divisions(self):
+    def constants_divisions(self) -> list[Dict]:
         """Fetches a list containing the racing divisions.
 
         Retrieves a list containing the racing divisions and
@@ -203,7 +210,7 @@ class irDataClient:
         """
         return self._get_resource("/data/constants/divisions")
 
-    def constants_event_types(self):
+    def constants_event_types(self) -> list[Dict]:
         """Fetches a list containing the event types.
 
         Retrieves a list containing the types of events (i.e. Practice,
@@ -214,11 +221,11 @@ class irDataClient:
 
         """
         return self._get_resource("/data/constants/event_types")
-    
-    def driver_list(self, category_id=None):
+
+    def driver_list(self, category_id: int = None) -> list[Dict]:
         """Fetches driver list by racing category
 
-        Retrieves a list containing the driver data by category 
+        Retrieves a list containing the driver data by category
         (category_id (int): 1 - Oval; 2 - Road; 3 - Dirt oval; 4 - Dirt road; 5 - Sports Car; 6 - Formula Car)
 
         Returns:
@@ -226,21 +233,23 @@ class irDataClient:
 
         """
         category_endpoints = {
-        1: "/data/driver_stats_by_category/oval",
-        2: "/data/driver_stats_by_category/road",
-        3: "/data/driver_stats_by_category/dirt_oval",
-        4: "/data/driver_stats_by_category/dirt_road",
-        5: "/data/driver_stats_by_category/sports_car",
-        6: "/data/driver_stats_by_category/formula_car"
+            1: "/data/driver_stats_by_category/oval",
+            2: "/data/driver_stats_by_category/road",
+            3: "/data/driver_stats_by_category/dirt_oval",
+            4: "/data/driver_stats_by_category/dirt_road",
+            5: "/data/driver_stats_by_category/sports_car",
+            6: "/data/driver_stats_by_category/formula_car",
         }
 
         if category_id not in category_endpoints:
-            raise ValueError(f"Invalid category_id '{category_id}'. Available categories are: {list(category_endpoints.keys())}")
+            raise ValueError(
+                f"Invalid category_id '{category_id}'. Available categories are: {list(category_endpoints.keys())}"
+            )
 
         endpoint = category_endpoints[category_id]
         return self._get_resource(endpoint)
 
-    def get_cars(self):
+    def get_cars(self) -> list[Dict]:
         """Fetches a list containing all the cars in the service.
 
         Retrieves a list containing each car in the service, with
@@ -251,18 +260,18 @@ class irDataClient:
         """
         return self._get_resource("/data/car/get")
 
-    def get_cars_assets(self):
+    def get_cars_assets(self) -> Dict:
         """Fetches a list containing all the car assets in the service.
 
         Retrieves a list containing each car in the service, with
         detailed assets related to the car (i.e. photos, tech specs, etc.)
 
         Returns:
-            list: A list of dicts representing assets from each car.
+            dict: a dict with keys relating to each car id, each containing a further dict of car assets.
         """
         return self._get_resource("/data/car/assets")
 
-    def get_carclasses(self):
+    def get_carclasses(self) -> list[Dict]:
         """Fetches a list containing all the car classes in the service.
 
         Retrieves a list containing each car class in the service, including
@@ -274,16 +283,7 @@ class irDataClient:
         """
         return self._get_resource("/data/carclass/get")
 
-    def get_carclass(self):
-        """
-        get_carclass() is deprecated and will be removed in a future release, please use get_carclasses()
-        """
-        print(
-            "get_carclass() is deprecated and will be removed in a future release, please use get_carclasses()"
-        )
-        return self.get_carclasses()
-
-    def get_tracks(self):
+    def get_tracks(self) -> list[Dict]:
         """Fetches a list containing all the tracks in the service.
 
         Retrieves a list containing each track in the service, with
@@ -294,18 +294,18 @@ class irDataClient:
         """
         return self._get_resource("/data/track/get")
 
-    def get_tracks_assets(self):
-        """Fetches a list containing all the track assets in the service.
+    def get_tracks_assets(self) -> Dict:
+        """Fetches a dict containing all the track assets in the service.
 
-        Retrieves a list containing each track in the service, with
+        Retrieves a dict containing each track in the service, with
         detailed assets related to the track (i.e. photos, track map, etc.)
 
         Returns:
-            list: A list of dicts representing assets from each track.
+            dict: a dict with keys relating to each track id, each containing a further dict of track assets.
         """
         return self._get_resource("/data/track/assets")
 
-    def hosted_combined_sessions(self, package_id=None):
+    def hosted_combined_sessions(self, package_id: int = None) -> Dict:
         """Fetches a dict containing the combined hosted sessions
 
         Retrieves a dict containing all the hosted sessions (available through ``sessions`` key)
@@ -326,7 +326,7 @@ class irDataClient:
             payload["package_id"] = package_id
         return self._get_resource("/data/hosted/combined_sessions", payload=payload)
 
-    def hosted_sessions(self):
+    def hosted_sessions(self) -> Dict:
         """Fetches a dict containing the hosted sessions
 
         Retrieves a dict containing the hosted sessions (available through ``sessions`` key)
@@ -337,7 +337,7 @@ class irDataClient:
         """
         return self._get_resource("/data/hosted/sessions")
 
-    def league_get(self, league_id=None, include_licenses=False):
+    def league_get(self, league_id: int = None, include_licenses: bool = False) -> Dict:
         """Fetches a dict containing information from the league requested.
 
         Retrieves a dict containing all the information of the league requested.
@@ -355,7 +355,9 @@ class irDataClient:
         payload = {"league_id": league_id, "include_licenses": include_licenses}
         return self._get_resource("/data/league/get", payload=payload)
 
-    def league_cust_league_sessions(self, mine=False, package_id=None):
+    def league_cust_league_sessions(
+        self, mine: bool = False, package_id: int = None
+    ) -> Dict:
         """Fetches a dict containing information from the league requested.
 
         Retrieves a dict containing all the information of the league requested.
@@ -375,19 +377,19 @@ class irDataClient:
 
     def league_directory(
         self,
-        search="",
-        tag="",
-        restrict_to_member=False,
-        restrict_to_recruiting=False,
-        restrict_to_friends=False,
-        restrict_to_watched=False,
-        minimum_roster_count=0,
-        maximum_roster_count=999,
-        lowerbound=1,
-        upperbound=None,
-        sort=None,
-        order="asc",
-    ):
+        search: str = "",
+        tag: str = "",
+        restrict_to_member: bool = False,
+        restrict_to_recruiting: bool = False,
+        restrict_to_friends: bool = False,
+        restrict_to_watched: bool = False,
+        minimum_roster_count: int = 0,
+        maximum_roster_count: int = 999,
+        lowerbound: int = 1,
+        upperbound: Optional[int] = None,
+        sort: Optional[str] = None,
+        order: str = "asc",
+    ) -> Dict:
         """Fetches the iRacing leagues that matches the parameters requested
 
         Retrieves the iRacing leagues that matches the parameters requested by the user.
@@ -420,7 +422,7 @@ class irDataClient:
 
         return self._get_resource("/data/league/directory", payload=payload)
 
-    def league_get_points_systems(self, league_id, season_id=None):
+    def league_get_points_systems(self, league_id: int, season_id: int = None) -> Dict:
         """Fetches a dict containing the point system from the league requested.
 
         Retrieves a dict containing all the information of the league requested.
@@ -440,7 +442,7 @@ class irDataClient:
 
         return self._get_resource("/data/league/get_points_systems", payload=payload)
 
-    def league_membership(self, include_league=False):
+    def league_membership(self, include_league: bool = False) -> list[Dict]:
         """Fetches a list containing all the leagues the user is currently a member.
 
         Retrieves a list containing all the leagues the user is member.
@@ -454,7 +456,7 @@ class irDataClient:
         payload = {"include_league": include_league}
         return self._get_resource("/data/league/membership", payload=payload)
 
-    def league_roster(self, league_id, include_licenses=False):
+    def league_roster(self, league_id: int, include_licenses: bool = False) -> Dict:
         """Fetches a dict containing information about the league roster.
         Args:
             league_id (int): the league to retrieve the roster
@@ -470,9 +472,9 @@ class irDataClient:
 
         resource = self._get_resource("/data/league/roster", payload=payload)
 
-        return self._get_resource_or_link(resource['data_url'])[0]
+        return self._get_resource_or_link(resource["data_url"])[0]
 
-    def league_seasons(self, league_id, retired=False):
+    def league_seasons(self, league_id: int, retired: bool = False) -> list[Dict]:
         """Fetches a list containing all the seasons from a league.
 
         Retrieves a list containing all the seasons from a league.
@@ -488,8 +490,12 @@ class irDataClient:
         return self._get_resource("/data/league/seasons", payload=payload)
 
     def league_season_standings(
-        self, league_id, season_id, car_class_id=None, car_id=None
-    ):
+        self,
+        league_id: int,
+        season_id: int,
+        car_class_id: Optional[int] = None,
+        car_id: Optional[int] = None,
+    ) -> Dict:
         """Fetches a dict containing all the seasons from a league.
 
         Retrieves a dict containing all the seasons from a league.
@@ -513,7 +519,9 @@ class irDataClient:
 
         return self._get_resource("/data/league/season_standings", payload=payload)
 
-    def league_season_sessions(self, league_id, season_id, results_only=False):
+    def league_season_sessions(
+        self, league_id: int, season_id: int, results_only: bool = False
+    ) -> Dict:
         """Fetches a dict containing all the sessions from a league session.
 
         Retrieves a dict containing all the sessions from a league session.
@@ -533,7 +541,7 @@ class irDataClient:
         }
         return self._get_resource("/data/league/season_sessions", payload=payload)
 
-    def lookup_club_history(self, season_year, season_quarter):
+    def lookup_club_history(self, season_year: int, season_quarter: int) -> list[Dict]:
         """The club history for a year and season.
 
         Note: returns an earlier history if requested quarter does not have a club history
@@ -549,7 +557,7 @@ class irDataClient:
         payload = {"season_year": season_year, "season_quarter": season_quarter}
         return self._get_resource("/data/lookup/club_history", payload=payload)
 
-    def lookup_countries(self):
+    def lookup_countries(self) -> list[Dict]:
         """The list of country names and the country codes.
 
         Returns:
@@ -558,7 +566,9 @@ class irDataClient:
         """
         return self._get_resource("/data/lookup/countries")
 
-    def lookup_drivers(self, search_term=None, league_id=None):
+    def lookup_drivers(
+        self, search_term: str = None, league_id: int = None
+    ) -> list[Dict]:
         """Lookup for drivers given a search term.
 
         Retrieves a list of drivers given a search term. It can be narrowed
@@ -578,10 +588,10 @@ class irDataClient:
 
         return self._get_resource("/data/lookup/drivers", payload=payload)
 
-    def lookup_get(self):
+    def lookup_get(self) -> list:
         return self._get_resource("/data/lookup/get")
 
-    def lookup_licenses(self):
+    def lookup_licenses(self) -> list[Dict]:
         """All the iRacing licenses.
 
         Retrieves a list containing all the current licenses, from Rookie to Pro/WC.
@@ -592,7 +602,7 @@ class irDataClient:
         """
         return self._get_resource("/data/lookup/licenses")
 
-    def result(self, subsession_id=None, include_licenses=False):
+    def result(self, subsession_id: int, include_licenses: bool = False) -> Dict:
         """Get the results from a specific session.
 
         Get the results of a subsession, if authorized to view them.
@@ -608,13 +618,12 @@ class irDataClient:
             dict: a dict containing all the result information from a subsession.
 
         """
-        if not subsession_id:
-            raise RuntimeError("Please supply a subsession_id")
-
         payload = {"subsession_id": subsession_id, "include_licenses": include_licenses}
         return self._get_resource("/data/results/get", payload=payload)
 
-    def result_lap_chart_data(self, subsession_id=None, simsession_number=0):
+    def result_lap_chart_data(
+        self, subsession_id: int, simsession_number: int = 0
+    ) -> list[Dict]:
         """Get all the lap data from a subsession.
 
         Retrieves all the lap data from all cars during a sim session (Practice,
@@ -629,9 +638,6 @@ class irDataClient:
             list: A list of all the laps completed by all cars.
 
         """
-        if not subsession_id:
-            raise RuntimeError("Please supply a subsession_id")
-
         payload = {
             "subsession_id": subsession_id,
             "simsession_number": simsession_number,
@@ -640,8 +646,12 @@ class irDataClient:
         return self._get_chunks(resource.get("chunk_info"))
 
     def result_lap_data(
-        self, subsession_id=None, simsession_number=0, cust_id=None, team_id=None
-    ):
+        self,
+        subsession_id: int,
+        simsession_number: int = 0,
+        cust_id: Optional[int] = None,
+        team_id: Optional[int] = None,
+    ) -> list[Optional[Dict]]:
         """Get the lap data from a car within a sim session.
 
          If there are no chunks to get, that's because no laps were done by this cust_id
@@ -658,9 +668,6 @@ class irDataClient:
             list: a list containing the lap data from a car within a sim session.
 
         """
-        if not subsession_id:
-            raise RuntimeError("Please supply a subsession_id")
-
         if not cust_id and not team_id:
             raise RuntimeError("Please supply either a cust_id or a team_id")
 
@@ -681,7 +688,9 @@ class irDataClient:
         # on this subsession, return an empty list for compatibility
         return []
 
-    def result_event_log(self, subsession_id=None, simsession_number=0):
+    def result_event_log(
+        self, subsession_id: int, simsession_number: int = 0
+    ) -> list[Dict]:
         """Get all the logs from a result sim session.
 
         Retrieves a list of all events logged during a sim event (Practice, Qualifying, Race)...
@@ -694,9 +703,6 @@ class irDataClient:
             list: A list of all the logged events during a sim session.
 
         """
-        if not subsession_id:
-            raise RuntimeError("Please supply a subsession_id")
-
         payload = {
             "subsession_id": subsession_id,
             "simsession_number": simsession_number,
@@ -706,19 +712,19 @@ class irDataClient:
 
     def result_search_hosted(
         self,
-        start_range_begin=None,
-        start_range_end=None,
-        finish_range_begin=None,
-        finish_range_end=None,
-        cust_id=None,
-        host_cust_id=None,
-        session_name=None,
-        league_id=None,
-        league_season_id=None,
-        car_id=None,
-        track_id=None,
-        category_ids=None,
-    ):
+        start_range_begin: Optional[str] = None,
+        start_range_end: Optional[str] = None,
+        finish_range_begin: Optional[str] = None,
+        finish_range_end: Optional[str] = None,
+        cust_id: Optional[int] = None,
+        host_cust_id: Optional[int] = None,
+        session_name: Optional[str] = None,
+        league_id: Optional[int] = None,
+        league_season_id: Optional[int] = None,
+        car_id: Optional[int] = None,
+        track_id: Optional[int] = None,
+        category_ids: Optional[list[int]] = None,
+    ) -> list[Dict]:
         """Search for hosted and league sessions.
 
         Hosted and league sessions. Maximum time frame of 90 days.
@@ -767,19 +773,19 @@ class irDataClient:
 
     def result_search_series(
         self,
-        season_year=None,
-        season_quarter=None,
-        start_range_begin=None,
-        start_range_end=None,
-        finish_range_begin=None,
-        finish_range_end=None,
-        cust_id=None,
-        series_id=None,
-        race_week_num=None,
-        official_only=True,
-        event_types=None,
-        category_ids=None,
-    ):
+        season_year: Optional[int] = None,
+        season_quarter: Optional[int] = None,
+        start_range_begin: Optional[str] = None,
+        start_range_end: Optional[str] = None,
+        finish_range_begin: Optional[str] = None,
+        finish_range_end: Optional[str] = None,
+        cust_id: Optional[int] = None,
+        series_id: Optional[int] = None,
+        race_week_num: Optional[int] = None,
+        official_only: bool = True,
+        event_types: Optional[list[int]] = None,
+        category_ids: Optional[list[int]] = None,
+    ) -> list[Dict]:
         """Search for official series sessions.
 
         Official series.  Maximum time frame of 90 days. Results split into one or more files with chunks
@@ -826,7 +832,12 @@ class irDataClient:
         resource = self._get_resource("/data/results/search_series", payload=payload)
         return self._get_chunks(resource.get("data", dict()).get("chunk_info"))
 
-    def result_season_results(self, season_id, event_type=None, race_week_num=None):
+    def result_season_results(
+        self,
+        season_id: int,
+        event_type: Optional[int] = None,
+        race_week_num: Optional[int] = None,
+    ) -> Dict:
         """Get results from a certain race week from a series season.
 
         Args:
@@ -846,7 +857,7 @@ class irDataClient:
 
         return self._get_resource("/data/results/season_results", payload=payload)
 
-    def member(self, cust_id=None, include_licenses=False):
+    def member(self, cust_id: int, include_licenses: bool = False) -> Dict:
         """Get member profile basic information from one or more members.
 
         Args:
@@ -860,13 +871,10 @@ class irDataClient:
             dict: a dict containing the information of one or more members in ``'members'`` section.
 
         """
-        if not cust_id:
-            raise RuntimeError("Please supply a cust_id")
-
         payload = {"cust_ids": cust_id, "include_licenses": include_licenses}
         return self._get_resource("/data/member/get", payload=payload)
 
-    def member_awards(self, cust_id=None):
+    def member_awards(self, cust_id: Optional[int] = None) -> list[Dict]:
         """Fetches a dict containing information on the members awards.
         Args:
             cust_id (int): the iRacing cust_id. Defaults to the authenticated member.
@@ -880,9 +888,11 @@ class irDataClient:
 
         resource = self._get_resource("/data/member/awards", payload=payload)
 
-        return self._get_resource_or_link(resource['data_url'])[0]
+        return self._get_resource_or_link(resource["data_url"])[0]
 
-    def member_chart_data(self, cust_id=None, category_id=2, chart_type=1):
+    def member_chart_data(
+        self, cust_id: Optional[int] = None, category_id: int = 2, chart_type: int = 1
+    ) -> Dict:
         """Get the irating, ttrating or safety rating chart data of a certain category.
 
         Args:
@@ -900,7 +910,7 @@ class irDataClient:
 
         return self._get_resource("/data/member/chart_data", payload=payload)
 
-    def member_info(self):
+    def member_info(self) -> Dict:
         """Account info from the authenticated member.
 
         Returns:
@@ -909,7 +919,7 @@ class irDataClient:
         """
         return self._get_resource("/data/member/info")
 
-    def member_profile(self, cust_id=None):
+    def member_profile(self, cust_id: Optional[int] = None) -> Dict:
         """Detailed profile info from a member.
 
         Args:
@@ -924,7 +934,9 @@ class irDataClient:
             payload["cust_id"] = cust_id
         return self._get_resource("/data/member/profile", payload=payload)
 
-    def stats_member_bests(self, cust_id=None, car_id=None):
+    def stats_member_bests(
+        self, cust_id: Optional[int] = None, car_id: Optional[int] = None
+    ) -> Dict:
         """Get the member best laptimes from a certain cust_id and car_id.
 
         Args:
@@ -944,7 +956,7 @@ class irDataClient:
 
         return self._get_resource("/data/stats/member_bests", payload=payload)
 
-    def stats_member_career(self, cust_id=None):
+    def stats_member_career(self, cust_id: Optional[int] = None) -> Dict:
         """Get the member career stats from a certain cust_id
 
         Args:
@@ -959,7 +971,9 @@ class irDataClient:
             payload["cust_id"] = cust_id
         return self._get_resource("/data/stats/member_career", payload=payload)
 
-    def stats_member_recap(self, cust_id=None, year=None, quarter=None):
+    def stats_member_recap(
+        self, cust_id: int = None, year: int = None, quarter: int = None
+    ) -> Dict:
         """Get a recap for the member.
 
         Args:
@@ -979,7 +993,7 @@ class irDataClient:
             payload["season"] = quarter
         return self._get_resource("/data/stats/member_recap", payload=payload)
 
-    def stats_member_recent_races(self, cust_id=None):
+    def stats_member_recent_races(self, cust_id: Optional[int] = None) -> Dict:
         """Get the latest member races from a certain cust_id
 
         Args:
@@ -995,7 +1009,7 @@ class irDataClient:
 
         return self._get_resource("/data/stats/member_recent_races", payload=payload)
 
-    def stats_member_summary(self, cust_id=None):
+    def stats_member_summary(self, cust_id: Optional[int] = None) -> Dict:
         """Get the member stats summary from a certain cust_id
 
         Args:
@@ -1011,7 +1025,7 @@ class irDataClient:
 
         return self._get_resource("/data/stats/member_summary", payload=payload)
 
-    def stats_member_yearly(self, cust_id=None):
+    def stats_member_yearly(self, cust_id: Optional[int] = None) -> Dict:
         """Get the member stats yearly from a certain cust_id
 
         Args:
@@ -1028,8 +1042,13 @@ class irDataClient:
         return self._get_resource("/data/stats/member_yearly", payload=payload)
 
     def stats_season_driver_standings(
-        self, season_id, car_class_id, race_week_num=None, club_id=None, division=None
-    ):
+        self,
+        season_id: int,
+        car_class_id: int,
+        race_week_num: Optional[int] = None,
+        club_id: Optional[int] = None,
+        division: Optional[int] = None,
+    ) -> Dict:
         """Get the driver standings from a season.
 
         Args:
@@ -1058,8 +1077,13 @@ class irDataClient:
         return self._get_chunks(resource.get("chunk_info"))
 
     def stats_season_supersession_standings(
-        self, season_id, car_class_id, race_week_num=None, club_id=None, division=None
-    ):
+        self,
+        season_id: int,
+        car_class_id: int,
+        race_week_num: Optional[int] = None,
+        club_id: Optional[int] = None,
+        division: Optional[int] = None,
+    ) -> Dict:
         """Get the supersession standings from a season.
 
         Args:
@@ -1087,7 +1111,9 @@ class irDataClient:
         )
         return self._get_chunks(resource.get("chunk_info"))
 
-    def stats_season_team_standings(self, season_id, car_class_id, race_week_num=None):
+    def stats_season_team_standings(
+        self, season_id: int, car_class_id: int, race_week_num: Optional[int] = None
+    ) -> Dict:
         """Get the team standings from a season.
 
         Args:
@@ -1109,8 +1135,13 @@ class irDataClient:
         return self._get_chunks(resource.get("chunk_info"))
 
     def stats_season_tt_standings(
-        self, season_id, car_class_id, race_week_num=None, club_id=None, division=None
-    ):
+        self,
+        season_id: int,
+        car_class_id: int,
+        race_week_num: Optional[int] = None,
+        club_id: Optional[int] = None,
+        division: Optional[int] = None,
+    ) -> Dict:
         """Get the Time Trial standings from a season.
 
         Args:
@@ -1138,8 +1169,13 @@ class irDataClient:
         return self._get_chunks(resource.get("chunk_info"))
 
     def stats_season_tt_results(
-        self, season_id, car_class_id, race_week_num, club_id=None, division=None
-    ):
+        self,
+        season_id: int,
+        car_class_id: int,
+        race_week_num: int,
+        club_id: Optional[int] = None,
+        division: Optional[int] = None,
+    ) -> Dict:
         """Get the Time Trial results from a season.
 
         Args:
@@ -1167,8 +1203,13 @@ class irDataClient:
         return self._get_chunks(resource.get("chunk_info"))
 
     def stats_season_qualify_results(
-        self, season_id, car_class_id, race_week_num, club_id=None, division=None
-    ):
+        self,
+        season_id: int,
+        car_class_id: int,
+        race_week_num: int,
+        club_id: Optional[int] = None,
+        division: Optional[int] = None,
+    ) -> Dict:
         """Get the qualifying results from a season.
 
         Args:
@@ -1198,8 +1239,12 @@ class irDataClient:
         return self._get_chunks(resource.get("chunk_info"))
 
     def stats_world_records(
-        self, car_id, track_id, season_year=None, season_quarter=None
-    ):
+        self,
+        car_id: int,
+        track_id: int,
+        season_year: Optional[int] = None,
+        season_quarter: Optional[int] = None,
+    ) -> Dict:
         """Get the world records from a given track and car.
 
         Args:
@@ -1221,7 +1266,7 @@ class irDataClient:
         resource = self._get_resource("/data/stats/world_records", payload=payload)
         return self._get_chunks(resource.get("data", dict()).get("chunk_info"))
 
-    def team(self, team_id, include_licenses=False):
+    def team(self, team_id: int, include_licenses: bool = False) -> Dict:
         """Get detailed team information.
 
         Args:
@@ -1236,7 +1281,7 @@ class irDataClient:
         payload = {"team_id": team_id, "include_licenses": include_licenses}
         return self._get_resource("/data/team/get", payload=payload)
 
-    def season_list(self, season_year, season_quarter):
+    def season_list(self, season_year: int, season_quarter: int) -> Dict:
         """Get the list of iRacing Official seasons given a year and quarter.
 
         Args:
@@ -1250,7 +1295,9 @@ class irDataClient:
         payload = {"season_year": season_year, "season_quarter": season_quarter}
         return self._get_resource("/data/season/list", payload=payload)
 
-    def season_race_guide(self, start_from=None, include_end_after_from=None):
+    def season_race_guide(
+        self, start_from: str = None, include_end_after_from: bool = None
+    ) -> Dict:
         """Get the season schedule race guide.
 
         Args:
@@ -1271,7 +1318,9 @@ class irDataClient:
 
         return self._get_resource("/data/season/race_guide", payload=payload)
 
-    def season_spectator_subsessionids(self, event_types=[2, 3, 4, 5]):
+    def season_spectator_subsessionids(
+        self, event_types: list[int] = [2, 3, 4, 5]
+    ) -> list[int]:
         """Get the current list of subsession IDs for a given event type
 
         Args:
@@ -1292,7 +1341,7 @@ class irDataClient:
             "/data/season/spectator_subsessionids", payload=payload
         )["subsession_ids"]
 
-    def get_series(self):
+    def get_series(self) -> list[Dict]:
         """Get all the current official iRacing series.
 
         Returns:
@@ -1301,7 +1350,7 @@ class irDataClient:
         """
         return self._get_resource("/data/series/get")
 
-    def get_series_assets(self):
+    def get_series_assets(self) -> Dict:
         """Get all the current official iRacing series assets.
 
         Get the images, description and logos from the current official iRacing series.
@@ -1313,14 +1362,7 @@ class irDataClient:
         """
         return self._get_resource("/data/series/assets")
 
-    def series_assets(self):
-        print(
-            "series_assets() is deprecated and will be removed in a future release, "
-            "please update to use get_series_assets"
-        )
-        return self.get_series_assets()
-
-    def series_past_seasons(self, series_id):
+    def series_past_seasons(self, series_id: int) -> Dict:
         """Get all seasons for a series.
 
         Filter list by ``'official'``: ``True`` for seasons with standings.
@@ -1332,9 +1374,11 @@ class irDataClient:
             dict: a dict containing information about the series and a list of seasons.
         """
         payload = {"series_id": series_id}
-        return self._get_resource("/data/series/past_seasons", payload=payload).get('series')
+        return self._get_resource("/data/series/past_seasons", payload=payload).get(
+            "series"
+        )
 
-    def series_seasons(self, include_series=False):
+    def series_seasons(self, include_series: bool = False) -> list[Dict]:
         """Get the all the seasons.
 
         To get series and seasons for which standings should be available, filter the list by ``'official'``: ``True``.
@@ -1349,7 +1393,7 @@ class irDataClient:
         payload = {"include_series": include_series}
         return self._get_resource("/data/series/seasons", payload=payload)
 
-    def series_stats(self):
+    def series_stats(self) -> list[Dict]:
         """Get the all the series and seasons.
 
         To get series and seasons for which standings should be available, filter the list by ``'official'``: ``True``.
