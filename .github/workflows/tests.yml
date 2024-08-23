@@ -1,0 +1,51 @@
+name: Tests
+
+on:
+  pull_request:
+    paths:
+      - '**.py'
+      - '**.pyi'
+      - '.github/workflows/django-coverage.yml'
+      - 'Pipfile'
+      - 'Pipfile.lock'
+      - 'codecov.yml'
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions: write-all
+
+    env:
+      PYTHON_VERSION: 3.11
+
+    steps:
+      - name: Cancel old runs
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          access_token: ${{ github.token }}
+
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        continue-on-error: true
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          coverage run -m unittest
+          coverage xml
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}

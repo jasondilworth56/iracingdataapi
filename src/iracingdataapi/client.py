@@ -10,6 +10,7 @@ import requests
 
 
 class irDataClient:
+
     def __init__(self, username=None, password=None, silent=False):
         self.authenticated = False
         self.session = requests.Session()
@@ -73,7 +74,7 @@ class irDataClient:
 
         r = self.session.get(url, params=payload)
 
-        if r.status_code == 401:
+        if r.status_code == 401 and self.authenticated:
             # unauthorised, likely due to a timeout, retry after a login
             self.authenticated = False
             return self._get_resource_or_link(url, payload=payload)
@@ -102,13 +103,15 @@ class irDataClient:
     ) -> Optional[Union[list, dict]]:
         request_url = self._build_url(endpoint)
         resource_obj, is_link = self._get_resource_or_link(request_url, payload=payload)
+
         if not is_link:
             return resource_obj
         r = self.session.get(resource_obj)
 
-        if r.status_code == 401:
-            # unauthorised, likely due to a timeout, retry after a login
+        if r.status_code == 401 and self.authenticated:
+            # Unauthenticated, likely due to a timeout, retry after a login
             self.authenticated = False
+            self._login()
             return self._get_resource(endpoint, payload=payload)
 
         if r.status_code == 429:
