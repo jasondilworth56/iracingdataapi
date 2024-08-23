@@ -1,3 +1,5 @@
+[![Coverage](https://sonarqube.thedilworths.co.uk/api/project_badges/measure?project=jasondilworth56_iracingdataapi_55b831f3-cb96-4e4f-9180-06b0f67d7d91&metric=coverage&token=sqb_5df555bdc9752373b81c6d5a2d8245c7bb97acc3)](https://sonarqube.thedilworths.co.uk/dashboard?id=jasondilworth56_iracingdataapi_55b831f3-cb96-4e4f-9180-06b0f67d7d91) [![Quality Gate Status](https://sonarqube.thedilworths.co.uk/api/project_badges/measure?project=jasondilworth56_iracingdataapi_55b831f3-cb96-4e4f-9180-06b0f67d7d91&metric=alert_status&token=sqb_5df555bdc9752373b81c6d5a2d8245c7bb97acc3)](https://sonarqube.thedilworths.co.uk/dashboard?id=jasondilworth56_iracingdataapi_55b831f3-cb96-4e4f-9180-06b0f67d7d91)
+
 # About
 
 iracing-data-api is a simple Python wrapper around the General Data API released by iRacing in January 2022 and documented [here](https://forums.iracing.com/discussion/15068/general-availability-of-data-api/).
