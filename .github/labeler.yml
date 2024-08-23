@@ -1,0 +1,31 @@
+Production release:
+  - any:
+    - base-branch: ['main', 'master']
+    
+Hotfix:
+  - any:
+    - head-branch: ['hotfix']
+            
+Has Migrations:
+  - any:
+    - changed-files: ['project/**/migrations/*.py']
+
+Dependency updates:
+  - any:
+    - changed-files: ['Pipfile', 'Pipfile.lock', '**/package.json', 'requirements.txt']
+          
+Python:
+  - any:
+    - changed-files: ['**/*.py']
+          
+JavaScript:
+  - any:
+    - changed-files: ['**/*.js', '**/*.jsx']
+          
+TypeScript:
+  - any:
+    - changed-files: ['**/*.ts', '**/*.tsx']
+          
+AWS:
+  - any:
+    - changed-files: ['project/aws/**']

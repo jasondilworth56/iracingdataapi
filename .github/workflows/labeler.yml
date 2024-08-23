@@ -1,0 +1,13 @@
+name: "Auto-labeler"
+on:
+  pull_request:
+
+jobs:
+  triage:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      # Alpha version adds labeling by branch name: https://github.com/actions/labeler/releases/tag/v5.0.0-alpha.1
+       - uses: actions/labeler@v5.0.0-alpha.1
