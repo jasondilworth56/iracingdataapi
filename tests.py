@@ -1162,6 +1162,14 @@ class TestIrDataClient(unittest.TestCase):
         )
         self.assertEqual(result, mock_get_resource.return_value)
 
+        self.client.result_season_results(
+            season_id, event_type=event_type, race_week_num=0
+        )
+        expected_payload["race_week_num"] = 0
+        mock_get_resource.assert_called_with(
+            "/data/results/season_results", payload=expected_payload
+        )
+
     @patch.object(irDataClient, "_get_resource")
     @patch.object(irDataClient, "_get_resource_or_link")
     def test_member_awards(self, mock_get_resource_or_link, mock_get_resource):
@@ -1307,6 +1315,20 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_chunks.assert_called_once()
         self.assertEqual(result, mock_get_chunks.return_value)
 
+        # test for 0 inputs which used to remove the input
+        self.client.stats_season_driver_standings(
+            season_id=season_id, car_class_id=car_class_id, race_week_num=0, division=0
+        )
+        mock_get_resource.assert_called_with(
+            "/data/stats/season_driver_standings",
+            payload={
+                "season_id": season_id,
+                "car_class_id": car_class_id,
+                "race_week_num": 0,
+                "division": 0,
+            },
+        )
+
     @patch.object(irDataClient, "_get_resource")
     @patch.object(irDataClient, "_get_chunks")
     def test_stats_season_supersession_standings(
@@ -1328,6 +1350,20 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_chunks.assert_called_once()
         self.assertEqual(result, mock_get_chunks.return_value)
 
+        # test for 0 inputs which used to remove the input
+        self.client.stats_season_supersession_standings(
+            season_id=season_id, car_class_id=car_class_id, race_week_num=0, division=0
+        )
+        mock_get_resource.assert_called_with(
+            "/data/stats/season_supersession_standings",
+            payload={
+                "season_id": season_id,
+                "car_class_id": car_class_id,
+                "race_week_num": 0,
+                "division": 0,
+            },
+        )
+
     @patch.object(irDataClient, "_get_resource")
     @patch.object(irDataClient, "_get_chunks")
     def test_stats_season_team_standings(self, mock_get_chunks, mock_get_resource):
@@ -1345,6 +1381,19 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_chunks.assert_called_once()
         self.assertEqual(result, mock_get_chunks.return_value)
 
+        self.client.stats_season_team_standings(
+            season_id, car_class_id, race_week_num=0
+        )
+
+        mock_get_resource.assert_called_with(
+            "/data/stats/season_team_standings",
+            payload={
+                "season_id": season_id,
+                "car_class_id": car_class_id,
+                "race_week_num": 0,
+            },
+        )
+
     @patch.object(irDataClient, "_get_resource")
     @patch.object(irDataClient, "_get_chunks")
     def test_stats_season_tt_standings(self, mock_get_chunks, mock_get_resource):
@@ -1361,6 +1410,20 @@ class TestIrDataClient(unittest.TestCase):
         )
         mock_get_chunks.assert_called_once()
         self.assertEqual(result, mock_get_chunks.return_value)
+
+        self.client.stats_season_tt_standings(
+            season_id, car_class_id, race_week_num=0, division=0
+        )
+
+        mock_get_resource.assert_called_with(
+            "/data/stats/season_tt_standings",
+            payload={
+                "season_id": season_id,
+                "car_class_id": car_class_id,
+                "race_week_num": 0,
+                "division": 0,
+            },
+        )
 
     @patch.object(irDataClient, "_get_resource")
     @patch.object(irDataClient, "_get_chunks")
@@ -1386,6 +1449,20 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_chunks.assert_called_once()
         self.assertEqual(result, mock_get_chunks.return_value)
 
+        self.client.stats_season_tt_results(
+            season_id, car_class_id, race_week_num, division=0
+        )
+
+        mock_get_resource.assert_called_with(
+            "/data/stats/season_tt_results",
+            payload={
+                "season_id": season_id,
+                "car_class_id": car_class_id,
+                "race_week_num": race_week_num,
+                "division": 0,
+            },
+        )
+
     @patch.object(irDataClient, "_get_resource")
     @patch.object(irDataClient, "_get_chunks")
     def test_stats_season_qualify_results(self, mock_get_chunks, mock_get_resource):
@@ -1409,6 +1486,20 @@ class TestIrDataClient(unittest.TestCase):
         )
         mock_get_chunks.assert_called_once()
         self.assertEqual(result, mock_get_chunks.return_value)
+
+        self.client.stats_season_qualify_results(
+            season_id, car_class_id, race_week_num, division=0
+        )
+
+        mock_get_resource.assert_called_with(
+            "/data/stats/season_qualify_results",
+            payload={
+                "season_id": season_id,
+                "car_class_id": car_class_id,
+                "race_week_num": race_week_num,
+                "division": 0,
+            },
+        )
 
     @patch.object(irDataClient, "_get_chunks")
     @patch.object(irDataClient, "_get_resource")
