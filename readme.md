@@ -35,6 +35,12 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.2.2**
+- Added `driver_list` endpoint, thanks to @nylanderj for that
+- Corrected issues where `if [parameter]` would skip if the parameter was correctly set to 0, e.g. `race_week_num`. Thanks to @abelsm2 for that
+- Added initial test setup
+- Added type hints throughout
+
 **1.2.0**
 Thanks to @ablesm2 for these changes.
 
