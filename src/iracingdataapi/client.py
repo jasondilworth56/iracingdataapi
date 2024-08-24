@@ -376,7 +376,7 @@ class irDataClient:
         if package_id:
             payload["package_id"] = package_id
 
-        return self._get_resource("/data/league/cust_league_sessions")
+        return self._get_resource("/data/league/cust_league_sessions", payload=payload)
 
     def league_directory(
         self,
