@@ -6,6 +6,10 @@ iracing-data-api is a simple Python wrapper around the General Data API released
 
 The client allows easy access to some of the most useful endpoints of the data API.
 
+# Pre-installation
+
+Ensure that you have marked your account with iRacing for legacy authentication - accounts with 2FA will not work with the API. This is a limitation of iRacing, not this wrapper. 
+
 # Installation
 
 `pip install iracingdataapi`
