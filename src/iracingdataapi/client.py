@@ -762,9 +762,6 @@ class irDataClient:
                 "Please supply either start_range_begin or finish_range_begin"
             )
 
-        if not (cust_id or host_cust_id):
-            raise RuntimeError("Please supply either cust_id or host_cust_id")
-
         params = locals()
         payload = {}
         for x in params.keys():
