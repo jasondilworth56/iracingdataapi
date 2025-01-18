@@ -767,7 +767,9 @@ class irDataClient:
             )
 
         if not (cust_id or host_cust_id or session_name or team_id):
-            raise RuntimeError("Please supply one of: cust_id, host_cust_id, session_name, or team_id")
+            raise RuntimeError(
+                "Please supply one of: cust_id, host_cust_id, session_name, or team_id"
+            )
 
         params = locals()
         payload = {}
