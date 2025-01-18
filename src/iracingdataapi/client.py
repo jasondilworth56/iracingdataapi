@@ -727,6 +727,7 @@ class irDataClient:
         car_id: Optional[int] = None,
         track_id: Optional[int] = None,
         category_ids: Optional[list[int]] = None,
+        team_id: Optional[int] = None,
     ) -> list[Dict]:
         """Search for hosted and league sessions.
 
@@ -737,6 +738,8 @@ class irDataClient:
         and skip any subsessions that are duplicated.
 
         Results are ordered by subsessionid which is a proxy for start time
+
+        Requires one of: start_range_begin, finish_range_begin AND one of: cust_id, team_id, host_cust_id, session_name
 
         Args:
             start_range_begin (str): Session start times. ISO-8601 UTC time zero offset: "2022-04-01T15:45Z"
@@ -753,6 +756,7 @@ class irDataClient:
             car_id (int): One of the cars used by the session.
             track_id (int): The ID of the track used by the session.
             category_ids (list[int]): Track categories to include in the search (1,2,3,4).  Defaults to all.
+            team_id (int): The team ID to search for. Takes priority over cust_id if both are supplied.
         Returns:
             list: a list containing all the hosted results matching criteria.
 
@@ -761,6 +765,9 @@ class irDataClient:
             raise RuntimeError(
                 "Please supply either start_range_begin or finish_range_begin"
             )
+
+        if not (cust_id or host_cust_id or session_name or team_id):
+            raise RuntimeError("Please supply one of: cust_id, host_cust_id, session_name, or team_id")
 
         params = locals()
         payload = {}
