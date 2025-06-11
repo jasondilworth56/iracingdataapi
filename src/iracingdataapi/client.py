@@ -544,22 +544,6 @@ class irDataClient:
         }
         return self._get_resource("/data/league/season_sessions", payload=payload)
 
-    def lookup_club_history(self, season_year: int, season_quarter: int) -> list[Dict]:
-        """The club history for a year and season.
-
-        Note: returns an earlier history if requested quarter does not have a club history
-
-        Args:
-            season_year (int): the season year
-            season_quarter (int): the season quarter (1, 2, 3, 4)
-
-        Returns:
-            list: a list containing all the history from all clubs in the requested year and season.
-
-        """
-        payload = {"season_year": season_year, "season_quarter": season_quarter}
-        return self._get_resource("/data/lookup/club_history", payload=payload)
-
     def lookup_countries(self) -> list[Dict]:
         """The list of country names and the country codes.
 
@@ -1055,7 +1039,6 @@ class irDataClient:
         season_id: int,
         car_class_id: int,
         race_week_num: Optional[int] = None,
-        club_id: Optional[int] = None,
         division: Optional[int] = None,
     ) -> Dict:
         """Get the driver standings from a season.
@@ -1064,7 +1047,6 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12). Default 0.
-            club_id (int): the iRacing club id. Defaults to all (-1).
             division (int): the iRacing division. Divisions are 0-based: 0 is Division 1, 10 is Rookie.
                             See /data/constants/divisons for more information. Defaults to all.
 
@@ -1075,8 +1057,6 @@ class irDataClient:
         payload = {"season_id": season_id, "car_class_id": car_class_id}
         if race_week_num is not None:
             payload["race_week_num"] = race_week_num
-        if club_id:
-            payload["club_id"] = club_id
         if division is not None:
             payload["division"] = division
 
@@ -1090,7 +1070,6 @@ class irDataClient:
         season_id: int,
         car_class_id: int,
         race_week_num: Optional[int] = None,
-        club_id: Optional[int] = None,
         division: Optional[int] = None,
     ) -> Dict:
         """Get the supersession standings from a season.
@@ -1099,7 +1078,6 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12). Default 0.
-            club_id (int): the iRacing club id. Defaults to all (-1).
             division (int): the iRacing division. Divisions are 0-based: 0 is Division 1, 10 is Rookie.
                             See /data/constants/divisons for more information. Defaults to all.
 
@@ -1110,8 +1088,6 @@ class irDataClient:
         payload = {"season_id": season_id, "car_class_id": car_class_id}
         if race_week_num is not None:
             payload["race_week_num"] = race_week_num
-        if club_id:
-            payload["club_id"] = club_id
         if division is not None:
             payload["division"] = division
 
@@ -1148,7 +1124,6 @@ class irDataClient:
         season_id: int,
         car_class_id: int,
         race_week_num: Optional[int] = None,
-        club_id: Optional[int] = None,
         division: Optional[int] = None,
     ) -> Dict:
         """Get the Time Trial standings from a season.
@@ -1157,7 +1132,6 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12).
-            club_id (int): the iRacing club id.
             division (int): the iRacing division.
 
         Returns:
@@ -1167,8 +1141,6 @@ class irDataClient:
         payload = {"season_id": season_id, "car_class_id": car_class_id}
         if race_week_num is not None:
             payload["race_week_num"] = race_week_num
-        if club_id:
-            payload["club_id"] = club_id
         if division is not None:
             payload["division"] = division
 
@@ -1182,7 +1154,6 @@ class irDataClient:
         season_id: int,
         car_class_id: int,
         race_week_num: int,
-        club_id: Optional[int] = None,
         division: Optional[int] = None,
     ) -> Dict:
         """Get the Time Trial results from a season.
@@ -1191,7 +1162,6 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12).
-            club_id (int): the iRacing club id.
             division (int): the iRacing division.
 
         Returns:
@@ -1203,8 +1173,6 @@ class irDataClient:
             "car_class_id": car_class_id,
             "race_week_num": race_week_num,
         }
-        if club_id:
-            payload["club_id"] = club_id
         if division is not None:
             payload["division"] = division
 
@@ -1216,7 +1184,6 @@ class irDataClient:
         season_id: int,
         car_class_id: int,
         race_week_num: int,
-        club_id: Optional[int] = None,
         division: Optional[int] = None,
     ) -> Dict:
         """Get the qualifying results from a season.
@@ -1225,7 +1192,6 @@ class irDataClient:
             season_id (int): The iRacing season id.
             car_class_id (int): the iRacing car class id.
             race_week_num (int): the race week number (0-12).
-            club_id (int): the iRacing club id.
             division (int): the iRacing division.
 
         Returns:
@@ -1237,8 +1203,6 @@ class irDataClient:
             "car_class_id": car_class_id,
             "race_week_num": race_week_num,
         }
-        if club_id:
-            payload["club_id"] = club_id
         if division is not None:
             payload["division"] = division
 
