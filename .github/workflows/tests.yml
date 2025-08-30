@@ -3,12 +3,12 @@ name: Tests
 on:
   pull_request:
     paths:
-      - '**.py'
-      - '**.pyi'
-      - '.github/workflows/django-coverage.yml'
-      - 'Pipfile'
-      - 'Pipfile.lock'
-      - 'codecov.yml'
+      - "**.py"
+      - "**.pyi"
+      - ".github/workflows/django-coverage.yml"
+      - "Pipfile"
+      - "Pipfile.lock"
+      - "codecov.yml"
 
   workflow_dispatch:
 
@@ -43,9 +43,3 @@ jobs:
         run: |
           coverage run -m unittest
           coverage xml
-
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
