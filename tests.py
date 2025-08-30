@@ -488,6 +488,35 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_resource.assert_not_called()
         mock_get_chunks.assert_not_called()
 
+
+    @patch.object(irDataClient, "_get_chunks")
+    @patch.object(irDataClient, "_get_resource")
+    def test_result_search_series_with_race_week_num_0(
+            self, mock_get_resource, mock_get_chunks
+    ):
+        client = irDataClient(username="test_user", password="test_password")
+        mock_get_resource.return_value = {"data": {"chunk_info": "chunk_data"}}
+        mock_get_chunks.return_value = ["result1", "result2"]
+
+        season_year = 2021
+        season_quarter = 2
+        race_week_num = 0
+        response = client.result_search_series(
+            season_year=season_year, season_quarter=season_quarter, race_week_num=race_week_num
+        )
+
+        mock_get_resource.assert_called_once_with(
+            "/data/results/search_series",
+            payload={
+                "season_year": season_year,
+                "season_quarter": season_quarter,
+                "race_week_num": race_week_num,
+                "official_only": True,
+            },
+        )
+        mock_get_chunks.assert_called_once_with("chunk_data")
+        self.assertEqual(response, ["result1", "result2"])
+
     @patch.object(irDataClient, "_get_resource")
     def test_member_with_required_parameters(self, mock_get_resource):
         client = irDataClient(username="test_user", password="test_password")
