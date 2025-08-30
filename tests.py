@@ -1027,23 +1027,6 @@ class TestIrDataClient(unittest.TestCase):
         self.assertEqual(result, mock_get_resource.return_value)
 
     @patch.object(irDataClient, "_get_resource")
-    def test_lookup_club_history(self, mock_get_resource):
-        mock_get_resource.return_value = [{"history": "club_history_data"}]
-        season_year = 2021
-        season_quarter = 3
-        expected_payload = {
-            "season_year": season_year,
-            "season_quarter": season_quarter,
-        }
-
-        result = self.client.lookup_club_history(season_year, season_quarter)
-
-        mock_get_resource.assert_called_once_with(
-            "/data/lookup/club_history", payload=expected_payload
-        )
-        self.assertEqual(result, mock_get_resource.return_value)
-
-    @patch.object(irDataClient, "_get_resource")
     def test_lookup_drivers(self, mock_get_resource):
         mock_get_resource.return_value = [{"driver": "driver_data"}]
         search_term = "Smith"
