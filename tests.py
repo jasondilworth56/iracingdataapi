@@ -608,9 +608,7 @@ class TestIrDataClient(unittest.TestCase):
         result = self.client._parse_csv_response(csv_text)
         self.assertEqual(result, expected_output)
         self.assertTrue(mock_print.called)
-        self.assertTrue(
-            mock_print.called_with("Warning: Row length does not match headers length")
-        )
+        mock_print.assert_any_call("Warning: Row length does not match headers length")
 
     @patch.object(irDataClient, "get_cars")
     @patch.object(irDataClient, "get_cars_assets")
