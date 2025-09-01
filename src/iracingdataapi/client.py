@@ -8,17 +8,34 @@ from typing import Dict, Optional, Union
 
 import requests
 
+from .exceptions import AccessTokenInvalid
+
 
 class irDataClient:
 
-    def __init__(self, username=None, password=None, silent=False):
-        self.authenticated = False
+    def __init__(self, username=None, password=None, access_token=None, silent=False):
         self.session = requests.Session()
         self.base_url = "https://members-ng.iracing.com"
         self.silent = silent
 
-        self.username = username
-        self.encoded_password = self._encode_password(username, password)
+        self.access_token = None
+        self.username = None
+        self.encoded_password = None
+
+        if access_token and username and password:
+            raise AttributeError(
+                "You must supply either access token or account credentials, not both"
+            )
+
+        if username and password:
+            self.username = username
+            self.encoded_password = self._encode_password(username, password)
+
+        if access_token:
+            self.access_token = access_token
+
+        # assume access token is valid, we'll raise later if necessary
+        self.authenticated = True if self.access_token else False
 
     def _encode_password(self, username: str, password: str) -> str:
         initial_hash = hashlib.sha256(
@@ -65,6 +82,13 @@ class irDataClient:
     def _build_url(self, endpoint: str) -> str:
         return self.base_url + endpoint
 
+    def _build_request_headers(self) -> dict:
+        headers = {}
+        if self.access_token:
+            headers["Authorization"] = f"Bearer {self.access_token}"
+
+        return headers
+
     def _get_resource_or_link(
         self, url: str, payload: dict = None
     ) -> list[Union[Dict, str], bool]:
@@ -72,11 +96,14 @@ class irDataClient:
             self._login()
             return self._get_resource_or_link(url, payload=payload)
 
-        r = self.session.get(url, params=payload)
+        r = self.session.get(url, params=payload, headers=self._build_request_headers())
 
         if r.status_code == 401 and self.authenticated:
             # unauthorised, likely due to a timeout, retry after a login
             self.authenticated = False
+            if self.access_token:
+                raise AccessTokenInvalid("Access token not valid")
+
             return self._get_resource_or_link(url, payload=payload)
 
         if r.status_code == 429:
