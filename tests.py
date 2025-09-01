@@ -7,11 +7,13 @@ from unittest.mock import MagicMock, patch
 import requests
 
 from src.iracingdataapi.client import irDataClient
+from src.iracingdataapi.exceptions import AccessTokenInvalid
 
 
 class TestIrDataClient(unittest.TestCase):
     def setUp(self):
         self.client = irDataClient(username="test_user", password="test_password")
+        self.access_token_client = irDataClient(access_token="some-mock-token")
 
     def test_encode_password(self):
         expected_password = base64.b64encode(
@@ -579,8 +581,8 @@ class TestIrDataClient(unittest.TestCase):
         result = self.client._parse_csv_response(csv_text)
         self.assertEqual(result, expected_output)
         self.assertTrue(mock_print.called)
-        self.assertTrue(
-            mock_print.called_with("Warning: Row length does not match headers length")
+        mock_print.assert_called_with(
+            "Warning: Row length does not match headers length"
         )
 
     @patch.object(irDataClient, "get_cars")
@@ -1591,6 +1593,31 @@ class TestIrDataClient(unittest.TestCase):
             "/data/series/seasons", payload=expected_payload
         )
         self.assertEqual(result, mock_get_resource.return_value)
+
+    def test_access_token_or_credentials(self):
+        """
+        It should not be possible to supply both credentials and an access token
+        """
+        with self.assertRaises(AttributeError):
+            irDataClient(
+                username="a@user.com",
+                password="somepassword",
+                access_token="an-access-token",
+            )
+
+    @patch("requests.Session.get")
+    def test_access_token_invalid_raises(self, mock_requests_get):
+        """
+        When an access token is no longer valid, it should raise a specific exception for consumers to build around
+        """
+
+        mock_requests_get.return_value = MagicMock(status_code=401)
+        with self.assertRaises(AccessTokenInvalid):
+            subsession_id = 12345
+            include_licenses = True
+            response = self.access_token_client.result(
+                subsession_id=subsession_id, include_licenses=include_licenses
+            )
 
 
 if __name__ == "__main__":
