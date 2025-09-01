@@ -1,2 +1,2 @@
 coverage==7.6.1
-requests==2.20.0
+requests==2.32.5
