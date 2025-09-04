@@ -64,6 +64,10 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.3.0**
+
+- Added a minimal Oauth2 implementation. You can now choose to send either username/password credentials as before, or use the iRacing Oauth2 token to make your requests. More information in the readme.
+
 **1.2.3**
 
 - Update `result_search_hosted` to remove the `cust_id`/`host_cust_id` requirement, and also add the `team_id` parameter. Thanks @glenbecker for that.
