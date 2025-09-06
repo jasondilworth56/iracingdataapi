@@ -508,9 +508,9 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_resource.assert_called_once_with(
             "/data/results/search_series",
             payload={
-                "season_year": season_year,
-                "season_quarter": season_quarter,
-                "race_week_num": race_week_num,
+                "season_year": 2021,
+                "season_quarter": 2,
+                "race_week_num": 0,
                 "official_only": True,
             },
         )
