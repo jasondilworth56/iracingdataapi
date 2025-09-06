@@ -14,6 +14,8 @@ Ensure that you have marked your account with iRacing for legacy authentication 
 
 # Examples
 
+## Using username/password credentials
+
 ```python
 from iracingdataapi.client import irDataClient
 
@@ -29,6 +31,31 @@ idc.stats_member_recent_races(cust_id=209179)
 idc.result_lap_data(subsession_id=43720351, cust_id=209179)
 ```
 
+## Using Oauth2 access token
+
+When you have acquired an Oauth2 access token from iRacing, and have ensured that token is valid, you can
+use it like so in this client:
+
+```python
+from iracingdataapi.client import irDataClient
+
+idc = irDataClient(access_token=[YOUR OAUTH2 TOKEN])
+```
+
+The rest of the client will work exactly the same, except that when that token expires you will find the client
+raises an `AccessTokenInvalid` exception. For now, managing refreshing of tokens etc is outside the scope of
+this client, so build around that exception and reinitialise the client with a new token when necessary. For instance:
+
+```python
+try:
+  lap_data = idc.result_lap_data(subsession_id=12345678, cust_id=987654)
+except AccessTokenInvalid:
+  # access token is invalid
+  new_token = do_something_in_your_code_to_refresh_token()
+  idc = irDataClient(access_token=[NEW TOKEN])
+  lap_data = idc.result_lap_data(subsession_id=12345678, cust_id=987654)
+```
+
 All available methods of `irDataClient` are included in `client.py`.
 
 # Contributing
@@ -36,6 +63,10 @@ All available methods of `irDataClient` are included in `client.py`.
 I welcome all pull requests for improvements or missing endpoints over time as they are added by iRacing.
 
 # Changelog
+
+**1.3.0**
+
+- Added a minimal Oauth2 implementation. You can now choose to send either username/password credentials as before, or use the iRacing Oauth2 token to make your requests. More information in the readme.
 
 **1.2.3**
 
