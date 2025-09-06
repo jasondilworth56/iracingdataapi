@@ -800,9 +800,9 @@ class irDataClient:
 
         params = locals()
         payload = {}
-        for x in params.keys():
-            if x != "self" and params[x]:
-                payload[x] = params[x]
+        for x, val in params.items():
+            if x != "self" and val is not None:
+                payload[x] = val
 
         resource = self._get_resource("/data/results/search_hosted", payload=payload)
         return self._get_chunks(resource.get("data", dict()).get("chunk_info"))
@@ -861,9 +861,9 @@ class irDataClient:
 
         params = locals()
         payload = {}
-        for x in params.keys():
-            if x != "self" and params[x]:
-                payload[x] = params[x]
+        for x, val in params.items():
+            if x != "self" and val is not None:
+                payload[x] = val
 
         resource = self._get_resource("/data/results/search_series", payload=payload)
         return self._get_chunks(resource.get("data", dict()).get("chunk_info"))
