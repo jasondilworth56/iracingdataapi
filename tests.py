@@ -493,7 +493,7 @@ class TestIrDataClient(unittest.TestCase):
 
     @patch.object(irDataClient, "_get_chunks")
     @patch.object(irDataClient, "_get_resource")
-    def test_result_search_series_with_race_week_num_0(
+    def test_result_search_series_passes_false_params(
             self, mock_get_resource, mock_get_chunks
     ):
         client = irDataClient(username="test_user", password="test_password")
@@ -503,8 +503,12 @@ class TestIrDataClient(unittest.TestCase):
         season_year = 2021
         season_quarter = 2
         race_week_num = 0
+        official_only = False
         response = client.result_search_series(
-            season_year=season_year, season_quarter=season_quarter, race_week_num=race_week_num
+            season_year=season_year,
+            season_quarter=season_quarter,
+            race_week_num=race_week_num,
+            official_only=official_only
         )
 
         mock_get_resource.assert_called_once_with(
@@ -513,7 +517,7 @@ class TestIrDataClient(unittest.TestCase):
                 "season_year": 2021,
                 "season_quarter": 2,
                 "race_week_num": 0,
-                "official_only": True,
+                "official_only": False,
             },
         )
         mock_get_chunks.assert_called_once_with("chunk_data")
@@ -1164,6 +1168,34 @@ class TestIrDataClient(unittest.TestCase):
             cust_id=111111,
             start_range_begin=start_range_begin,
             start_range_end=start_range_end,
+        )
+
+        mock_get_resource.assert_called_once_with(
+            "/data/results/search_hosted", payload=expected_payload
+        )
+        mock_get_chunks.assert_called_once()
+        self.assertEqual(result, mock_get_chunks.return_value)
+
+    @patch.object(irDataClient, "_get_resource")
+    @patch.object(irDataClient, "_get_chunks")
+    def test_result_search_hosted_passes_false_params(self, mock_get_chunks, mock_get_resource):
+        mock_get_chunks.return_value = [{"session": "hosted_session"}]
+        start_range_begin = "2022-01-01T00:00:00Z"
+        start_range_end = "2022-01-31T23:59:59Z"
+        expected_payload = {
+            "start_range_begin": start_range_begin,
+            "start_range_end": start_range_end,
+            "cust_id": 111111,
+            "car_id": 0,
+            "category_ids": [0],
+        }
+
+        result = self.client.result_search_hosted(
+            cust_id=111111,
+            start_range_begin="2022-01-01T00:00:00Z",
+            start_range_end="2022-01-31T23:59:59Z",
+            car_id=0,
+            category_ids=[0],
         )
 
         mock_get_resource.assert_called_once_with(
