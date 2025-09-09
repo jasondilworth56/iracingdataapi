@@ -490,11 +490,20 @@ class irDataClient:
             dict: a dict with the request info including the leagues from the search requested.
 
         """
-        params = locals()
-        payload = {}
-        for x in params.keys():
-            if x != "self":
-                payload[x] = params[x]
+        payload = {
+            "search": search,
+            "tag": tag,
+            "restrict_to_member": restrict_to_member,
+            "restrict_to_recruiting": restrict_to_recruiting,
+            "restrict_to_friends": restrict_to_friends,
+            "restrict_to_watched": restrict_to_watched,
+            "minimum_roster_count": minimum_roster_count,
+            "maximum_roster_count": maximum_roster_count,
+            "lowerbound": lowerbound,
+            "upperbound": upperbound,
+            "sort": sort,
+            "order": order,
+        }
 
         return self._get_resource("/data/league/directory", payload=payload)
 
@@ -744,8 +753,8 @@ class irDataClient:
             list: a list containing the lap data from a car within a sim session.
 
         """
-        if not cust_id and not team_id:
-            raise RuntimeError("Please supply either a cust_id or a team_id")
+        if (cust_id is None) == (team_id is None):
+            raise ValueError("Provide exactly one of cust_id or team_id.")
 
         payload = {
             "subsession_id": subsession_id,
@@ -835,84 +844,130 @@ class irDataClient:
 
         """
         if not (start_range_begin or finish_range_begin):
-            raise RuntimeError(
-                "Please supply either start_range_begin or finish_range_begin"
-            )
+            raise ValueError("Provide start_range_begin or finish_range_begin.")
 
         if not (cust_id or host_cust_id or session_name or team_id):
-            raise RuntimeError(
-                "Please supply one of: cust_id, host_cust_id, session_name, or team_id"
+            raise ValueError(
+                "Provide one of: cust_id, host_cust_id, session_name, team_id."
             )
 
-        params = locals()
-        payload = {}
-        for x, val in params.items():
-            if x != "self" and val is not None:
-                payload[x] = val
+        # enforce begin < end when both given, and 90-day max window
+        if start_range_begin and start_range_end:
+            if not start_range_begin < start_range_end:
+                raise ValueError("start_range_begin must be before start_range_end.")
+            if (start_range_end - start_range_begin).days > 90:
+                raise ValueError("start time window exceeds 90 days.")
+        if finish_range_begin and finish_range_end:
+            if not finish_range_begin < finish_range_end:
+                raise ValueError("finish_range_begin must be before finish_range_end.")
+            if (finish_range_end - finish_range_begin).days > 90:
+                raise ValueError("finish time window exceeds 90 days.")
+
+        if category_ids is not None:
+            category_ids = sorted(set(category_ids))
+            if not category_ids:
+                raise ValueError("category_ids cannot be an empty list.")
+
+        # team_id takes priority over cust_id
+        if team_id is not None and cust_id is not None:
+            cust_id = None
+
+        payload: dict[str, Any] = {}
+        if start_range_begin:
+            payload["start_range_begin"] = self._to_utc_z(start_range_begin)
+        if start_range_end:
+            payload["start_range_end"] = self._to_utc_z(start_range_end)
+        if finish_range_begin:
+            payload["finish_range_begin"] = self._to_utc_z(finish_range_begin)
+        if finish_range_end:
+            payload["finish_range_end"] = self._to_utc_z(finish_range_end)
+
+        if cust_id is not None:
+            payload["cust_id"] = cust_id
+        if host_cust_id is not None:
+            payload["host_cust_id"] = host_cust_id
+        if session_name is not None:
+            payload["session_name"] = session_name
+        if league_id is not None:
+            payload["league_id"] = league_id
+        if league_season_id is not None:
+            payload["league_season_id"] = league_season_id
+        if car_id is not None:
+            payload["car_id"] = car_id
+        if track_id is not None:
+            payload["track_id"] = track_id
+        if category_ids is not None:
+            payload["category_ids"] = category_ids
+        if team_id is not None:
+            payload["team_id"] = team_id
 
         resource = self._get_resource("/data/results/search_hosted", payload=payload)
-        return self._get_chunks(resource.get("data", dict()).get("chunk_info"))
-
-    def result_search_series(
-        self,
-        season_year: Optional[int] = None,
-        season_quarter: Optional[int] = None,
-        start_range_begin: Optional[str] = None,
-        start_range_end: Optional[str] = None,
-        finish_range_begin: Optional[str] = None,
-        finish_range_end: Optional[str] = None,
-        cust_id: Optional[int] = None,
-        series_id: Optional[int] = None,
-        race_week_num: Optional[int] = None,
-        official_only: bool = True,
-        event_types: Optional[list[int]] = None,
-        category_ids: Optional[list[int]] = None,
-    ) -> list[Dict]:
-        """Search for official series sessions.
-
-        Official series.  Maximum time frame of 90 days. Results split into one or more files with chunks
-        of results. For scraping results the most effective approach is to keep track
-        of the maximum end_time found during a search then make the subsequent call using that
-        date/time as the finish_range_begin and skip any subsessions that are duplicated.
-        Results are ordered by subsessionid which is a proxy for start time but groups
-        together multiple splits of a series when multiple series launch sessions at the same time.
-        Requires at least one of: season_year and season_quarter, start_range_begin, finish_range_begin.
-
-        Args:
-            season_year (int): the season year
-            season_quarter (int): the season quarter (1, 2, 3, 4)
-            start_range_begin (str): Session start times. ISO-8601 UTC time zero offset: "2022-04-01T15:45Z"
-             Exclusive. May be omitted if finish_range_begin is less than 90 days in the past.
-            start_range_end (str): ISO-8601 UTC time zero offset: "2022-04-01T15:45Z".
-             Exclusive. May be omitted if start_range_begin is less than 90 days in the past.
-            finish_range_begin (str): Session finish times. ISO-8601 UTC time zero offset: "2022-04-01T15:45Z".
-            finish_range_end (str): ISO-8601 UTC time zero offset: "2022-04-01T15:45Z".
-            cust_id (int): The participant's customer ID.
-            series_id (id): Include only sessions for series with this ID.
-            race_week_num (id): Include only sessions with this race week number.
-            official_only (bool): If true, include only sessions earning championship points. Defaults to all.
-            event_types (list[int]): Types of events to include in the search. Defaults to all. event_types=2,3,4,5
-            category_ids (list[int]): Track categories to include in the search (1,2,3,4).  Defaults to all.
-
-        Returns:
-            list: a list containing all the hosted results matching criteria.
-
-        """
+        chunks = resource.get("data", {}).get("chunk_info")
+        return self._get_chunks(chunks) if chunks else []
         if not (
             (season_year and season_quarter) or start_range_begin or finish_range_begin
         ):
-            raise RuntimeError(
-                "Please supply Season Year and Season Quarter or a date range"
+            raise ValueError(
+                "Provide (season_year & season_quarter) or a date range (start_range_begin or finish_range_begin)."
             )
 
-        params = locals()
-        payload = {}
-        for x, val in params.items():
-            if x != "self" and val is not None:
-                payload[x] = val
+        # If one of season_year/season_quarter given, require the other
+        if (season_year is None) ^ (season_quarter is None):
+            raise ValueError(
+                "season_year and season_quarter must be provided together."
+            )
+
+        # enforce begin < end and 90-day window when both ends given
+        if start_range_begin and start_range_end:
+            if not start_range_begin < start_range_end:
+                raise ValueError("start_range_begin must be before start_range_end.")
+            if (start_range_end - start_range_begin).days > 90:
+                raise ValueError("Start time window exceeds 90 days.")
+        if finish_range_begin and finish_range_end:
+            if not finish_range_begin < finish_range_end:
+                raise ValueError("finish_range_begin must be before finish_range_end.")
+            if (finish_range_end - finish_range_begin).days > 90:
+                raise ValueError("Finish time window exceeds 90 days.")
+
+        if event_types is not None:
+            event_types = sorted(set(event_types))
+            if not event_types:
+                raise ValueError("event_types cannot be an empty list.")
+        if category_ids is not None:
+            category_ids = sorted(set(category_ids))
+            if not category_ids:
+                raise ValueError("category_ids cannot be an empty list.")
+
+        payload: dict[str, Any] = {}
+
+        if season_year is not None:
+            payload["season_year"] = season_year
+        if season_quarter is not None:
+            payload["season_quarter"] = season_quarter
+        if start_range_begin:
+            payload["start_range_begin"] = self._to_utc_z(start_range_begin)
+        if start_range_end:
+            payload["start_range_end"] = self._to_utc_z(start_range_end)
+        if finish_range_begin:
+            payload["finish_range_begin"] = self._to_utc_z(finish_range_begin)
+        if finish_range_end:
+            payload["finish_range_end"] = self._to_utc_z(finish_range_end)
+        if cust_id is not None:
+            payload["cust_id"] = cust_id
+        if series_id is not None:
+            payload["series_id"] = series_id
+        if race_week_num is not None:
+            payload["race_week_num"] = race_week_num
+
+        payload["official_only"] = official_only
+        if event_types is not None:
+            payload["event_types"] = event_types
+        if category_ids is not None:
+            payload["category_ids"] = category_ids
 
         resource = self._get_resource("/data/results/search_series", payload=payload)
-        return self._get_chunks(resource.get("data", dict()).get("chunk_info"))
+        chunks = resource.get("data", {}).get("chunk_info")
+        return self._get_chunks(chunks) if chunks else []
 
     def result_season_results(
         self,
@@ -1394,7 +1449,7 @@ class irDataClient:
         """
         payload = {}
         if start_from:
-            payload["from"] = start_from
+            payload["from"] = self._to_utc_z(start_from)
         if include_end_after_from:
             payload["include_end_after_from"] = include_end_after_from
 

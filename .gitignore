@@ -152,3 +152,5 @@ cython_debug/
 #.idea/
 .vscode/launch.json
 src/.DS_Store
+generate_api_responses.py
+api_responses/
