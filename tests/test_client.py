@@ -1,10 +1,11 @@
 import base64
 import hashlib
 import unittest
-from datetime import datetime
+from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
 import requests
+from pydantic_core import ValidationError
 
 from src.iracingdataapi.client import irDataClient
 from src.iracingdataapi.exceptions import AccessTokenInvalid
@@ -270,10 +271,10 @@ class TestIrDataClient(unittest.TestCase):
     def test_result_missing_subsession_id(self):
         client = irDataClient(username="test_user", password="test_password")
 
-        with self.assertRaises(TypeError) as context:
+        with self.assertRaises(ValidationError) as context:
             client.result()
         self.assertIn(
-            "irDataClient.result() missing 1 required positional argument: 'subsession_id'",
+            "1 validation error for irDataClient.result\nsubsession_id",
             str(context.exception),
         )
 
@@ -397,10 +398,10 @@ class TestIrDataClient(unittest.TestCase):
 
         season_year = 2021
         season_quarter = 2
-        start_range_begin = "2021-01-01T00:00Z"
-        start_range_end = "2021-01-31T23:59Z"
-        finish_range_begin = "2021-01-01T00:00Z"
-        finish_range_end = "2021-01-31T23:59Z"
+        start_range_begin = datetime(2021, 1, 1, tzinfo=timezone.utc)
+        start_range_end = "2021-01-31T23:59:00Z"
+        finish_range_begin = datetime(2021, 1, 1, tzinfo=timezone.utc)
+        finish_range_end = "2021-01-31T23:59:00Z"
         cust_id = 12345
         series_id = 67890
         race_week_num = 3
@@ -428,9 +429,9 @@ class TestIrDataClient(unittest.TestCase):
             payload={
                 "season_year": season_year,
                 "season_quarter": season_quarter,
-                "start_range_begin": start_range_begin,
+                "start_range_begin": "2021-01-01T00:00:00Z",
                 "start_range_end": start_range_end,
-                "finish_range_begin": finish_range_begin,
+                "finish_range_begin": "2021-01-01T00:00:00Z",
                 "finish_range_end": finish_range_end,
                 "cust_id": cust_id,
                 "series_id": series_id,
@@ -452,8 +453,8 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_resource.return_value = {"data": {"chunk_info": "chunk_data"}}
         mock_get_chunks.return_value = ["result1", "result2"]
 
-        start_range_begin = "2021-01-01T00:00Z"
-        finish_range_begin = "2021-01-01T00:00Z"
+        start_range_begin = "2021-01-01T00:00:00Z"
+        finish_range_begin = "2021-01-01T00:00:00Z"
         cust_id = 12345
 
         response = client.result_search_series(
@@ -465,8 +466,8 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_resource.assert_called_once_with(
             "/data/results/search_series",
             payload={
-                "start_range_begin": "2021-01-01T00:00Z",
-                "finish_range_begin": "2021-01-01T00:00Z",
+                "start_range_begin": "2021-01-01T00:00:00Z",
+                "finish_range_begin": "2021-01-01T00:00:00Z",
                 "cust_id": 12345,
                 "official_only": True,
             },
@@ -481,10 +482,10 @@ class TestIrDataClient(unittest.TestCase):
     ):
         client = irDataClient(username="test_user", password="test_password")
 
-        with self.assertRaises(RuntimeError) as context:
+        with self.assertRaises(ValueError) as context:
             client.result_search_series()
         self.assertIn(
-            "Please supply Season Year and Season Quarter or a date range",
+            "Provide (season_year & season_quarter) or a date range (start_range_begin or finish_range_begin)",
             str(context.exception),
         )
         mock_get_resource.assert_not_called()
@@ -493,7 +494,7 @@ class TestIrDataClient(unittest.TestCase):
     @patch.object(irDataClient, "_get_chunks")
     @patch.object(irDataClient, "_get_resource")
     def test_result_search_series_passes_false_params(
-            self, mock_get_resource, mock_get_chunks
+        self, mock_get_resource, mock_get_chunks
     ):
         client = irDataClient(username="test_user", password="test_password")
         mock_get_resource.return_value = {"data": {"chunk_info": "chunk_data"}}
@@ -507,7 +508,7 @@ class TestIrDataClient(unittest.TestCase):
             season_year=season_year,
             season_quarter=season_quarter,
             race_week_num=race_week_num,
-            official_only=official_only
+            official_only=official_only,
         )
 
         mock_get_resource.assert_called_once_with(
@@ -572,10 +573,10 @@ class TestIrDataClient(unittest.TestCase):
     def test_member_missing_cust_id(self):
         client = irDataClient(username="test_user", password="test_password")
 
-        with self.assertRaises(TypeError) as context:
+        with self.assertRaises(ValidationError) as context:
             client.member()
         self.assertIn(
-            "irDataClient.member() missing 1 required positional argument: 'cust_id'",
+            "1 validation error for irDataClient.member\ncust_id",
             str(context.exception),
         )
 
@@ -789,11 +790,14 @@ class TestIrDataClient(unittest.TestCase):
                 self.assertEqual(drivers, mock_get_resource.return_value)
 
         # Test for invalid category ID
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(ValidationError) as context:
             self.client.driver_list(99)
         self.assertEqual(
             str(context.exception),
-            "Invalid category_id '99'. Available categories are: [1, 2, 3, 4, 5, 6]",
+            """1 validation error for irDataClient.driver_list
+1
+  Input should be less than or equal to 6 [type=less_than_equal, input_value=99, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.11/v/less_than_equal""",
         )
 
     @patch.object(irDataClient, "_get_resource")
@@ -1176,7 +1180,9 @@ class TestIrDataClient(unittest.TestCase):
 
     @patch.object(irDataClient, "_get_resource")
     @patch.object(irDataClient, "_get_chunks")
-    def test_result_search_hosted_passes_false_params(self, mock_get_chunks, mock_get_resource):
+    def test_result_search_hosted_passes_false_params(
+        self, mock_get_chunks, mock_get_resource
+    ):
         mock_get_chunks.return_value = [{"session": "hosted_session"}]
         start_range_begin = "2022-01-01T00:00:00Z"
         start_range_end = "2022-01-31T23:59:59Z"
@@ -1184,16 +1190,16 @@ class TestIrDataClient(unittest.TestCase):
             "start_range_begin": start_range_begin,
             "start_range_end": start_range_end,
             "cust_id": 111111,
-            "car_id": 0,
-            "category_ids": [0],
+            "car_id": 1,
+            "category_ids": [1],
         }
 
         result = self.client.result_search_hosted(
             cust_id=111111,
             start_range_begin="2022-01-01T00:00:00Z",
             start_range_end="2022-01-31T23:59:59Z",
-            car_id=0,
-            category_ids=[0],
+            car_id=1,
+            category_ids=[1],
         )
 
         mock_get_resource.assert_called_once_with(
