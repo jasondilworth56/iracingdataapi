@@ -9,6 +9,7 @@ from typing import Dict, Optional, Union
 import requests
 
 from .exceptions import AccessTokenInvalid
+from .rate_limit import irRateLimit
 
 
 class irDataClient:
@@ -36,6 +37,9 @@ class irDataClient:
 
         # assume access token is valid, we'll raise later if necessary
         self.authenticated = True if self.access_token else False
+        
+        # Rate limit object - self-contained with defaults
+        self.rate_limit = irRateLimit()
 
     def _encode_password(self, username: str, password: str) -> str:
         initial_hash = hashlib.sha256(
@@ -43,6 +47,7 @@ class irDataClient:
         ).digest()
 
         return base64.b64encode(initial_hash).decode("utf-8")
+
 
     def _login(self) -> str:
         headers = {"Content-Type": "application/json"}
@@ -74,6 +79,8 @@ class irDataClient:
         else:
             response_data = r.json()
             if r.status_code == 200 and response_data.get("authcode"):
+                # Update rate limit from successful login response  
+                self.rate_limit.update_from_response(r)
                 self.authenticated = True
                 return "Logged in"
             else:
@@ -119,6 +126,10 @@ class irDataClient:
 
         if r.status_code != 200:
             raise RuntimeError("Unhandled Non-200 response", r)
+        
+        # Update rate limit from successful response
+        self.rate_limit.update_from_response(r)
+        
         data = r.json()
         if not isinstance(data, list) and "link" in data.keys():
             return [data.get("link"), True]
@@ -153,6 +164,9 @@ class irDataClient:
 
         if r.status_code != 200:
             raise RuntimeError("Unhandled Non-200 response", r)
+
+        # Update rate limit from successful response
+        self.rate_limit.update_from_response(r)
 
         content_type = r.headers.get("Content-Type")
 
@@ -1439,3 +1453,4 @@ class irDataClient:
 
         """
         return self._get_resource("/data/series/stats_series")
+
