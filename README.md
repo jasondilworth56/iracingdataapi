@@ -49,6 +49,42 @@ You can opt-in to use of Pydantic model objects in the return of all method endp
 idc = irDataClient(access_token=[YOUR OAUTH2 TOKEN], use_pydantic=True)
 ```
 
+## Accessing Rate Limit Information
+
+The iRacing API implements rate limiting to prevent abuse and ensure fair usage. This client automatically tracks rate limit information from API responses and makes it available through the `rate_limit` property.
+
+```python
+from iracingdataapi.client import irDataClient
+
+idc = irDataClient(username=[YOUR iRACING USERNAME], password=[YOUR iRACING PASSWORD])
+
+# Make an API call
+idc.get_cars()
+
+# Check rate limit information
+if idc.rate_limit.has_data:
+    print(f"Rate limit: {idc.rate_limit.limit}")
+    print(f"Remaining requests: {idc.rate_limit.remaining}")
+    print(f"Reset time (UTC): {idc.rate_limit.reset_time}")
+    print(f"Seconds until reset: {idc.rate_limit.seconds_until_reset}")
+
+    # Check if we're rate limited
+    if idc.rate_limit.is_rate_limited:
+        print("Rate limit exceeded! Wait before making more requests.")
+```
+
+The `rate_limit` object provides the following properties:
+
+- `limit`: The total number of requests allowed per time window
+- `remaining`: Number of requests remaining in the current window
+- `reset`: Unix timestamp when the rate limit will reset
+- `reset_time`: Rate limit reset time as a UTC datetime object
+- `seconds_until_reset`: Number of seconds until the rate limit resets
+- `is_rate_limited`: Boolean indicating if the rate limit has been exhausted
+- `has_data`: Boolean indicating if rate limit data is available from the API
+
+Note: Rate limit data is only available after making at least one API request. The `has_data` property will be `False` until the first successful API response.
+
 # Contributing
 
 I welcome all pull requests for improvements or missing endpoints over time as they are added by iRacing.
