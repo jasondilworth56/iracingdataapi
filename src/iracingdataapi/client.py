@@ -136,6 +136,38 @@ class irDataClient:
         else:
             return [data, False]
 
+    def _fetch_link_data(self, url: str) -> Union[list, dict]:
+        """
+        Fetch data from an external link (e.g., S3 URL) without authentication headers.
+
+        S3 URLs use pre-signed authentication in the URL itself, so adding OAuth headers
+        causes authentication failures.
+
+        Args:
+            url (str): The URL to fetch data from
+
+        Returns:
+            Union[list, dict]: The parsed data (JSON or CSV)
+        """
+        r = self.session.get(url)
+
+        if r.status_code != 200:
+            raise RuntimeError("Unhandled Non-200 response", r)
+
+        # Update rate limit from successful response
+        self.rate_limit.update_from_response(r)
+
+        content_type = r.headers.get("Content-Type", "")
+
+        if "application/json" in content_type or "application/octet-stream" in content_type:
+            return r.json()
+
+        elif "text/csv" in content_type or "text/plain" in content_type:
+            return self._parse_csv_response(r.text)
+
+        else:
+            raise RuntimeError(f"Unsupported Content-Type: {content_type}")
+
     def _get_resource(
         self, endpoint: str, payload: Optional[dict] = None
     ) -> Optional[Union[list, dict]]:
@@ -516,7 +548,7 @@ class irDataClient:
 
         resource = self._get_resource("/data/league/roster", payload=payload)
 
-        return self._get_resource_or_link(resource["data_url"])[0]
+        return self._fetch_link_data(resource["data_url"])
 
     def league_seasons(self, league_id: int, retired: bool = False) -> list[Dict]:
         """Fetches a list containing all the seasons from a league.
@@ -938,7 +970,7 @@ class irDataClient:
 
         resource = self._get_resource("/data/member/awards", payload=payload)
 
-        return self._get_resource_or_link(resource["data_url"])[0]
+        return self._fetch_link_data(resource["data_url"])
 
     def member_chart_data(
         self, cust_id: Optional[int] = None, category_id: int = 2, chart_type: int = 1

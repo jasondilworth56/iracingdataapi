@@ -984,9 +984,10 @@ class TestIrDataClient(unittest.TestCase):
         self.assertEqual(points_systems, mock_get_resource.return_value)
 
     @patch.object(irDataClient, "_get_resource")
-    @patch.object(irDataClient, "_get_resource_or_link")
-    def test_league_roster(self, mock_get_resource_or_link, mock_get_resource):
-        mock_get_resource_or_link.return_value = [{"data": "roster_data"}]
+    @patch.object(irDataClient, "_fetch_link_data")
+    def test_league_roster(self, mock_fetch_link_data, mock_get_resource):
+        mock_get_resource.return_value = {"data_url": "https://s3.amazonaws.com/test"}
+        mock_fetch_link_data.return_value = {"data": "roster_data"}
         league_id = 123
         include_licenses = True
         expected_payload = {
@@ -999,10 +1000,8 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_resource.assert_called_once_with(
             "/data/league/roster", payload=expected_payload
         )
-        mock_get_resource_or_link.assert_called_once_with(
-            mock_get_resource.return_value["data_url"]
-        )
-        self.assertEqual(result, mock_get_resource_or_link.return_value[0])
+        mock_fetch_link_data.assert_called_once_with("https://s3.amazonaws.com/test")
+        self.assertEqual(result, {"data": "roster_data"})
 
     @patch.object(irDataClient, "_get_resource")
     def test_league_seasons(self, mock_get_resource):
@@ -1233,9 +1232,10 @@ class TestIrDataClient(unittest.TestCase):
         )
 
     @patch.object(irDataClient, "_get_resource")
-    @patch.object(irDataClient, "_get_resource_or_link")
-    def test_member_awards(self, mock_get_resource_or_link, mock_get_resource):
-        mock_get_resource_or_link.return_value = [{"award": "award_data"}]
+    @patch.object(irDataClient, "_fetch_link_data")
+    def test_member_awards(self, mock_fetch_link_data, mock_get_resource):
+        mock_get_resource.return_value = {"data_url": "https://s3.amazonaws.com/test"}
+        mock_fetch_link_data.return_value = {"award": "award_data"}
         cust_id = 123
         expected_payload = {"cust_id": cust_id}
 
@@ -1244,8 +1244,8 @@ class TestIrDataClient(unittest.TestCase):
         mock_get_resource.assert_called_once_with(
             "/data/member/awards", payload=expected_payload
         )
-        mock_get_resource_or_link.assert_called_once()
-        self.assertEqual(result, mock_get_resource_or_link.return_value[0])
+        mock_fetch_link_data.assert_called_once_with("https://s3.amazonaws.com/test")
+        self.assertEqual(result, {"award": "award_data"})
 
     @patch.object(irDataClient, "_get_resource")
     def test_member_chart_data(self, mock_get_resource):
