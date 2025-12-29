@@ -1,0 +1,32 @@
+[
+  {
+    "league_id": 9686,
+    "league_name": "MEC",
+    "owner": false,
+    "admin": false,
+    "league_mail_opt_out": false,
+    "league_pm_opt_out": false,
+    "car_number": null,
+    "nick_name": null
+  },
+  {
+    "league_id": 386,
+    "league_name": "UK&I Formula Ford Series",
+    "owner": false,
+    "admin": false,
+    "league_mail_opt_out": false,
+    "league_pm_opt_out": false,
+    "car_number": null,
+    "nick_name": null
+  },
+  {
+    "league_id": 4607,
+    "league_name": "WSL GT3 E.U Season 5",
+    "owner": false,
+    "admin": false,
+    "league_mail_opt_out": false,
+    "league_pm_opt_out": false,
+    "car_number": "56",
+    "nick_name": "[P] Jason Dilworth"
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "license_group": 1,
+    "group_name": "Rookie",
+    "min_num_races": 2,
+    "participation_credits": 4,
+    "min_sr_to_fast_track": 300,
+    "levels": [
+      {
+        "license_id": 1,
+        "license_group": 1,
+        "license": "Rookie 1.0",
+        "short_name": "R 1.0",
+        "license_letter": "R",
+        "color": "fc0706"
+      },
+      {
+        "license_id": 2,
+        "license_group": 1,
+        "license": "Rookie 2.0",
+        "short_name": "R 2.0",
+        "license_letter": "R",
+        "color": "fc0706"
+      },
+      {
+        "license_id": 3,
+        "license_group": 1,
+        "license": "Rookie 3.0",
+        "short_name": "R 3.0",
+        "license_letter": "R",
+        "color": "fc0706"
+      },
+      {
+        "license_id": 4,
+        "license_group": 1,
+        "license": "Rookie 4.0",
+        "short_name": "R 4.0",
+        "license_letter": "R",
+        "color": "fc0706"
+      }
+    ],
+    "min_num_tt": 4
+  },
+  {
+    "license_group": 2,
+    "group_name": "Class D",
+    "min_num_races": 4,
+    "participation_credits": 4,
+    "min_sr_to_fast_track": 400,
+    "levels": [
+      {
+        "license_id": 5,
+        "license_group": 2,
+        "license": "Class D 1.0",
+        "short_name": "D 1.0",
+        "license_letter": "D",
+        "color": "fc8a27"
+      },
+      {
+        "license_id": 6,
+        "license_group": 2,
+        "license": "Class D 2.0",
+        "short_name": "D 2.0",
+        "license_letter": "D",
+        "color": "fc8a27"
+      },
+      {
+        "license_id": 7,
+        "license_group": 2,
+        "license": "Class D 3.0",
+        "short_name": "D 3.0",
+        "license_letter": "D",
+        "color": "fc8a27"
+      },
+      {
+        "license_id": 8,
+        "license_group": 2,
+        "license": "Class D 4.0",
+        "short_name": "D 4.0",
+        "license_letter": "D",
+        "color": "fc8a27"
+      }
+    ],
+    "min_num_tt": 4
+  },
+  {
+    "license_group": 3,
+    "group_name": "Class C",
+    "min_num_races": 4,
+    "participation_credits": 4,
+    "min_sr_to_fast_track": 400,
+    "levels": [
+      {
+        "license_id": 9,
+        "license_group": 3,
+        "license": "Class C 1.0",
+        "short_name": "C 1.0",
+        "license_letter": "C",
+        "color": "feec04"
+      },
+      {
+        "license_id": 10,
+        "license_group": 3,
+        "license": "Class C 2.0",
+        "short_name": "C 2.0",
+        "license_letter": "C",
+        "color": "feec04"
+      },
+      {
+        "license_id": 11,
+        "license_group": 3,
+        "license": "Class C 3.0",
+        "short_name": "C 3.0",
+        "license_letter": "C",
+        "color": "feec04"
+      },
+      {
+        "license_id": 12,
+        "license_group": 3,
+        "license": "Class C 4.0",
+        "short_name": "C 4.0",
+        "license_letter": "C",
+        "color": "feec04"
+      }
+    ],
+    "min_num_tt": 4
+  },
+  {
+    "license_group": 4,
+    "group_name": "Class B",
+    "min_num_races": 4,
+    "participation_credits": 7,
+    "min_sr_to_fast_track": 400,
+    "levels": [
+      {
+        "license_id": 13,
+        "license_group": 4,
+        "license": "Class B 1.0",
+        "short_name": "B 1.0",
+        "license_letter": "B",
+        "color": "00c702"
+      },
+      {
+        "license_id": 14,
+        "license_group": 4,
+        "license": "Class B 2.0",
+        "short_name": "B 2.0",
+        "license_letter": "B",
+        "color": "00c702"
+      },
+      {
+        "license_id": 15,
+        "license_group": 4,
+        "license": "Class B 3.0",
+        "short_name": "B 3.0",
+        "license_letter": "B",
+        "color": "00c702"
+      },
+      {
+        "license_id": 16,
+        "license_group": 4,
+        "license": "Class B 4.0",
+        "short_name": "B 4.0",
+        "license_letter": "B",
+        "color": "00c702"
+      }
+    ],
+    "min_num_tt": 4
+  },
+  {
+    "license_group": 5,
+    "group_name": "Class A",
+    "min_num_races": null,
+    "participation_credits": 7,
+    "min_sr_to_fast_track": 400,
+    "levels": [
+      {
+        "license_id": 17,
+        "license_group": 5,
+        "license": "Class A 1.0",
+        "short_name": "A 1.0",
+        "license_letter": "A",
+        "color": "0153db"
+      },
+      {
+        "license_id": 18,
+        "license_group": 5,
+        "license": "Class A 2.0",
+        "short_name": "A 2.0",
+        "license_letter": "A",
+        "color": "0153db"
+      },
+      {
+        "license_id": 19,
+        "license_group": 5,
+        "license": "Class A 3.0",
+        "short_name": "A 3.0",
+        "license_letter": "A",
+        "color": "0153db"
+      },
+      {
+        "license_id": 20,
+        "license_group": 5,
+        "license": "Class A 4.0",
+        "short_name": "A 4.0",
+        "license_letter": "A",
+        "color": "0153db"
+      }
+    ],
+    "min_num_tt": null
+  },
+  {
+    "license_group": 6,
+    "group_name": "Pro",
+    "min_num_races": null,
+    "participation_credits": 0,
+    "min_sr_to_fast_track": null,
+    "levels": [
+      {
+        "license_id": 21,
+        "license_group": 6,
+        "license": "Pro 1.0",
+        "short_name": "P 1.0",
+        "license_letter": "P",
+        "color": "000000"
+      },
+      {
+        "license_id": 22,
+        "license_group": 6,
+        "license": "Pro 2.0",
+        "short_name": "P 2.0",
+        "license_letter": "P",
+        "color": "000000"
+      },
+      {
+        "license_id": 23,
+        "license_group": 6,
+        "license": "Pro 3.0",
+        "short_name": "P 3.0",
+        "license_letter": "P",
+        "color": "000000"
+      },
+      {
+        "license_id": 24,
+        "license_group": 6,
+        "license": "Pro 4.0",
+        "short_name": "P 4.0",
+        "license_letter": "P",
+        "color": "000000"
+      }
+    ],
+    "min_num_tt": null
+  },
+  {
+    "license_group": 7,
+    "group_name": "Pro/WC",
+    "min_num_races": null,
+    "participation_credits": 0,
+    "min_sr_to_fast_track": null,
+    "levels": [
+      {
+        "license_id": 25,
+        "license_group": 7,
+        "license": "Pro/WC 1.0",
+        "short_name": "PWC 1.0",
+        "license_letter": "PWC",
+        "color": "000000"
+      },
+      {
+        "license_id": 26,
+        "license_group": 7,
+        "license": "Pro/WC 2.0",
+        "short_name": "PWC 2.0",
+        "license_letter": "PWC",
+        "color": "000000"
+      },
+      {
+        "license_id": 27,
+        "license_group": 7,
+        "license": "Pro/WC 3.0",
+        "short_name": "PWC 3.0",
+        "license_letter": "PWC",
+        "color": "000000"
+      },
+      {
+        "license_id": 28,
+        "license_group": 7,
+        "license": "Pro/WC 4.0",
+        "short_name": "PWC 4.0",
+        "license_letter": "PWC",
+        "color": "000000"
+      }
+    ],
+    "min_num_tt": null
+  }
+]

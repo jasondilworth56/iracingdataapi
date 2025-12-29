@@ -1,0 +1,127 @@
+{
+  "subscribed": false,
+  "success": true,
+  "points_systems": [
+    {
+      "points_system_id": 1,
+      "name": "None",
+      "description": "No points will be awarded.  The league administrator will assign points at a later date.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 12,
+      "name": "ARCA",
+      "description": "1st through 43rd earn points. Pole Position awards 1 point. Leading a Lap awards 1 point. Leading the Most Laps awards 1 point.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 8,
+      "name": "Club Racing",
+      "description": "1st through 20th earn points. ",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 14,
+      "name": "European Endurance",
+      "description": "1st through 10th earn decreasing amounts of points. All other drivers earn 1 point.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 4,
+      "name": "Grand Prix",
+      "description": "Positions 1 through 10 awarded 25, 18, 15, 12, 10, 8, 6, 4, 2, and 1 points.  Remaining positions awarded 0 points.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 11,
+      "name": "IMSA",
+      "description": "1st through 30th earn points.\\n\\nQualifying is scored at 1/10 the points value of the Race.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 9,
+      "name": "Modern Grand Prix",
+      "description": "1st through 10th earn points. Fastest Lap in the Race awards an extra point.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 16,
+      "name": "NASCAR",
+      "description": "1st through 40th earn points.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 6,
+      "name": "Off Road Trucks",
+      "description": "1st through 5th earn points in Qualifying. 1st through 26th earn points in the Race.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 3,
+      "name": "Oval",
+      "description": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 10,
+      "name": "Rallycross",
+      "description": "1st through 6th earn points in Qualifying. 1st through 8th earn points in the Heats. 1st through 10th earn points in the Feature.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 7,
+      "name": "Two Race Weekend",
+      "description": "1st through 10th score points in both the Sprint and Feature. Pole Position awards 4 points. Fastest Lap in each race awards 2 points.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 13,
+      "name": "US Open Wheel",
+      "description": "1st through 33rd earn points. Pole Position awards 1 point. Leading a Lap awards 1 point. Leading the Most Laps awards 2 points.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 5,
+      "name": "USAC",
+      "description": "70 points for 1st, decreasing by 3 for top 10, decreasing by 2 for 11th through 20th.  Balance of field 23 each.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    },
+    {
+      "points_system_id": 15,
+      "name": "World of Outlaws",
+      "description": "All drivers receive points for entry. All drivers in the Feature earn more points.",
+      "league_id": 0,
+      "retired": false,
+      "iracing_system": true
+    }
+  ],
+  "league_id": 13561
+}

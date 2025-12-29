@@ -1,0 +1,26 @@
+{
+  "year": 2025,
+  "stats": {
+    "starts": 25,
+    "wins": 3,
+    "top5": 13,
+    "avg_start_position": 8,
+    "avg_finish_position": 8,
+    "laps": 578,
+    "laps_led": 28,
+    "favorite_car": {
+      "car_id": 67,
+      "car_name": "Global Mazda MX-5 Cup",
+      "car_image": "https://images-static.iracing.com/img/cars/globalmazdamx5cup/globalmazdamx5cup-small.jpg"
+    },
+    "favorite_track": {
+      "config_name": "24 Heures du Mans",
+      "track_id": 268,
+      "track_logo": "https://images-static.iracing.com/img/logos/tracks/circuitdes24heuresdumans-logo.png",
+      "track_name": "Circuit des 24 Heures du Mans"
+    }
+  },
+  "success": true,
+  "season": 4,
+  "cust_id": 209179
+}

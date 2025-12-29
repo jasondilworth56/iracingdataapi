@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "subscribed": false,
+  "league_id": 637,
+  "season_id": 128114,
+  "sessions": [
+    {
+      "cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights",
+          "car_class_id": 0,
+          "car_class_name": "Hosted All Cars Class"
+        }
+      ],
+      "driver_changes": false,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-12-21T19:30:00Z",
+      "league_id": 637,
+      "league_season_id": 128114,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 90,
+      "private_session_id": 4892249,
+      "qualify_laps": 0,
+      "qualify_length": 30,
+      "race_laps": 22,
+      "race_length": 60,
+      "session_id": 295162238,
+      "status": 4,
+      "subsession_id": 82074245,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Bike",
+        "track_id": 526,
+        "track_name": "Circuit de Spa-Francorchamps"
+      },
+      "track_state": {
+        "leave_marbles": false,
+        "practice_grip_compound": -1,
+        "practice_rubber": -1,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 1,
+          "temp_high": 19.8,
+          "temp_low": 19.1,
+          "temp_units": 1,
+          "wind_dir": 5,
+          "wind_high": 3.3,
+          "wind_low": 1.9,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": 856613,
+      "winner_name": "Yohann Enette"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights",
+          "car_class_id": 0,
+          "car_class_name": "Hosted All Cars Class"
+        }
+      ],
+      "driver_changes": false,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-12-28T19:30:00Z",
+      "league_id": 637,
+      "league_season_id": 128114,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 90,
+      "private_session_id": 4894238,
+      "qualify_laps": 0,
+      "qualify_length": 30,
+      "race_laps": 36,
+      "race_length": 60,
+      "session_id": 295895198,
+      "status": 4,
+      "subsession_id": 82262357,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Road Course",
+        "track_id": 448,
+        "track_name": "Indianapolis Motor Speedway"
+      },
+      "track_state": {
+        "leave_marbles": false,
+        "practice_grip_compound": -1,
+        "practice_rubber": -1,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 3,
+          "skies_low": 1,
+          "temp_high": 19.4,
+          "temp_low": 18.9,
+          "temp_units": 1,
+          "wind_dir": 4,
+          "wind_high": 9.5,
+          "wind_low": 6.9,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": 399929,
+      "winner_name": "Nick N\u00e4gler"
+    }
+  ]
+}

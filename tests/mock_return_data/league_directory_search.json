@@ -1,0 +1,145 @@
+{
+  "results_page": [
+    {
+      "league_id": 1303,
+      "owner_id": 156134,
+      "league_name": "#1 Open Wheel Racing League",
+      "created": "2014-10-26T05:55:40Z",
+      "about": "Welcome to the #1 Open Wheel Racing League! Our mission here is one objective. Formula 1 On Ovals!Come test your skills against the best open wheel cars in the world and the best drivers in the world! FW31's are a great car to drive and are a blast on ovals. come see for yourself! All are welcome to join and have a great time! Goodluck and God Speed!",
+      "url": "None",
+      "roster_count": 414,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 156134,
+        "display_name": "Thomas Gould",
+        "helmet": {
+          "pattern": 3,
+          "color1": "1500db",
+          "color2": "ffffff",
+          "color3": "ff1414",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 1238,
+      "owner_id": 145791,
+      "league_name": "16th & Georgetown",
+      "created": "2014-09-06T18:56:10Z",
+      "about": "IMS-only series!  DW12 on the oval every other week.  On &#8220;even&#8221; weeks, we run something fun/interesting: GT3 cars on the road course, the L49 on the oval, Skip Barbers on the MotoGP layout, fixed trucks on the oval, etc.\n\nJust testing things out during S3 here.  First &#8220;live&#8221; season will start in S4 2013.\n\nShooting for 60-90 minutes on the races.  So the DW12s will run the Indy 200.  The GT3 Challenge cars will run a timed 75 minutes session.  The Trucks will run 150 miles.\n\nWhen iRacing permits it, &#8220;even&#8221; weeks will have tournaments, &#8220;odd&#8221; weeks will feature proper Indy 500-style 4-lap qualifying sessions, etc.\n\nPlease let me know if you have any questions or feedback!",
+      "url": "None",
+      "roster_count": 1,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 145791,
+        "display_name": "Justin Dion",
+        "helmet": {
+          "pattern": 13,
+          "color1": "ECF816",
+          "color2": "000000",
+          "color3": "ECF72B",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 6034,
+      "owner_id": 315240,
+      "league_name": "2021 AVSS 250",
+      "created": "2020-12-07T05:55:59Z",
+      "about": "2021 Auto Value Super Sprints (AVSS) 250: The most challenging car on iRacing takes the shining light in the AVSS 250. A one-of-a-kind event that test a driver's and car's ability to sprint to the finish but have the endurance to last 250 laps. The hills of North Carolina hide the hidden and forgotten gem of North Wilksboro Speedway. The AVSS 250 brings the ghost back to life and ignites a new flame.",
+      "url": "http://facebook.com/elbowsupsimsport",
+      "roster_count": 2,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 315240,
+        "display_name": "Zane Scott",
+        "helmet": {
+          "pattern": 0,
+          "color1": "ffffff",
+          "color2": "ffffff",
+          "color3": "ffffff",
+          "face_type": 8,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 5590,
+      "owner_id": 543947,
+      "league_name": "313 Racing League",
+      "created": "2020-09-08T06:39:22Z",
+      "about": "Just a bunch of mates racing to see who the fastest is.",
+      "roster_count": 6,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 543947,
+        "display_name": "Dan A Carpenter",
+        "helmet": {
+          "pattern": 68,
+          "color1": "111111",
+          "color2": "bd0303",
+          "color3": "6f2600",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 6905,
+      "owner_id": 286165,
+      "league_name": "a51p test",
+      "created": "2021-05-06T18:11:43Z",
+      "roster_count": 12,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 286165,
+        "display_name": "Nathan Jurgenson",
+        "helmet": {
+          "pattern": 50,
+          "color1": "000000",
+          "color2": "fffc00",
+          "color3": "000000",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    }
+  ],
+  "success": true,
+  "lowerbound": 1,
+  "upperbound": 5,
+  "row_count": 314
+}

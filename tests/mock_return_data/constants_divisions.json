@@ -1,0 +1,50 @@
+[
+  {
+    "label": "ALL",
+    "value": -1
+  },
+  {
+    "label": "Division 1",
+    "value": 0
+  },
+  {
+    "label": "Division 2",
+    "value": 1
+  },
+  {
+    "label": "Division 3",
+    "value": 2
+  },
+  {
+    "label": "Division 4",
+    "value": 3
+  },
+  {
+    "label": "Division 5",
+    "value": 4
+  },
+  {
+    "label": "Division 6",
+    "value": 5
+  },
+  {
+    "label": "Division 7",
+    "value": 6
+  },
+  {
+    "label": "Division 8",
+    "value": 7
+  },
+  {
+    "label": "Division 9",
+    "value": 8
+  },
+  {
+    "label": "Division 10",
+    "value": 9
+  },
+  {
+    "label": "Rookie",
+    "value": 10
+  }
+]

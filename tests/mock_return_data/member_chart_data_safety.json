@@ -1,0 +1,37 @@
+{
+  "blackout": false,
+  "category_id": 2,
+  "chart_type": 3,
+  "data": [
+    {
+      "when": "2015-09-23",
+      "value": 1250
+    },
+    {
+      "when": "2015-09-28",
+      "value": 1266
+    },
+    {
+      "when": "2015-10-05",
+      "value": 1286
+    },
+    {
+      "when": "2015-10-13",
+      "value": 1277
+    },
+    {
+      "when": "2015-10-20",
+      "value": 2266
+    },
+    {
+      "when": "2015-10-27",
+      "value": 2336
+    },
+    {
+      "when": "2015-11-03",
+      "value": 2339
+    }
+  ],
+  "success": true,
+  "cust_id": 209179
+}

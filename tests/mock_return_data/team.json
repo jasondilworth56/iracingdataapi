@@ -1,0 +1,78 @@
+{
+  "team_id": -90444,
+  "owner_id": 209179,
+  "team_name": "Prestanda NOMAD #56",
+  "created": "2018-01-08T13:24:31Z",
+  "hidden": false,
+  "message": "https://www.nomadsimracing.co.uk",
+  "about": "Use for: UKSR #56 \n IVRA Clubsport #56",
+  "url": "https://www.nomadsimracing.co.uk",
+  "roster_count": 17,
+  "recruiting": false,
+  "private_wall": true,
+  "is_default": false,
+  "is_owner": true,
+  "is_admin": true,
+  "suit": {
+    "pattern": 17,
+    "color1": "194C5F",
+    "color2": "FFFFFF",
+    "color3": "FFD825"
+  },
+  "owner": {
+    "cust_id": 209179,
+    "display_name": "Jason Dilworth",
+    "helmet": {
+      "pattern": 66,
+      "color1": "01606f",
+      "color2": "00dbc9",
+      "color3": "ffffff",
+      "face_type": 8,
+      "helmet_type": 0
+    },
+    "owner": true,
+    "admin": true
+  },
+  "tags": {
+    "categorized": [],
+    "not_categorized": []
+  },
+  "team_applications": [],
+  "pending_requests": [
+    {
+      "cust_id": 1111111,
+      "display_name": "Redacted",
+      "helmet": {
+        "pattern": 61,
+        "color1": "111111",
+        "color2": "ffffff",
+        "color3": "744975",
+        "face_type": 4,
+        "helmet_type": 0
+      },
+      "team_id": -90444,
+      "initiated": "2022-10-30T14:30:02Z",
+      "revoked": false
+    }
+  ],
+  "is_member": true,
+  "is_applicant": false,
+  "is_invite": false,
+  "is_ignored": false,
+  "roster": [
+    {
+      "cust_id": 209179,
+      "display_name": "Jason Dilworth",
+      "helmet": {
+        "pattern": 66,
+        "color1": "01606f",
+        "color2": "00dbc9",
+        "color3": "ffffff",
+        "face_type": 8,
+        "helmet_type": 0
+      },
+      "owner": true,
+      "admin": true
+    }
+  ]
+}

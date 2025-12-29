@@ -1,0 +1,2622 @@
+{
+  "success": true,
+  "season_id": 5935,
+  "schedules": [
+    {
+      "season_id": 5935,
+      "race_week_num": 0,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2025-12-16",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2025-12-16",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Grand Prix",
+        "track_id": 572,
+        "track_name": "Aut\u00f3dromo Hermanos Rodr\u00edguez"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": 4362066274603862,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 42,
+        "simulated_start_time": "2025-12-20T12:00:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 70,
+        "time_of_day": 9,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 0,
+          "skies_low": 0,
+          "temp_high": 22.2,
+          "temp_low": 21.3,
+          "temp_units": 1,
+          "wind_dir": 4,
+          "wind_high": 10.9,
+          "wind_low": 8,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw0_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=0374fea87cea151cf89d6a0e59f58e09aad7ec1e18379f9ccc8820ae088768ec",
+        "wind_dir": 4,
+        "wind_units": 0,
+        "wind_value": 4
+      },
+      "week_end_time": "2025-12-22T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 1,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2025-12-23",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2025-12-23",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "International",
+        "track_id": 95,
+        "track_name": "Sebring International Raceway"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 0,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": -263981596325509,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 8,
+        "rel_humidity": 84,
+        "simulated_start_time": "2026-02-10T18:10:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 69,
+        "time_of_day": 8,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 48,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 20,
+          "temp_low": 19.7,
+          "temp_units": 1,
+          "wind_dir": 2,
+          "wind_high": 20.7,
+          "wind_low": 17.7,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw1_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=abd91ba64a955a23c0c40bc2b3651eebcb821711138c83f7bbc89c5996a09b44",
+        "wind_dir": 0,
+        "wind_units": 0,
+        "wind_value": 6
+      },
+      "week_end_time": "2025-12-29T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 2,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2025-12-30",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2025-12-30",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "24 Heures du Mans",
+        "track_id": 268,
+        "track_name": "Circuit des 24 Heures du Mans"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": 2358757913808172,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 61,
+        "simulated_start_time": "2026-03-01T17:00:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 65,
+        "time_of_day": 2,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 2,
+          "temp_high": 18.7,
+          "temp_low": 18.8,
+          "temp_units": 1,
+          "wind_dir": 5,
+          "wind_high": 16.2,
+          "wind_low": 15.7,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw2_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=ff78885130ebacc0e4f4ff44bbe602685de1554a3a8c40036611901845fa1274",
+        "wind_dir": 5,
+        "wind_units": 0,
+        "wind_value": 8
+      },
+      "week_end_time": "2026-01-05T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 3,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-01-06",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-01-06",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Grand Prix",
+        "track_id": 403,
+        "track_name": "Red Bull Ring"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": 613516588959157,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 79,
+        "simulated_start_time": "2026-03-01T08:55:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 65,
+        "time_of_day": 1,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 2,
+          "temp_high": 18.4,
+          "temp_low": 18.4,
+          "temp_units": 1,
+          "wind_dir": 5,
+          "wind_high": 6.8,
+          "wind_low": 6.6,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw3_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=6703701880d604ae55766ef14b7d43058a77b0e4fe7a0ee0c919ca1a6754acdb",
+        "wind_dir": 7,
+        "wind_units": 0,
+        "wind_value": 4
+      },
+      "week_end_time": "2026-01-12T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 4,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-01-13",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-01-13",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Road Course",
+        "track_id": 192,
+        "track_name": "Daytona International Speedway"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": -1990692123887647,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 48,
+        "simulated_start_time": "2026-04-01T20:35:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 77,
+        "time_of_day": 3,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 2,
+          "temp_high": 22.1,
+          "temp_low": 21.8,
+          "temp_units": 1,
+          "wind_dir": 2,
+          "wind_high": 12.2,
+          "wind_low": 11.8,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw4_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=f45b1aadfc3286c62d0dfeb7497acda4022aeff96f4a98b3af9ba768902d752e",
+        "wind_dir": 2,
+        "wind_units": 0,
+        "wind_value": 11
+      },
+      "week_end_time": "2026-01-19T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 5,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-01-20",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-01-20",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Motorcycle Grand Prix",
+        "track_id": 478,
+        "track_name": "MotorLand Arag\u00f3n"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 0,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": 2257441000999661,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 8,
+        "rel_humidity": 57,
+        "simulated_start_time": "2026-03-01T09:30:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 66,
+        "time_of_day": 1,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 34,
+          "skies_high": 3,
+          "skies_low": 2,
+          "temp_high": 18.6,
+          "temp_low": 18.7,
+          "temp_units": 1,
+          "wind_dir": 0,
+          "wind_high": 19.2,
+          "wind_low": 15.5,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw5_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=93883954aa589edc67f2e5a0e7de088395673daa02740166aa0d907a12d398c6",
+        "wind_dir": 6,
+        "wind_units": 0,
+        "wind_value": 11
+      },
+      "week_end_time": "2026-01-26T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 6,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-01-27",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-01-27",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Boot",
+        "track_id": 434,
+        "track_name": "Watkins Glen International"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": -1084089793004646,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 73,
+        "simulated_start_time": "2026-05-01T14:20:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 65,
+        "time_of_day": 0,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 3,
+          "skies_low": 1,
+          "temp_high": 21.6,
+          "temp_low": 20.4,
+          "temp_units": 1,
+          "wind_dir": 4,
+          "wind_high": 15,
+          "wind_low": 12.3,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw6_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=7b1ddf2a97ce0b1c482ecd6b3281a49264dfddf0360874096995230af2956fc9",
+        "wind_dir": 6,
+        "wind_units": 0,
+        "wind_value": 6
+      },
+      "week_end_time": "2026-02-02T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 7,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-02-03",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-02-03",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Moto",
+        "track_id": 474,
+        "track_name": "Circuito de Jerez - \u00c1ngel Nieto"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": 1793074752647630,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 66,
+        "simulated_start_time": "2026-03-01T12:00:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 67,
+        "time_of_day": 9,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 0,
+          "skies_low": 0,
+          "temp_high": 19.8,
+          "temp_low": 19.5,
+          "temp_units": 1,
+          "wind_dir": 6,
+          "wind_high": 18.3,
+          "wind_low": 17.9,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw7_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=11be469b874219633149def4d289ffec78c2d0ff40f19baf84bc470dfb6413cc",
+        "wind_dir": 5,
+        "wind_units": 0,
+        "wind_value": 10
+      },
+      "week_end_time": "2026-02-09T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 8,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-02-10",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-02-10",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Full Course",
+        "track_id": 18,
+        "track_name": "Road America"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": 896626515328021,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 60,
+        "simulated_start_time": "2026-04-01T17:50:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 65,
+        "time_of_day": 2,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 18.9,
+          "temp_low": 18.9,
+          "temp_units": 1,
+          "wind_dir": 1,
+          "wind_high": 11.7,
+          "wind_low": 9.5,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw8_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=45168ad3ccb545db9de1811258a8a8fa83cb8115ba0205a4146268ef2e730a6e",
+        "wind_dir": 0,
+        "wind_units": 0,
+        "wind_value": 13
+      },
+      "week_end_time": "2026-02-16T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 9,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-02-17",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-02-17",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Grand Prix",
+        "track_id": 212,
+        "track_name": "Aut\u00f3dromo Jos\u00e9 Carlos Pace"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": -2049881023849395,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 70,
+        "simulated_start_time": "2026-02-21T07:30:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 76,
+        "time_of_day": 1,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 2,
+          "temp_high": 21.4,
+          "temp_low": 21,
+          "temp_units": 1,
+          "wind_dir": 2,
+          "wind_high": 16.3,
+          "wind_low": 15.3,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw9_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=383ef2b1c9ba28f0e1e9a32c28d8d4cba28868215a50bf84dd1cc625f787c230",
+        "wind_dir": 3,
+        "wind_units": 0,
+        "wind_value": 8
+      },
+      "week_end_time": "2026-02-23T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 10,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-02-24",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-02-24",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Grand Prix",
+        "track_id": 239,
+        "track_name": "Autodromo Nazionale Monza"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 0,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": -1659936399302288,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 8,
+        "rel_humidity": 73,
+        "simulated_start_time": "2026-04-01T14:05:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 65,
+        "time_of_day": 0,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 31,
+          "skies_high": 3,
+          "skies_low": 3,
+          "temp_high": 19,
+          "temp_low": 19,
+          "temp_units": 1,
+          "wind_dir": 6,
+          "wind_high": 8,
+          "wind_low": 7.4,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw10_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=e9f125b8c6c9819e6dd3e1629b26736f53be0d293727d4fb3d47978c2d96baf9",
+        "wind_dir": 1,
+        "wind_units": 0,
+        "wind_value": 4
+      },
+      "week_end_time": "2026-03-02T22:45:00Z"
+    },
+    {
+      "season_id": 5935,
+      "race_week_num": 11,
+      "car_restrictions": [
+        {
+          "car_id": 128,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 80,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 132,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 133,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 156,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 159,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 168,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 169,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 170,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 173,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 174,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 184,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 185,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 188,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 194,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 196,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 65,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        },
+        {
+          "car_id": 206,
+          "max_dry_tire_sets": 0,
+          "max_pct_fuel_fill": 50,
+          "power_adjust_pct": 0,
+          "weight_penalty_kg": 0
+        }
+      ],
+      "category": "sports_car",
+      "category_id": 5,
+      "enable_pitlane_collisions": false,
+      "full_course_cautions": false,
+      "practice_length": 3,
+      "qual_attached": true,
+      "qual_time_descriptors": [],
+      "qualify_laps": 2,
+      "qualify_length": 8,
+      "race_lap_limit": null,
+      "race_time_descriptors": [
+        {
+          "day_offset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_session_time": "00:45:00",
+          "repeat_minutes": 120,
+          "repeating": true,
+          "session_minutes": 59,
+          "start_date": "2026-03-03",
+          "super_session": false
+        }
+      ],
+      "race_time_limit": 45,
+      "race_week_car_class_ids": [],
+      "race_week_cars": [],
+      "restart_type": "Double-file Back",
+      "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
+      "season_name": "IMSA iRacing Series - 2026 Season 1",
+      "series_id": 447,
+      "series_name": "IMSA iRacing Series",
+      "short_parade_lap": false,
+      "special_event_type": null,
+      "start_date": "2026-03-03",
+      "start_type": "Rolling",
+      "start_zone": false,
+      "track": {
+        "category": "road",
+        "category_id": 2,
+        "config_name": "Grand Prix",
+        "track_id": 539,
+        "track_name": "Miami International Autodrome"
+      },
+      "track_state": {
+        "leave_marbles": true
+      },
+      "warmup_length": 0,
+      "weather": {
+        "allow_fog": false,
+        "forecast_options": {
+          "allow_fog": false,
+          "forecast_type": 1,
+          "precipitation": 1,
+          "skies": 0,
+          "stop_precip": 0,
+          "temperature": 0,
+          "weather_seed": -2445418029463578,
+          "wind_dir": 0,
+          "wind_speed": 0
+        },
+        "precip_option": 0,
+        "rel_humidity": 51,
+        "simulated_start_time": "2026-04-01T12:00:00",
+        "simulated_time_multiplier": 1,
+        "simulated_time_offsets": [
+          15,
+          35
+        ],
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 79,
+        "time_of_day": 9,
+        "track_water": 0,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 26.9,
+          "temp_low": 26.2,
+          "temp_units": 1,
+          "wind_dir": 2,
+          "wind_high": 21.2,
+          "wind_low": 20.7,
+          "wind_units": 1
+        },
+        "weather_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/non_expiring/weather-forecast/season/5935/rw11_evt5_display.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105456Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=dc58881a1661c8adb18b824229f675fc74abbf3814c91bb2ec7d8bab1a558d5d",
+        "wind_dir": 2,
+        "wind_units": 0,
+        "wind_value": 12
+      },
+      "week_end_time": "2026-03-09T22:45:00Z"
+    }
+  ]
+}

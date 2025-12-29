@@ -1,0 +1,165 @@
+{
+  "team_id": -90444,
+  "owner_id": 209179,
+  "team_name": "Prestanda NOMAD #56",
+  "created": "2018-01-08T13:24:31Z",
+  "hidden": false,
+  "message": "https://www.nomadsimracing.co.uk",
+  "about": "Use for: UKSR #56 \n IVRA Clubsport #56",
+  "url": "https://www.nomadsimracing.co.uk",
+  "roster_count": 17,
+  "recruiting": false,
+  "private_wall": true,
+  "is_default": false,
+  "is_owner": true,
+  "is_admin": true,
+  "suit": {
+    "pattern": 17,
+    "color1": "194C5F",
+    "color2": "FFFFFF",
+    "color3": "FFD825"
+  },
+  "owner": {
+    "cust_id": 209179,
+    "display_name": "Jason Dilworth",
+    "helmet": {
+      "pattern": 66,
+      "color1": "01606f",
+      "color2": "00dbc9",
+      "color3": "ffffff",
+      "face_type": 8,
+      "helmet_type": 0
+    },
+    "owner": true,
+    "admin": true
+  },
+  "tags": {
+    "categorized": [],
+    "not_categorized": []
+  },
+  "team_applications": [],
+  "pending_requests": [
+    {
+      "cust_id": 573706,
+      "display_name": "Lachlan Cooley",
+      "helmet": {
+        "pattern": 61,
+        "color1": "111111",
+        "color2": "ffffff",
+        "color3": "744975",
+        "face_type": 4,
+        "helmet_type": 0
+      },
+      "team_id": -90444,
+      "initiated": "2022-10-30T14:30:02Z",
+      "revoked": false
+    }
+  ],
+  "is_member": true,
+  "is_applicant": false,
+  "is_invite": false,
+  "is_ignored": false,
+  "roster": [
+    {
+      "cust_id": 209179,
+      "display_name": "Jason Dilworth",
+      "helmet": {
+        "pattern": 66,
+        "color1": "01606f",
+        "color2": "00dbc9",
+        "color3": "ffffff",
+        "face_type": 8,
+        "helmet_type": 0
+      },
+      "licenses": [
+        {
+          "category_id": 1,
+          "category": "oval",
+          "category_name": "Oval",
+          "license_level": 6,
+          "safety_rating": 2.43,
+          "cpi": 14.272879,
+          "irating": 1430,
+          "tt_rating": 1350,
+          "mpr_num_races": 0,
+          "color": "fc8a27",
+          "group_name": "Class D",
+          "group_id": 2,
+          "pro_promotable": false,
+          "seq": 1,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 5,
+          "category": "sports_car",
+          "category_name": "Sports Car",
+          "license_level": 20,
+          "safety_rating": 4.99,
+          "cpi": 232.04012,
+          "irating": 4201,
+          "tt_rating": 1350,
+          "mpr_num_races": 2,
+          "color": "0153db",
+          "group_name": "Class A",
+          "group_id": 5,
+          "pro_promotable": false,
+          "seq": 2,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 6,
+          "category": "formula_car",
+          "category_name": "Formula Car",
+          "license_level": 14,
+          "safety_rating": 2.04,
+          "cpi": 23.7156,
+          "irating": 4670,
+          "tt_rating": 1350,
+          "mpr_num_races": 0,
+          "color": "00c702",
+          "group_name": "Class B",
+          "group_id": 4,
+          "pro_promotable": false,
+          "seq": 3,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 3,
+          "category": "dirt_oval",
+          "category_name": "Dirt Oval",
+          "license_level": 2,
+          "safety_rating": 2.5,
+          "cpi": 10.10941,
+          "irating": 1350,
+          "tt_rating": 1350,
+          "mpr_num_races": 0,
+          "color": "fc0706",
+          "group_name": "Rookie",
+          "group_id": 1,
+          "pro_promotable": false,
+          "seq": 4,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 4,
+          "category": "dirt_road",
+          "category_name": "Dirt Road",
+          "license_level": 2,
+          "safety_rating": 2.99,
+          "cpi": 13.976458,
+          "irating": 1407,
+          "tt_rating": 1350,
+          "mpr_num_races": 6,
+          "color": "fc0706",
+          "group_name": "Rookie",
+          "group_id": 1,
+          "pro_promotable": false,
+          "seq": 5,
+          "mpr_num_tts": 0
+        }
+      ],
+      "owner": true,
+      "admin": true
+    }
+  ]
+}

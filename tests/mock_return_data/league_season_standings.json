@@ -1,0 +1,1262 @@
+{
+  "car_class_id": 0,
+  "success": true,
+  "season_id": 128114,
+  "car_id": 0,
+  "standings": {
+    "driver_standings": [
+      {
+        "rownum": 1,
+        "position": 1,
+        "driver": {
+          "cust_id": 442249,
+          "display_name": "Brad Fullagar",
+          "helmet": {
+            "pattern": 11,
+            "color1": "f5fc54",
+            "color2": "ed2129",
+            "color3": "2a3795",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "18",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 2,
+        "average_finish": 2,
+        "base_points": 84,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 84
+      },
+      {
+        "rownum": 2,
+        "position": 2,
+        "driver": {
+          "cust_id": 399929,
+          "display_name": "Nick N\u00e4gler",
+          "helmet": {
+            "pattern": 0,
+            "color1": "cbff29",
+            "color2": "000000",
+            "color3": "000000",
+            "face_type": 9,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "15",
+        "driver_nickname": null,
+        "wins": 1,
+        "average_start": 4,
+        "average_finish": 3,
+        "base_points": 83,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 83
+      },
+      {
+        "rownum": 3,
+        "position": 3,
+        "driver": {
+          "cust_id": 637490,
+          "display_name": "Aleksei Iukish",
+          "helmet": {
+            "pattern": 60,
+            "color1": "9d0083",
+            "color2": "ffa800",
+            "color3": "d50000",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 5,
+        "average_finish": 5,
+        "base_points": 78,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 78
+      },
+      {
+        "rownum": 4,
+        "position": 4,
+        "driver": {
+          "cust_id": 975282,
+          "display_name": "Stefan Doderer",
+          "helmet": {
+            "pattern": 53,
+            "color1": "111111",
+            "color2": "000000",
+            "color3": "ffde00",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "00",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 10,
+        "average_finish": 7,
+        "base_points": 75,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 75
+      },
+      {
+        "rownum": 5,
+        "position": 4,
+        "driver": {
+          "cust_id": 42528,
+          "display_name": "Antonio A Jimenez Tellez",
+          "helmet": {
+            "pattern": 42,
+            "color1": "020c63",
+            "color2": "dddddd",
+            "color3": "666666",
+            "face_type": 6,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "1",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 6,
+        "average_finish": 7,
+        "base_points": 75,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 75
+      },
+      {
+        "rownum": 6,
+        "position": 6,
+        "driver": {
+          "cust_id": 367893,
+          "display_name": "Andy Flint",
+          "helmet": {
+            "pattern": 49,
+            "color1": "121116",
+            "color2": "ffffff",
+            "color3": "debb1d",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "13",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 14,
+        "average_finish": 9,
+        "base_points": 71,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 71
+      },
+      {
+        "rownum": 7,
+        "position": 7,
+        "driver": {
+          "cust_id": 367574,
+          "display_name": "Denis Cornu",
+          "helmet": {
+            "pattern": 14,
+            "color1": "ffffff",
+            "color2": "f27536",
+            "color3": "f1e42e",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 16,
+        "average_finish": 11,
+        "base_points": 67,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 67
+      },
+      {
+        "rownum": 8,
+        "position": 8,
+        "driver": {
+          "cust_id": 70306,
+          "display_name": "Robert Ridgway",
+          "helmet": {
+            "pattern": 36,
+            "color1": "ffffff",
+            "color2": "202020",
+            "color3": "000000",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "17",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 17,
+        "average_finish": 12,
+        "base_points": 65,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 65
+      },
+      {
+        "rownum": 9,
+        "position": 9,
+        "driver": {
+          "cust_id": 959800,
+          "display_name": "Scott Taylor25",
+          "helmet": {
+            "pattern": 59,
+            "color1": "b83030",
+            "color2": "ffffff",
+            "color3": "283394",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "58",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 16,
+        "average_finish": 12,
+        "base_points": 64,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 64
+      },
+      {
+        "rownum": 10,
+        "position": 10,
+        "driver": {
+          "cust_id": 894807,
+          "display_name": "Patrick J Williams",
+          "helmet": {
+            "pattern": 34,
+            "color1": "800101",
+            "color2": "000000",
+            "color3": "c6d000",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "47",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 15,
+        "average_finish": 13,
+        "base_points": 62,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 62
+      },
+      {
+        "rownum": 11,
+        "position": 11,
+        "driver": {
+          "cust_id": 516202,
+          "display_name": "Ludovic Ran\u00e7on",
+          "helmet": {
+            "pattern": 65,
+            "color1": "2A3795",
+            "color2": "ED2129",
+            "color3": "ffffff",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 8,
+        "average_finish": 15,
+        "base_points": 58,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 58
+      },
+      {
+        "rownum": 12,
+        "position": 12,
+        "driver": {
+          "cust_id": 253777,
+          "display_name": "Kouji Itoh",
+          "helmet": {
+            "pattern": 6,
+            "color1": "D72332",
+            "color2": "cccccc",
+            "color3": "666666",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "146",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 27,
+        "average_finish": 20,
+        "base_points": 49,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 49
+      },
+      {
+        "rownum": 13,
+        "position": 13,
+        "driver": {
+          "cust_id": 1094517,
+          "display_name": "Justin Fields",
+          "helmet": {
+            "pattern": 1,
+            "color1": "0704bd",
+            "color2": "ffffff",
+            "color3": "000000",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "678",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 20,
+        "average_finish": 20,
+        "base_points": 48,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 48
+      },
+      {
+        "rownum": 14,
+        "position": 14,
+        "driver": {
+          "cust_id": 596077,
+          "display_name": "John S MacKenzie",
+          "helmet": {
+            "pattern": 7,
+            "color1": "eeeeee",
+            "color2": "9c9eac",
+            "color3": "ed2229",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "42",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 26,
+        "average_finish": 21,
+        "base_points": 47,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 47
+      },
+      {
+        "rownum": 15,
+        "position": 15,
+        "driver": {
+          "cust_id": 1165900,
+          "display_name": "Marius B Andersen",
+          "helmet": {
+            "pattern": 28,
+            "color1": "fdfdfd",
+            "color2": "d518ec",
+            "color3": "0a0a0a",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "43",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 11,
+        "average_finish": 21,
+        "base_points": 46,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 46
+      },
+      {
+        "rownum": 16,
+        "position": 16,
+        "driver": {
+          "cust_id": 375767,
+          "display_name": "Adam Talsma",
+          "helmet": {
+            "pattern": 62,
+            "color1": "050505",
+            "color2": "debb1d",
+            "color3": "e8e3d7",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "7",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 33,
+        "average_finish": 22,
+        "base_points": 45,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 45
+      },
+      {
+        "rownum": 17,
+        "position": 16,
+        "driver": {
+          "cust_id": 252954,
+          "display_name": "Marcello Caruso",
+          "helmet": {
+            "pattern": 35,
+            "color1": "ffffff",
+            "color2": "000000",
+            "color3": "0cf0c7",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 21,
+        "average_finish": 22,
+        "base_points": 45,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 45
+      },
+      {
+        "rownum": 18,
+        "position": 18,
+        "driver": {
+          "cust_id": 856613,
+          "display_name": "Yohann Enette",
+          "helmet": {
+            "pattern": 56,
+            "color1": "ffffff",
+            "color2": "0011ff",
+            "color3": "ff0000",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "999",
+        "driver_nickname": null,
+        "wins": 1,
+        "average_start": 1,
+        "average_finish": 1,
+        "base_points": 43,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 43
+      },
+      {
+        "rownum": 19,
+        "position": 18,
+        "driver": {
+          "cust_id": 869697,
+          "display_name": "Nguyen Nguyen",
+          "helmet": {
+            "pattern": 28,
+            "color1": "e30000",
+            "color2": "000000",
+            "color3": "ffffff",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 21,
+        "average_finish": 23,
+        "base_points": 43,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 43
+      },
+      {
+        "rownum": 20,
+        "position": 20,
+        "driver": {
+          "cust_id": 69178,
+          "display_name": "Max Bartolotta",
+          "helmet": {
+            "pattern": 2,
+            "color1": "ffffff",
+            "color2": "f9f9f9",
+            "color3": "ffffff",
+            "face_type": 9,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "157",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 3,
+        "average_finish": 3,
+        "base_points": 41,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 41
+      },
+      {
+        "rownum": 21,
+        "position": 20,
+        "driver": {
+          "cust_id": 398427,
+          "display_name": "Mehmet Emre Tasci",
+          "helmet": {
+            "pattern": 5,
+            "color1": "ffffff",
+            "color2": "ff0000",
+            "color3": "da0000",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 10,
+        "average_finish": 24,
+        "base_points": 41,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 41
+      },
+      {
+        "rownum": 22,
+        "position": 22,
+        "driver": {
+          "cust_id": 935855,
+          "display_name": "Krish Pat",
+          "helmet": {
+            "pattern": 36,
+            "color1": "ff0000",
+            "color2": "000000",
+            "color3": "ff0000",
+            "face_type": 10,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 7,
+        "average_finish": 4,
+        "base_points": 40,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 40
+      },
+      {
+        "rownum": 23,
+        "position": 23,
+        "driver": {
+          "cust_id": 561874,
+          "display_name": "Dorian Arroyo",
+          "helmet": {
+            "pattern": 20,
+            "color1": "8c0584",
+            "color2": "00719f",
+            "color3": "85f0ff",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "2",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 33,
+        "average_finish": 25,
+        "base_points": 39,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 39
+      },
+      {
+        "rownum": 24,
+        "position": 24,
+        "driver": {
+          "cust_id": 817301,
+          "display_name": "Kevin Bylund",
+          "helmet": {
+            "pattern": 9,
+            "color1": "ffffff",
+            "color2": "cdf700",
+            "color3": "490be0",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "19",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 9,
+        "average_finish": 6,
+        "base_points": 38,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 38
+      },
+      {
+        "rownum": 25,
+        "position": 25,
+        "driver": {
+          "cust_id": 816947,
+          "display_name": "Paul Disteli",
+          "helmet": {
+            "pattern": 20,
+            "color1": "00e8ff",
+            "color2": "ebff00",
+            "color3": "ff5f1f",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "303",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 31,
+        "average_finish": 26,
+        "base_points": 37,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 37
+      },
+      {
+        "rownum": 26,
+        "position": 26,
+        "driver": {
+          "cust_id": 154094,
+          "display_name": "Max Giachino",
+          "helmet": {
+            "pattern": 19,
+            "color1": "01c4ca",
+            "color2": "000001",
+            "color3": "ffffff",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "04",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 8,
+        "average_finish": 8,
+        "base_points": 36,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 36
+      },
+      {
+        "rownum": 27,
+        "position": 27,
+        "driver": {
+          "cust_id": 625667,
+          "display_name": "Jimmy Santos",
+          "helmet": {
+            "pattern": 3,
+            "color1": "bd4040",
+            "color2": "6a1d1d",
+            "color3": "9d2b2b",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 21,
+        "average_finish": 27,
+        "base_points": 34,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 34
+      },
+      {
+        "rownum": 28,
+        "position": 28,
+        "driver": {
+          "cust_id": 1073243,
+          "display_name": "Dion Rosa",
+          "helmet": {
+            "pattern": 65,
+            "color1": "ffffff",
+            "color2": "e62212",
+            "color3": "000000",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "316",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 10,
+        "average_finish": 13,
+        "base_points": 31,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 31
+      },
+      {
+        "rownum": 29,
+        "position": 29,
+        "driver": {
+          "cust_id": 1147887,
+          "display_name": "Alex Laan",
+          "helmet": {
+            "pattern": 56,
+            "color1": "2a3795",
+            "color2": "ed2129",
+            "color3": "ffffff",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 34,
+        "average_finish": 30,
+        "base_points": 29,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 29
+      },
+      {
+        "rownum": 30,
+        "position": 30,
+        "driver": {
+          "cust_id": 943260,
+          "display_name": "Scott Haddock",
+          "helmet": {
+            "pattern": 1,
+            "color1": "000000",
+            "color2": "000000",
+            "color3": "000000",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 41,
+        "average_finish": 16,
+        "base_points": 28,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 28
+      },
+      {
+        "rownum": 31,
+        "position": 31,
+        "driver": {
+          "cust_id": 672721,
+          "display_name": "Bruno Danese",
+          "helmet": {
+            "pattern": 50,
+            "color1": "ff00fc",
+            "color2": "00e9f0",
+            "color3": "ffcd4d",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "556",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 30,
+        "average_finish": 18,
+        "base_points": 26,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 26
+      },
+      {
+        "rownum": 32,
+        "position": 32,
+        "driver": {
+          "cust_id": 21092,
+          "display_name": "Ben Goyette",
+          "helmet": {
+            "pattern": 63,
+            "color1": "a7fc46",
+            "color2": "000000",
+            "color3": "a7fc46",
+            "face_type": 10,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "36",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 31,
+        "average_finish": 20,
+        "base_points": 24,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 24
+      },
+      {
+        "rownum": 33,
+        "position": 33,
+        "driver": {
+          "cust_id": 1052790,
+          "display_name": "Harry Sasden",
+          "helmet": {
+            "pattern": 34,
+            "color1": "ff0000",
+            "color2": "00ffff",
+            "color3": "ffffff",
+            "face_type": 10,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "822",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 23,
+        "average_finish": 21,
+        "base_points": 23,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 23
+      },
+      {
+        "rownum": 34,
+        "position": 33,
+        "driver": {
+          "cust_id": 1128190,
+          "display_name": "Andrew Harris18",
+          "helmet": {
+            "pattern": 6,
+            "color1": "43d6db",
+            "color2": "c25cd5",
+            "color3": "ffffff",
+            "face_type": 10,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 20,
+        "average_finish": 33,
+        "base_points": 23,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 23
+      },
+      {
+        "rownum": 35,
+        "position": 35,
+        "driver": {
+          "cust_id": 105603,
+          "display_name": "Luca Varani",
+          "helmet": {
+            "pattern": 20,
+            "color1": "5efe7d",
+            "color2": "41e793",
+            "color3": "41e793",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "222",
+        "driver_nickname": "Luca Varani",
+        "wins": 0,
+        "average_start": 13,
+        "average_finish": 22,
+        "base_points": 22,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 22
+      },
+      {
+        "rownum": 36,
+        "position": 35,
+        "driver": {
+          "cust_id": 460974,
+          "display_name": "Matthew Gracy",
+          "helmet": {
+            "pattern": 2,
+            "color1": "cccccc",
+            "color2": "ed1c24",
+            "color3": "111111",
+            "face_type": 6,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "707",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 32,
+        "average_finish": 33,
+        "base_points": 22,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 22
+      },
+      {
+        "rownum": 37,
+        "position": 37,
+        "driver": {
+          "cust_id": 1341519,
+          "display_name": "Saleem Manjoo",
+          "helmet": {
+            "pattern": 1,
+            "color1": "ec232d",
+            "color2": "ffffff",
+            "color3": "2e358f",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "8",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 31,
+        "average_finish": 24,
+        "base_points": 20,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 20
+      },
+      {
+        "rownum": 38,
+        "position": 38,
+        "driver": {
+          "cust_id": 181830,
+          "display_name": "Richard van Veen",
+          "helmet": {
+            "pattern": 31,
+            "color1": "1687b9",
+            "color2": "ffffff",
+            "color3": "ffffff",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "3",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 23,
+        "average_finish": 35,
+        "base_points": 19,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 19
+      },
+      {
+        "rownum": 39,
+        "position": 39,
+        "driver": {
+          "cust_id": 455872,
+          "display_name": "Edward J Amos",
+          "helmet": {
+            "pattern": 67,
+            "color1": "00f6f6",
+            "color2": "000000",
+            "color3": "000000",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "69",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 25,
+        "average_finish": 28,
+        "base_points": 16,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 16
+      },
+      {
+        "rownum": 40,
+        "position": 40,
+        "driver": {
+          "cust_id": 359882,
+          "display_name": "Philipp Lukas",
+          "helmet": {
+            "pattern": 44,
+            "color1": "ffffff",
+            "color2": "ff0000",
+            "color3": "000000",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 28,
+        "average_finish": 29,
+        "base_points": 15,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 15
+      },
+      {
+        "rownum": 41,
+        "position": 41,
+        "driver": {
+          "cust_id": 108648,
+          "display_name": "Giovanni Sellitto2",
+          "helmet": {
+            "pattern": 58,
+            "color1": "817902",
+            "color2": "000000",
+            "color3": "063f81",
+            "face_type": 8,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "091",
+        "driver_nickname": "Giovanni Sellitto",
+        "wins": 0,
+        "average_start": 36,
+        "average_finish": 30,
+        "base_points": 14,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 14
+      },
+      {
+        "rownum": 42,
+        "position": 41,
+        "driver": {
+          "cust_id": 255734,
+          "display_name": "Vincenzo Taormina",
+          "helmet": {
+            "pattern": 57,
+            "color1": "1e9331",
+            "color2": "fa0a0a",
+            "color3": "f8f5f5",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": null,
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 19,
+        "average_finish": 30,
+        "base_points": 14,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 14
+      },
+      {
+        "rownum": 43,
+        "position": 43,
+        "driver": {
+          "cust_id": 1259938,
+          "display_name": "Jonathan Firquin",
+          "helmet": {
+            "pattern": 0,
+            "color1": "605e5e",
+            "color2": "ff7a00",
+            "color3": "005eff",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "34",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 39,
+        "average_finish": 34,
+        "base_points": 10,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 10
+      },
+      {
+        "rownum": 44,
+        "position": 44,
+        "driver": {
+          "cust_id": 369959,
+          "display_name": "Noel Ritchie-Robinson",
+          "helmet": {
+            "pattern": 58,
+            "color1": "fc0706",
+            "color2": "1b1a9e",
+            "color3": "08084e",
+            "face_type": 6,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "159",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 40,
+        "average_finish": 36,
+        "base_points": 8,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 8
+      },
+      {
+        "rownum": 45,
+        "position": 45,
+        "driver": {
+          "cust_id": 224623,
+          "display_name": "Leonard O Cheri",
+          "helmet": {
+            "pattern": 27,
+            "color1": "4813b9",
+            "color2": "b31f4c",
+            "color3": "c2bebe",
+            "face_type": 10,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "55",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 22,
+        "average_finish": 37,
+        "base_points": 7,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 7
+      },
+      {
+        "rownum": 46,
+        "position": 46,
+        "driver": {
+          "cust_id": 59792,
+          "display_name": "Amal Youness",
+          "helmet": {
+            "pattern": 65,
+            "color1": "000000",
+            "color2": "4a0a5c",
+            "color3": "4a0a5c",
+            "face_type": 10,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "64",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 5,
+        "average_finish": 38,
+        "base_points": 6,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 6
+      },
+      {
+        "rownum": 47,
+        "position": 47,
+        "driver": {
+          "cust_id": 1312007,
+          "display_name": "Samuel D Roberts",
+          "helmet": {
+            "pattern": 1,
+            "color1": "482574",
+            "color2": "111111",
+            "color3": "808080",
+            "face_type": 4,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "46",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 38,
+        "average_finish": 38,
+        "base_points": 2,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 2
+      },
+      {
+        "rownum": 48,
+        "position": 48,
+        "driver": {
+          "cust_id": 94268,
+          "display_name": "Clarke Williams",
+          "helmet": {
+            "pattern": 59,
+            "color1": "000000",
+            "color2": "08a110",
+            "color3": "000000",
+            "face_type": 0,
+            "helmet_type": 0
+          }
+        },
+        "car_number": "98",
+        "driver_nickname": null,
+        "wins": 0,
+        "average_start": 26,
+        "average_finish": 32,
+        "base_points": 0,
+        "negative_adjustments": 0,
+        "positive_adjustments": 0,
+        "total_adjustments": 0,
+        "total_points": 0
+      }
+    ],
+    "team_standings": [],
+    "driver_standings_csv_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/short_lived/league-standings/leagueid_637_driver_standings.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105801Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=fa86f995ce44ab14808356c9afd78e6f9f38ec234d60d90600588c7243a46ae4",
+    "team_standings_csv_url": "https://scorpio-assets.s3.amazonaws.com/members/messaging-services/short_lived/league-standings/leagueid_637_team_standings.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260101T105801Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAUO6OO4A3WX3RTXUZ%2F20260101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=eed6943364787dd55038b197df34a869180c00dd5f133e735448b8d5af18a03d"
+  },
+  "league_id": 637
+}

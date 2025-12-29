@@ -1,0 +1,17 @@
+{
+  "year": 2026,
+  "stats": {
+    "starts": 0,
+    "wins": 0,
+    "top5": 0,
+    "avg_start_position": 0,
+    "avg_finish_position": 0,
+    "laps": 0,
+    "laps_led": 0,
+    "favorite_car": null,
+    "favorite_track": null
+  },
+  "success": true,
+  "season": null,
+  "cust_id": 209179
+}

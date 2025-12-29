@@ -1,0 +1,3154 @@
+{
+  "subscribed": false,
+  "sessions": [
+    {
+      "season_id": 5893,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 139,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:26:00Z",
+      "session_id": 296272764,
+      "entry_count": 221
+    },
+    {
+      "season_id": 5943,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 498,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:29:00Z",
+      "session_id": 296272809,
+      "entry_count": 41
+    },
+    {
+      "season_id": 5937,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 455,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:26:00Z",
+      "session_id": 296272802,
+      "entry_count": 32
+    },
+    {
+      "season_id": 5930,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 535,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:14:00Z",
+      "session_id": 296272798,
+      "entry_count": 30
+    },
+    {
+      "season_id": 5902,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 526,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:31:00Z",
+      "session_id": 296272774,
+      "entry_count": 26
+    },
+    {
+      "season_id": 5975,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 538,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:24:00Z",
+      "session_id": 296272845,
+      "entry_count": 22
+    },
+    {
+      "season_id": 5985,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 103,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:48:00Z",
+      "session_id": 296272860,
+      "entry_count": 16
+    },
+    {
+      "season_id": 5968,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 182,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:27:00Z",
+      "session_id": 296272836,
+      "entry_count": 13
+    },
+    {
+      "season_id": 5897,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 519,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:29:00Z",
+      "session_id": 296272769,
+      "entry_count": 11
+    },
+    {
+      "season_id": 5952,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 592,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:39:00Z",
+      "session_id": 296272819,
+      "entry_count": 8
+    },
+    {
+      "season_id": 5992,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 550,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:19:00Z",
+      "session_id": 296272870,
+      "entry_count": 7
+    },
+    {
+      "season_id": 5990,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 567,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:18:00Z",
+      "session_id": 296272867,
+      "entry_count": 5
+    },
+    {
+      "season_id": 6005,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 306,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:39:00Z",
+      "session_id": 296272888,
+      "entry_count": 5
+    },
+    {
+      "season_id": 5915,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 74,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:44:00Z",
+      "session_id": 296272784,
+      "entry_count": 4
+    },
+    {
+      "season_id": 5963,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 471,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:24:00Z",
+      "session_id": 296272831,
+      "entry_count": 4
+    },
+    {
+      "season_id": 5966,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 483,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:11:25Z",
+      "session_id": 296272833,
+      "entry_count": 2
+    },
+    {
+      "season_id": 5962,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 484,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:41:00Z",
+      "session_id": 296272830,
+      "entry_count": 1
+    },
+    {
+      "season_id": 5995,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 292,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:24:00Z",
+      "session_id": 296272874,
+      "entry_count": 1
+    },
+    {
+      "season_id": 5996,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 291,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:22:00Z",
+      "session_id": 296272876,
+      "entry_count": 1
+    },
+    {
+      "season_id": 5901,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 505,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:20:00Z",
+      "session_id": 296272772,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5916,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 285,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:40:00Z",
+      "session_id": 296272785,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5973,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 45,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:09:44Z",
+      "session_id": 296272842,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5976,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 190,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:18:36Z",
+      "session_id": 296272847,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5978,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 417,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:25:47Z",
+      "session_id": 296272850,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5979,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 32,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:30:00Z",
+      "session_id": 296272852,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5983,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 524,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "session_id": 296272857,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5987,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 131,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:00:00Z",
+      "session_id": 296272863,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5999,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 311,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:59:00Z",
+      "session_id": 296272880,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6003,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 515,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:25:00Z",
+      "session_id": 296272885,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6009,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 428,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:59:00Z",
+      "session_id": 296272893,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6018,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 462,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:16:00Z",
+      "session_id": 296272903,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6019,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 325,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:49:00Z",
+      "session_id": 296272905,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6021,
+      "start_time": "2026-01-01T11:00:00Z",
+      "super_session": false,
+      "series_id": 588,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:11:41Z",
+      "session_id": 296272908,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5918,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 231,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:53:00Z",
+      "session_id": 296273841,
+      "entry_count": 34
+    },
+    {
+      "season_id": 5926,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 444,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:49:00Z",
+      "session_id": 296273845,
+      "entry_count": 28
+    },
+    {
+      "season_id": 5894,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 571,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:41:00Z",
+      "session_id": 296273836,
+      "entry_count": 19
+    },
+    {
+      "season_id": 5938,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 520,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:41:00Z",
+      "session_id": 296273846,
+      "entry_count": 12
+    },
+    {
+      "season_id": 5945,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 541,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:44:00Z",
+      "session_id": 296273849,
+      "entry_count": 12
+    },
+    {
+      "season_id": 5895,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 514,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:44:00Z",
+      "session_id": 296273837,
+      "entry_count": 10
+    },
+    {
+      "season_id": 5982,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 164,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:00:00Z",
+      "session_id": 296273856,
+      "entry_count": 7
+    },
+    {
+      "season_id": 5905,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 353,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:44:00Z",
+      "session_id": 296273840,
+      "entry_count": 3
+    },
+    {
+      "season_id": 5948,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 431,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:54:00Z",
+      "session_id": 296273850,
+      "entry_count": 3
+    },
+    {
+      "season_id": 6011,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 307,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:50:00Z",
+      "session_id": 296273860,
+      "entry_count": 3
+    },
+    {
+      "season_id": 5903,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 559,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:44:00Z",
+      "session_id": 296273838,
+      "entry_count": 2
+    },
+    {
+      "season_id": 5904,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 557,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:44:00Z",
+      "session_id": 296273839,
+      "entry_count": 2
+    },
+    {
+      "season_id": 5957,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 165,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:49:00Z",
+      "session_id": 296273852,
+      "entry_count": 2
+    },
+    {
+      "season_id": 5967,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 564,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:40:00Z",
+      "session_id": 296273853,
+      "entry_count": 2
+    },
+    {
+      "season_id": 6016,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 459,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:31:00Z",
+      "session_id": 296273862,
+      "entry_count": 2
+    },
+    {
+      "season_id": 5919,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 399,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:12:00Z",
+      "session_id": 296273842,
+      "entry_count": 1
+    },
+    {
+      "season_id": 5942,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 34,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:52:00Z",
+      "session_id": 296273848,
+      "entry_count": 1
+    },
+    {
+      "season_id": 6038,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 599,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:31:00Z",
+      "session_id": 296273864,
+      "entry_count": 1
+    },
+    {
+      "season_id": 5956,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 132,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:52:35Z",
+      "session_id": 296273851,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5970,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 440,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:33:12Z",
+      "session_id": 296273854,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5980,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 223,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:33:24Z",
+      "session_id": 296273855,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6000,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 327,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:06:00Z",
+      "session_id": 296273857,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6004,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 310,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:10:00Z",
+      "session_id": 296273858,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6007,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 576,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:17:00Z",
+      "session_id": 296273859,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6015,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 369,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:45:00Z",
+      "session_id": 296273861,
+      "entry_count": 0
+    },
+    {
+      "season_id": 6023,
+      "start_time": "2026-01-01T11:15:00Z",
+      "super_session": false,
+      "series_id": 464,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:26:05Z",
+      "session_id": 296273863,
+      "entry_count": 0
+    },
+    {
+      "season_id": 5893,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 139,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5896,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 562,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5898,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 112,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:09:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5907,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 210,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:09:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5911,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 502,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5937,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 455,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5939,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 443,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5944,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 540,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5953,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 593,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5954,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 201,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:21:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5960,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 537,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:12:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5964,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 259,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5966,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 483,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:52:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5968,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 182,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:57:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5972,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 554,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:58:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5975,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 538,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5984,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 413,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:40:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5991,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 446,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:48:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5993,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 558,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5997,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 466,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:53:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6002,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 305,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:32:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6006,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 517,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6010,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 518,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:06:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6018,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 462,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:46:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6020,
+      "start_time": "2026-01-01T11:30:00Z",
+      "super_session": false,
+      "series_id": 461,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T11:47:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5894,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 571,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:11:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5895,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 514,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5900,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 530,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5906,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 63,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5909,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 503,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5917,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 493,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5921,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 299,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5923,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 432,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5927,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 594,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5928,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 595,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5929,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 596,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5936,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 539,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:34:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5938,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 520,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:11:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5940,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 563,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:12:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5941,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 521,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:23:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5946,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 542,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5951,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 552,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5965,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 116,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5967,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 564,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5971,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 167,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5986,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 53,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5994,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 315,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:05:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5998,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 553,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:13:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6001,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 516,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:13:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6008,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 442,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:18:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6012,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 458,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6013,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 309,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:40:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6014,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 308,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:58:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6017,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 460,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:03:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6022,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 463,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:08:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6038,
+      "start_time": "2026-01-01T11:45:00Z",
+      "super_session": false,
+      "series_id": 599,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:01:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5893,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 139,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:26:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5897,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 519,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5902,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 526,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:31:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5925,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 228,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5932,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 591,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:34:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5933,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 457,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:34:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5937,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 455,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:26:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5943,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 498,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5947,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 429,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5952,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 592,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:39:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5958,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 133,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:07:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5961,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 260,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:06:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5963,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 471,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5966,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 483,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5968,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 182,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:27:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5974,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 441,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5975,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 538,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5976,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 190,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:35:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5977,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 102,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5979,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 32,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:27:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5983,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 524,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5989,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 191,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:38:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5990,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 567,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:18:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5992,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 550,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5995,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 292,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5996,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 291,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5999,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 311,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6003,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 515,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:32:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6005,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 306,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:55:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6009,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 428,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6018,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 462,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:16:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6019,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 325,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6021,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 588,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:23:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6037,
+      "start_time": "2026-01-01T12:00:00Z",
+      "super_session": false,
+      "series_id": 62,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:25:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5894,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 571,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:41:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5895,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 514,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5903,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 559,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5904,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 557,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5905,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 353,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5918,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 231,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:53:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5920,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 405,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:12:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5938,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 520,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:41:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5942,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 34,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:52:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5945,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 541,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5949,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 456,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5956,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 132,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:39:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5967,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 564,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:40:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5969,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 33,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5981,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 416,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:46:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5982,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 164,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:00:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6000,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 327,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:06:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6004,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 310,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6007,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 576,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:17:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6011,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 307,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:04:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6015,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 369,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:53:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6016,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 459,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:31:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6023,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 464,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:38:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6038,
+      "start_time": "2026-01-01T12:15:00Z",
+      "super_session": false,
+      "series_id": 599,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:31:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5893,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 139,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5896,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 562,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5898,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 112,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:09:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5907,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 210,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:09:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5910,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 491,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:04:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5912,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 525,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:04:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5937,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 455,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5939,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 443,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5944,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 540,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5953,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 593,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5955,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 65,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:32:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5959,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 536,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:32:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5964,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 259,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5966,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 483,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:52:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5968,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 182,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:57:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5972,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 554,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:58:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5975,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 538,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5988,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 58,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:31:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5991,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 446,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:48:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5993,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 558,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5997,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 466,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:53:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6002,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 305,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:32:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6006,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 517,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6010,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 518,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:06:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6018,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 462,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:46:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6020,
+      "start_time": "2026-01-01T12:30:00Z",
+      "super_session": false,
+      "series_id": 461,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T12:47:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5894,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 571,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:11:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5895,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 514,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5900,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 530,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5906,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 63,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5908,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 430,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5922,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 476,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5927,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 594,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5928,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 595,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5929,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 596,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5935,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 447,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5938,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 520,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:11:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5940,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 563,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:12:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5941,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 521,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:23:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5946,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 542,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5950,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 551,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5965,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 116,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5967,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 564,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5971,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 167,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5994,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 315,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:05:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5998,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 553,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:13:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6001,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 516,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:13:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6008,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 442,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:18:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6012,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 458,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6013,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 309,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:40:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6014,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 308,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:58:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6017,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 460,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:03:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6022,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 463,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:08:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6030,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 47,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:04:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6038,
+      "start_time": "2026-01-01T12:45:00Z",
+      "super_session": false,
+      "series_id": 599,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:01:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5893,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 139,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:26:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5897,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 519,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5901,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 505,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:34:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5902,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 526,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:31:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5915,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 74,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5916,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 285,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5930,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 535,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5937,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 455,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:26:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5943,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 498,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5952,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 592,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:39:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5962,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 484,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:41:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5963,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 471,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5966,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 483,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5968,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 182,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:27:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5973,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 45,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5975,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 538,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5976,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 190,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:35:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5978,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 417,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5979,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 32,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:27:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5983,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 524,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5985,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 103,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:48:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5987,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 131,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:28:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5990,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 567,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:18:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5992,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 550,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5995,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 292,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5996,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 291,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5999,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 311,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6003,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 515,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:32:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6005,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 306,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:55:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6009,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 428,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6018,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 462,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:16:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6019,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 325,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6021,
+      "start_time": "2026-01-01T13:00:00Z",
+      "super_session": false,
+      "series_id": 588,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:23:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5894,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 571,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:41:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5895,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 514,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5903,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 559,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5904,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 557,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5905,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 353,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5918,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 231,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:53:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5919,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 399,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:12:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5926,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 444,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5938,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 520,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:41:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5942,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 34,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:52:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5945,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 541,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5948,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 431,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5956,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 132,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:39:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5957,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 165,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5967,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 564,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:40:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5970,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 440,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:46:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5980,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 223,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:55:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5982,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 164,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:00:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6000,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 327,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:06:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6004,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 310,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6007,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 576,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:17:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6011,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 307,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:04:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6015,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 369,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:53:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6016,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 459,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:31:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6023,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 464,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:38:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6038,
+      "start_time": "2026-01-01T13:15:00Z",
+      "super_session": false,
+      "series_id": 599,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:31:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5893,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 139,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5896,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 562,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5898,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 112,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:09:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5907,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 210,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:09:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5911,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 502,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5937,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 455,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5939,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 443,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:56:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5944,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 540,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5953,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 593,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5954,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 201,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:21:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5960,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 537,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:12:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5964,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 259,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5966,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 483,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:52:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5968,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 182,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:57:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5972,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 554,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:58:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5975,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 538,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:54:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5984,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 413,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:40:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5991,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 446,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:48:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5993,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 558,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:49:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5997,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 466,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:53:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6002,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 305,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:32:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6006,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 517,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:59:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6010,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 518,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:06:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6018,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 462,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:46:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6020,
+      "start_time": "2026-01-01T13:30:00Z",
+      "super_session": false,
+      "series_id": 461,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T13:47:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5894,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 571,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:11:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5895,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 514,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5900,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 530,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5906,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 63,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:24:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5909,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 503,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5917,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 493,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5921,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 299,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:22:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5923,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 432,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:29:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5927,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 594,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5928,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 595,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5929,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 596,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5936,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 539,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:34:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5938,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 520,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:11:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5940,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 563,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:12:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5941,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 521,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:23:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5946,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 542,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:14:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5951,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 552,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5965,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 116,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5967,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 564,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5971,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 167,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:19:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5986,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 53,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:44:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5994,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 315,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:05:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 5998,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 553,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:13:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6001,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 516,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:13:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6008,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 442,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:18:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6012,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 458,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:10:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6013,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 309,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:40:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6014,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 308,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:58:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6017,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 460,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:03:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6022,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 463,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:08:00Z",
+      "entry_count": 0
+    },
+    {
+      "season_id": 6038,
+      "start_time": "2026-01-01T13:45:00Z",
+      "super_session": false,
+      "series_id": 599,
+      "race_week_num": 2,
+      "end_time": "2026-01-01T14:01:00Z",
+      "entry_count": 0
+    }
+  ],
+  "block_begin_time": "2026-01-01T10:59:00Z",
+  "block_end_time": "2026-01-01T13:59:00Z",
+  "success": true
+}

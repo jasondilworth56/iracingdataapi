@@ -1,0 +1,2219 @@
+{
+  "subscribed": false,
+  "seasons": [
+    {
+      "league_id": 637,
+      "season_id": 114141,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 1",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 118952,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 2",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": 10,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 122233,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 3",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 125296,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 4",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 128114,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2026 Season 1",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 34412,
+      "points_system_id": 1,
+      "season_name": "2017S1 Formula Renault",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [],
+      "driver_points_car_classes": [],
+      "team_points_car_classes": [],
+      "points_system_name": "None",
+      "points_system_desc": "No points will be awarded.  The league administrator will assign points at a later date."
+    },
+    {
+      "league_id": 637,
+      "season_id": 37589,
+      "points_system_id": 2,
+      "season_name": "F.Renault - 2018 Season 1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 74,
+          "car_name": "Formula Renault 2.0"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 74,
+              "car_name": "Formula Renault 2.0"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 38891,
+      "points_system_id": 2,
+      "season_name": "F.Renault - 2018 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 4,
+          "car_name": "[Legacy] Pro Mazda"
+        },
+        {
+          "car_id": 74,
+          "car_name": "Formula Renault 2.0"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 4,
+              "car_name": "[Legacy] Pro Mazda"
+            },
+            {
+              "car_id": 74,
+              "car_name": "Formula Renault 2.0"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 60562,
+      "points_system_id": 3,
+      "season_name": "F3   2021 Season 1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 47806,
+      "points_system_id": 3,
+      "season_name": "F3 - 2020 Season 1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 63157,
+      "points_system_id": 1077,
+      "season_name": "F3 - 2021 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 84635,
+      "points_system_id": 1077,
+      "season_name": "F3 - 2022 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 87396,
+      "points_system_id": 1077,
+      "season_name": "F3 - 2023 Season 1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 90266,
+      "points_system_id": 1077,
+      "season_name": "F3 - 2023 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 93330,
+      "points_system_id": 1077,
+      "season_name": "F3 - 2023 Season 3",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 95908,
+      "points_system_id": 1077,
+      "season_name": "F3 - 2023 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 98333,
+      "points_system_id": 1077,
+      "season_name": "F3 - 2024 Season 1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 49540,
+      "points_system_id": 3,
+      "season_name": "F3 2020 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 54988,
+      "points_system_id": 3,
+      "season_name": "F3 2020 Season 3",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 58193,
+      "points_system_id": 3,
+      "season_name": "F3 2020 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 65438,
+      "points_system_id": 1077,
+      "season_name": "F3 2021 Season 3",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 67781,
+      "points_system_id": 1077,
+      "season_name": "F3 2021 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 74865,
+      "points_system_id": 1077,
+      "season_name": "F3 2022 Season 1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 78210,
+      "points_system_id": 1077,
+      "season_name": "F3 2022 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 80401,
+      "points_system_id": 1077,
+      "season_name": "F3 2022 Season 3",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 41749,
+      "points_system_id": 3,
+      "season_name": "Formula 3 - 2019 S1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 43504,
+      "points_system_id": 3,
+      "season_name": "Formula 3 - 2019 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 44678,
+      "points_system_id": 3,
+      "season_name": "Formula 3 - 2019 Season 3",
+      "active": false,
+      "hidden": false,
+      "num_drops": 1,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 46270,
+      "points_system_id": 3,
+      "season_name": "Formula 3 - 2019 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 106,
+          "car_name": "Dallara F3"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 106,
+              "car_name": "Dallara F3"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 58194,
+      "points_system_id": 3,
+      "season_name": "GT   2020 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 1,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 109,
+          "car_name": "BMW M8 GTE"
+        },
+        {
+          "car_id": 127,
+          "car_name": "Chevrolet Corvette C8.R GTE"
+        },
+        {
+          "car_id": 93,
+          "car_name": "Ferrari 488 GTE"
+        },
+        {
+          "car_id": 92,
+          "car_name": "Ford GTE"
+        },
+        {
+          "car_id": 102,
+          "car_name": "Porsche 911 RSR"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 92,
+              "car_name": "Ford GTE"
+            },
+            {
+              "car_id": 109,
+              "car_name": "BMW M8 GTE"
+            },
+            {
+              "car_id": 93,
+              "car_name": "Ferrari 488 GTE"
+            },
+            {
+              "car_id": 127,
+              "car_name": "Chevrolet Corvette C8.R GTE"
+            },
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 102,
+              "car_name": "Porsche 911 RSR"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 102,
+              "car_name": "Porsche 911 RSR"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 16197,
+      "points_system_id": 2,
+      "season_name": "IGPFUN-SB Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 1,
+          "car_name": "Skip Barber Formula 2000"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 1,
+              "car_name": "Skip Barber Formula 2000"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 12104,
+      "points_system_id": 1,
+      "season_name": "IGPFUN-SRF Fun/Practice Races",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        },
+        {
+          "car_id": 1,
+          "car_name": "Skip Barber Formula 2000"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 1,
+              "car_name": "Skip Barber Formula 2000"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "None",
+      "points_system_desc": "No points will be awarded.  The league administrator will assign points at a later date."
+    },
+    {
+      "league_id": 637,
+      "season_id": 21711,
+      "points_system_id": 1,
+      "season_name": "MX5-SRF Shootout",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 34,
+          "car_name": "[Legacy] Mazda MX-5 Cup - 2010"
+        },
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        },
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        },
+        {
+          "car_id": 34,
+          "car_name": "[Legacy] Mazda MX-5 Cup - 2010"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 34,
+              "car_name": "[Legacy] Mazda MX-5 Cup - 2010"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        },
+        {
+          "car_class_id": 32,
+          "name": "MX-5 Cup",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 34,
+              "car_name": "[Legacy] Mazda MX-5 Cup - 2010"
+            }
+          ]
+        },
+        {
+          "car_class_id": 20,
+          "name": "SRF",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "None",
+      "points_system_desc": "No points will be awarded.  The league administrator will assign points at a later date."
+    },
+    {
+      "league_id": 637,
+      "season_id": 101995,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2024 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 108750,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2024 Season 3",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 111414,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2024 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 30328,
+      "points_system_id": 2,
+      "season_name": "iGPFun - F.Renault - 2016 S2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [],
+      "driver_points_car_classes": [],
+      "team_points_car_classes": [],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 30329,
+      "points_system_id": 2,
+      "season_name": "iGPFun - F.Renault - 2016 S2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 74,
+          "car_name": "Formula Renault 2.0"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 74,
+              "car_name": "Formula Renault 2.0"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 24257,
+      "points_system_id": 2,
+      "season_name": "iGPFun Summer Trophy",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 15417,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SB Season 01",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [],
+      "driver_points_car_classes": [],
+      "team_points_car_classes": [],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 15418,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SB Season 01",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 1,
+          "car_name": "Skip Barber Formula 2000"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 1,
+              "car_name": "Skip Barber Formula 2000"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 19878,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SRF 2014 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 22452,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SRF 2015 Season 2",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 25293,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SRF 2015 Season 4",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 21008,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SRF 2015 Season1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 27277,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SRF 2016 Season 1",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 11925,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SRF Season 01",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    },
+    {
+      "league_id": 637,
+      "season_id": 14335,
+      "points_system_id": 2,
+      "season_name": "iGPFun-SRF Season 02",
+      "active": false,
+      "hidden": false,
+      "num_drops": 0,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 23,
+          "car_name": "SCCA Spec Racer Ford"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 23,
+              "car_name": "SCCA Spec Racer Ford"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Custom",
+      "points_system_desc": "The custom points system will be used."
+    }
+  ],
+  "success": true,
+  "retired": true,
+  "league_id": 637
+}

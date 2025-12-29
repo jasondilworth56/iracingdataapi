@@ -1,0 +1,36 @@
+{
+  "results_page": [
+    {
+      "league_id": 4607,
+      "owner_id": 247276,
+      "league_name": "WSL GT3 E.U Season 5",
+      "created": "2020-04-28T02:42:32Z",
+      "about": "&#8220;World Series Leagues&#8221; Race Anywhere - World Series - GT3 Championship",
+      "url": "https://www.worldseriesleagues.com",
+      "roster_count": 46,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": true,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 247276,
+        "display_name": "Harry Wills",
+        "helmet": {
+          "pattern": 67,
+          "color1": "000000",
+          "color2": "000000",
+          "color3": "000000",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    }
+  ],
+  "success": true,
+  "lowerbound": 1,
+  "upperbound": 1,
+  "row_count": 1
+}

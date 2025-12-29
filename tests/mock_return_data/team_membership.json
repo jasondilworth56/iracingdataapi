@@ -1,0 +1,16 @@
+[
+  {
+    "team_id": -115553,
+    "team_name": "NOMAD 562",
+    "owner": true,
+    "admin": true,
+    "default_team": false
+  },
+  {
+    "team_id": -82627,
+    "team_name": "NOMAD 563",
+    "owner": true,
+    "admin": true,
+    "default_team": false
+  }
+]

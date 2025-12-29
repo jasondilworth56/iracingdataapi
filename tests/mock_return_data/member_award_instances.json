@@ -1,0 +1,17 @@
+{
+  "cust_id": 209179,
+  "award_id": 0,
+  "achievement": false,
+  "award_count": 0,
+  "awards": [
+    {
+      "member_award_id": 0,
+      "award_id": 0,
+      "achievement": false,
+      "award_count": 0,
+      "award_order": 1
+    }
+  ],
+  "has_pdf": false,
+  "weight": 0
+}
