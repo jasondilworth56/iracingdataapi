@@ -1996,6 +1996,17 @@ class irDataClient:
 
         """
         payload = {"include_series": include_series}
+
+        if (season_year or season_quarter) and not (season_year and season_quarter):
+            raise ValueError(
+                "season_year and season_quarter must be provided together."
+            )
+
+        if season_year is not None:
+            payload["season_year"] = season_year
+        if season_quarter is not None:
+            payload["season_quarter"] = season_quarter
+
         return self._validate_and_return(
             SeriesSeasonsResponse,
             self._get_resource("/data/series/seasons", payload=payload),
