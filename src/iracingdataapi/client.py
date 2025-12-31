@@ -42,11 +42,15 @@ from src.iracingdataapi.models.responses import (
     LeagueSeasonStandingsResponse,
     LookupCountriesResponse,
     LookupDriversResponse,
+    LookupFlairsResponse,
+    LookupGetResponse,
     LookupLicensesResponse,
+    MemberAwardInstancesResponse,
     MemberAwardsResponse,
     MemberChartDataResponse,
     MemberGetResponse,
     MemberInfoResponse,
+    MemberParticipationCreditsResponse,
     MemberProfileResponse,
     ResultsEventLogResponse,
     ResultsGetResponse,
@@ -57,15 +61,20 @@ from src.iracingdataapi.models.responses import (
     ResultsSeasonResultsResponse,
     SeasonListResponse,
     SeasonRaceGuideResponse,
+    SeasonSpectatorSubsessionidsDetailResponse,
     SeasonSpectatorSubsessionidsResponse,
     SeriesAssetsResponse,
     SeriesGetResponse,
     SeriesPastSeasonsResponse,
     SeriesSeasonListResponse,
+    SeriesSeasonScheduleResponse,
+    SeriesSeasonsResponse,
     SeriesStatsSeriesResponse,
     SeriesWithAssetResponse,
+    SessionRegDriversListResponse,
     StatsMemberBestsResponse,
     StatsMemberCareerResponse,
+    StatsMemberDivisionResponse,
     StatsMemberRecapResponse,
     StatsMemberRecentRacesResponse,
     StatsMemberSummaryResponse,
@@ -78,6 +87,8 @@ from src.iracingdataapi.models.responses import (
     StatsSeasonTtStandingsResponse,
     StatsWorldRecordsResponse,
     TeamGetResponse,
+    TeamMembershipResponse,
+    TimeAttackMemberSeasonResultsResponse,
     TrackAssetsResponse,
     TrackGetResponse,
     TrackWithAssetResponse,
@@ -860,8 +871,23 @@ class irDataClient:
             self._get_resource("/data/lookup/drivers", payload=payload),
         )
 
-    def lookup_get(self) -> list:
-        return self._get_resource("/data/lookup/get")
+    def lookup_flairs(self) -> Union[LookupFlairsResponse, list[Dict]]:
+        """All the iRacing flairs.
+
+        Retrieves a list containing all the current flairs.
+
+        Returns:
+            list: a list containing all the current flairs.
+
+        """
+        return self._validate_and_return(
+            LookupFlairsResponse, self._get_resource("/data/lookup/flairs")
+        )
+
+    def lookup_get(self) -> Union[LookupGetResponse, list[Dict]]:
+        return self._validate_and_return(
+            LookupGetResponse, self._get_resource("/data/lookup/get")
+        )
 
     def lookup_licenses(self) -> Union[LookupLicensesResponse, list[Dict]]:
         """All the iRacing licenses.
@@ -1270,6 +1296,29 @@ class irDataClient:
         )
 
     @validate_call
+    def member_award_instances(
+        self, award_id: int, cust_id: Optional[int] = None
+    ) -> Union[MemberAwardInstancesResponse, list[Dict]]:
+        """Fetches a dict containing information on the members award instances.
+        Args:
+            cust_id (int): the iRacing cust_id.
+            award_id (int): the award id to get instances for.
+
+        Returns:
+            list: A list of dicts containing all the members award instances.  On failure, returns an empty list.
+        """
+        payload = {"award_id": award_id}
+        if cust_id:
+            payload["cust_id"] = cust_id
+
+        resource = self._get_resource("/data/member/award_instances", payload=payload)
+
+        return self._validate_and_return(
+            MemberAwardInstancesResponse,
+            self._fetch_link_data(resource["data_url"]),
+        )
+
+    @validate_call
     def member_chart_data(
         self,
         cust_id: Optional[PositiveInt] = None,
@@ -1305,6 +1354,20 @@ class irDataClient:
         """
         return self._validate_and_return(
             MemberInfoResponse, self._get_resource("/data/member/info")
+        )
+
+    def member_participation_credits(
+        self,
+    ) -> Union[MemberParticipationCreditsResponse, Dict]:
+        """Participation credits info from the authenticated member.
+
+        Returns:
+            dict: a dict containing the participation credits information from the authenticated member.
+
+        """
+        return self._validate_and_return(
+            MemberParticipationCreditsResponse,
+            self._get_resource("/data/member/participation_credits"),
         )
 
     @validate_call
@@ -1375,6 +1438,26 @@ class irDataClient:
         return self._validate_and_return(
             StatsMemberCareerResponse,
             self._get_resource("/data/stats/member_career", payload=payload),
+        )
+
+    @validate_call
+    def stats_member_division(
+        self,
+        event_type: Literal[2, 3, 4, 5],
+        season_id: PositiveInt,
+    ) -> Union[StatsMemberDivisionResponse, Dict]:
+        """Get the member division stats from a certain cust_id
+
+        Args:
+            event_type (int): 2 - Practice; 3 - Qualify; 4 - Time   Trial; 5 - Race
+            season_id (int): The iRacing season id.
+        Returns:
+            dict: a dict containing the member division stats
+        """
+        payload = {"event_type": event_type, "season_id": season_id}
+        return self._validate_and_return(
+            StatsMemberDivisionResponse,
+            self._get_resource("/data/stats/member_division", payload=payload),
         )
 
     @validate_call
@@ -1737,6 +1820,17 @@ class irDataClient:
             self._get_resource("/data/team/get", payload=payload),
         )
 
+    def team_membership(self) -> Union[TeamMembershipResponse, Dict]:
+        """Get the team membership information from the authenticated member.
+
+        Returns:
+            TeamMembership | dict: the team membership information.
+
+        """
+        return self._validate_and_return(
+            TeamMembershipResponse, self._get_resource("/data/team/membership")
+        )
+
     @validate_call
     def season_list(
         self,
@@ -1813,16 +1907,31 @@ class irDataClient:
         )
         return self._validate_and_return(SeasonSpectatorSubsessionidsResponse, result)
 
-    def get_series(self) -> Union[SeriesGetResponse, list[Dict]]:
-        """Get all the current official iRacing series.
+    @validate_call
+    def season_spectator_subsessions_detail(
+        self,
+        event_types: list[Literal[2, 3, 4, 5]] = [2, 3, 4, 5],
+        season_ids: list[int] | None = None,
+    ) -> Union[SeasonSpectatorSubsessionidsDetailResponse, Dict]:
+        """Get the current list of subsession details for a given event type
+        Args:
+            event_types (list[int]): A list of integers that match with iRacing event types as follows:
+                2: Practise
+                3: Qualify
+                4: Time Trial
+                5: Race
 
         Returns:
             list[Series] | list[dict]: a list containing all the official iRacing series.
 
         """
+        payload = {"event_types": ",".join([str(x) for x in event_types])}
+        if season_ids:
+            payload["season_ids"] = ",".join([str(x) for x in season_ids])
+
         return self._validate_and_return(
-            SeriesGetResponse,
-            self._get_resource("/data/series/get"),
+            SeasonSpectatorSubsessionidsDetailResponse,
+            self._get_resource("/data/series/get", payload=payload),
         )
 
     def get_series(self) -> Union[SeriesGetResponse, list[Dict]]:
@@ -1874,7 +1983,7 @@ class irDataClient:
         include_series: StrictBool = False,
         season_year: Optional[PositiveInt] = None,
         season_quarter: Optional[Literal[1, 2, 3, 4]] = None,
-    ) -> Union[SeriesSeasonListResponse, list[Dict]]:
+    ) -> Union[SeriesSeasonsResponse, list[Dict]]:
         """Get the all the seasons.
 
         To get series and seasons for which standings should be available, filter the list by ``'official'``: ``True``.
@@ -1892,6 +2001,58 @@ class irDataClient:
             self._get_resource("/data/series/seasons", payload=payload),
         )
 
+    @validate_call
+    def series_seasons_list(
+        self,
+        include_series: bool = False,
+        season_quarter: Optional[Literal[1, 2, 3, 4]] = None,
+        season_year: Optional[PositiveInt] = None,
+    ) -> Union[SeriesSeasonListResponse, list[Dict]]:
+        """Get the all the seasons.
+
+        To get series and seasons for which standings should be available, filter the list by ``'official'``: ``True``.
+
+        Args:
+            include_series: whether if you want to include the series information or not. Default ``False``.
+            season_quarter: the season quarter (1, 2, 3, 4). Only applicable when ``season_year`` is used.
+            season_year: the season year
+        Returns:
+            list[SeriesSeason] | list[dict]: a list containing all the series and seasons.
+
+        """
+        payload = {"include_series": include_series}
+
+        if (season_year or season_quarter) and not (season_year and season_quarter):
+            raise ValueError(
+                "season_year and season_quarter must be provided together."
+            )
+
+        if season_year is not None:
+            payload["season_year"] = season_year
+        if season_quarter is not None:
+            payload["season_quarter"] = season_quarter
+        return self._validate_and_return(
+            SeriesSeasonListResponse,
+            self._get_resource("/data/series/seasons", payload=payload),
+        )
+
+    @validate_call
+    def series_season_schedule(
+        self, season_id: PositiveInt
+    ) -> Union[SeriesSeasonScheduleResponse, Dict]:
+        """Get the season schedule for a given season id.
+
+        Args:
+            season_id (int): the season id
+        Returns:
+            SeriesSeasonSchedule | dict: information about the season schedule.
+        """
+        payload = {"season_id": season_id}
+        return self._validate_and_return(
+            SeriesSeasonScheduleResponse,
+            self._get_resource("/data/series/season_schedule", payload=payload),
+        )
+
     def series_stats(self) -> Union[SeriesStatsSeriesResponse, list[Dict]]:
         """Get the all the series and seasons.
 
@@ -1904,4 +2065,40 @@ class irDataClient:
         return self._validate_and_return(
             SeriesStatsSeriesResponse,
             self._get_resource("/data/series/stats_series"),
+        )
+
+    @validate_call
+    def session_reg_drivers_list(
+        self, subsession_id: PositiveInt
+    ) -> Union[SessionRegDriversListResponse, Dict]:
+        """Get the list of registered drivers for a given subsession id.
+
+        Args:
+            subsession_id (int): the subsession id
+        Returns:
+            SessionRegDriversList | dict: information about the registered drivers.
+        """
+        payload = {"subsession_id": subsession_id}
+        return self._validate_and_return(
+            SessionRegDriversListResponse,
+            self._get_resource("/data/session/reg_drivers_list", payload=payload),
+        )
+
+    @validate_call
+    def time_attack_member_season_results(
+        self, ta_comp_season_id: int
+    ) -> Union[TimeAttackMemberSeasonResultsResponse, Dict]:
+        """Get Time Attack season results for the authenticated member.
+
+        Args:
+            ta_comp_season_id (int): the Time Attack competition season id.
+        Returns:
+            TimeAttackMemberSeasonResults | dict: information about the Time Attack season results.
+        """
+        payload = {"ta_comp_season_id": ta_comp_season_id}
+        return self._validate_and_return(
+            TimeAttackMemberSeasonResultsResponse,
+            self._get_resource(
+                "/data/time_attack/member_season_results", payload=payload
+            ),
         )
