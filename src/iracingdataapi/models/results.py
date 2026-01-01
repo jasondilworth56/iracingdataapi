@@ -2,16 +2,10 @@ from datetime import datetime
 
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.cars import HostedResultCar, Livery
-from src.iracingdataapi.models.common import (
-    AllowedLicense,
-    Helmet,
-    MemberWithHelmet,
-    ServerFarm,
-    SimpleSuit,
-)
-from src.iracingdataapi.models.tracks import Track, TrackState, TrackWithConfig
-from src.iracingdataapi.models.weather import SimpleWeather
+from .cars import HostedResultCar, Livery
+from .common import AllowedLicense, Helmet, MemberWithHelmet, ServerFarm, SimpleSuit
+from .tracks import Track, TrackState, TrackWithConfig
+from .weather import SimpleWeather
 
 
 class BaseEventResult(BaseModel):

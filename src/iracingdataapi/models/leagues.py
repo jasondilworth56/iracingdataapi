@@ -2,16 +2,10 @@ from typing import Any
 
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.cars import CarInClass
-from src.iracingdataapi.models.common import (
-    Helmet,
-    Image,
-    Member,
-    MemberWithHelmet,
-    Tags,
-)
-from src.iracingdataapi.models.members import MemberLicense
-from src.iracingdataapi.models.weather import SimpleWeather
+from .cars import CarInClass
+from .common import Helmet, Image, Member, MemberWithHelmet, Tags
+from .members import MemberLicense
+from .weather import SimpleWeather
 
 
 class LeagueOwner(BaseModel):

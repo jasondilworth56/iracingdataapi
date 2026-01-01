@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.cars import SimpleCarClass
-from src.iracingdataapi.models.common import AllowedLicense, LicenseGroupType, RaceWeek
-from src.iracingdataapi.models.seasons import Season, SimpleSeason
+from .cars import SimpleCarClass
+from .common import AllowedLicense, LicenseGroupType, RaceWeek
+from .seasons import Season, SimpleSeason
 
 
 class SeriesAsset(BaseModel):

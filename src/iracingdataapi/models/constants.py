@@ -1,4 +1,4 @@
-from src.iracingdataapi.models.common import LabelIntValuePair
+from .common import LabelIntValuePair
 
 
 class Category(LabelIntValuePair):

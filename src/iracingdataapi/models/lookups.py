@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.common import MemberWithHelmet
+from .common import MemberWithHelmet
 
 
 class LookupCountry(BaseModel):

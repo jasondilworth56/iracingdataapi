@@ -1,10 +1,10 @@
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.cars import FavoriteCar, SimpleCarClass
-from src.iracingdataapi.models.common import AllowedLicense, Helmet, LicenseGroupType
-from src.iracingdataapi.models.members import SimpleMemberLicense, StatMemberLicense
-from src.iracingdataapi.models.series import RaceWeek
-from src.iracingdataapi.models.tracks import FavoriteTrack, SimpleTrack, Track
+from .cars import FavoriteCar, SimpleCarClass
+from .common import AllowedLicense, Helmet, LicenseGroupType
+from .members import SimpleMemberLicense, StatMemberLicense
+from .series import RaceWeek
+from .tracks import FavoriteTrack, SimpleTrack, Track
 
 
 class SeriesStatSeason(BaseModel):
