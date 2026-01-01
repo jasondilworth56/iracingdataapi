@@ -91,6 +91,14 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.4.0**
+
+- Feature: expose rate limit headers
+- Improvement: Return objects for improved type hinting
+- Fix: Multiple missing endpoints
+- fix: include falsy but valid parameter values (e.g. 0, False) in payload
+- Fix: member_awards endpoint
+
 **1.3.0**
 
 - Added a minimal Oauth2 implementation. You can now choose to send either username/password credentials as before, or use the iRacing Oauth2 token to make your requests. More information in the readme.
