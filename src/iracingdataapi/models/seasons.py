@@ -297,6 +297,7 @@ class SeriesSeasonsResponseItem(BaseSeasonConfig, SimpleSeason):
     season_id: int
     season_name: str
 
+    series_id: int
     active: bool
     allowed_season_members: None = None
     complete: bool
