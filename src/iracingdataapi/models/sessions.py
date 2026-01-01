@@ -1,13 +1,7 @@
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.cars import (
-    Car,
-    CarType,
-    HostedCombinedSessionCar,
-    LeagueSessionCar,
-    Livery,
-)
-from src.iracingdataapi.models.common import (
+from .cars import Car, CarType, HostedCombinedSessionCar, LeagueSessionCar, Livery
+from .common import (
     Admin,
     Helmet,
     Image,
@@ -16,10 +10,10 @@ from src.iracingdataapi.models.common import (
     ServerFarm,
     SessionEligibility,
 )
-from src.iracingdataapi.models.leagues import LeagueCar, LeagueSessionWeather
-from src.iracingdataapi.models.members import MemberLicense
-from src.iracingdataapi.models.tracks import Track, TrackState, TrackType
-from src.iracingdataapi.models.weather import Weather
+from .leagues import LeagueCar, LeagueSessionWeather
+from .members import MemberLicense
+from .tracks import Track, TrackState, TrackType
+from .weather import Weather
 
 
 class SessionEventType(BaseModel):

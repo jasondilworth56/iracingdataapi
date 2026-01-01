@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.common import Helmet
+from .common import Helmet
 
 
 class Lap(BaseModel):

@@ -2,15 +2,11 @@ from typing import Any
 
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.cars import CarType, RaceWeekCarClasses
-from src.iracingdataapi.models.common import LicenseGroupType, SimpleEligibility
-from src.iracingdataapi.models.sessions import HeatInfo
-from src.iracingdataapi.models.tracks import SimpleTrackState, Track, TrackType
-from src.iracingdataapi.models.weather import (
-    ForecastOptions,
-    SimpleWeather,
-    WeatherSummary,
-)
+from .cars import CarType, RaceWeekCarClasses
+from .common import LicenseGroupType, SimpleEligibility
+from .sessions import HeatInfo
+from .tracks import SimpleTrackState, Track, TrackType
+from .weather import ForecastOptions, SimpleWeather, WeatherSummary
 
 
 class BaseSeasonIdentifiers(BaseModel):
@@ -301,6 +297,7 @@ class SeriesSeasonsResponseItem(BaseSeasonConfig, SimpleSeason):
     season_id: int
     season_name: str
 
+    series_id: int
     active: bool
     allowed_season_members: None = None
     complete: bool

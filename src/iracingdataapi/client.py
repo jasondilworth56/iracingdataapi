@@ -20,7 +20,8 @@ from pydantic import (
     validate_call,
 )
 
-from src.iracingdataapi.models.responses import (
+from .exceptions import AccessTokenInvalid
+from .models.responses import (
     CarAssetsResponse,
     CarclassGetResponse,
     CarGetResponse,
@@ -93,8 +94,6 @@ from src.iracingdataapi.models.responses import (
     TrackGetResponse,
     TrackWithAssetResponse,
 )
-
-from .exceptions import AccessTokenInvalid
 from .rate_limit import irRateLimit
 
 

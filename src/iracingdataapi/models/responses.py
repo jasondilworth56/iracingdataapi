@@ -2,23 +2,11 @@ from typing import Any, Optional
 
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.cars import (
-    Car,
-    CarAsset,
-    CarClass,
-    CarInClass,
-    CarWithAsset,
-)
-from src.iracingdataapi.models.common import (
-    Owner,
-    SimpleSuit,
-    Tags,
-    TeamMembership,
-    ValueWhenPair,
-)
-from src.iracingdataapi.models.constants import Category, Division, EventType
-from src.iracingdataapi.models.laps import ChartLap, Lap
-from src.iracingdataapi.models.leagues import (
+from .cars import Car, CarAsset, CarClass, CarInClass, CarWithAsset
+from .common import Owner, SimpleSuit, Tags, TeamMembership, ValueWhenPair
+from .constants import Category, Division, EventType
+from .laps import ChartLap, Lap
+from .leagues import (
     League,
     LeagueDirectoryItem,
     LeagueMembership,
@@ -27,13 +15,8 @@ from src.iracingdataapi.models.leagues import (
     LeagueStandings,
     RosterItem,
 )
-from src.iracingdataapi.models.lookups import (
-    Flair,
-    LookupCountry,
-    LookupDriver,
-    LookupLicense,
-)
-from src.iracingdataapi.models.members import (
+from .lookups import Flair, LookupCountry, LookupDriver, LookupLicense
+from .members import (
     DriverFromCSV,
     Member,
     MemberActivity,
@@ -45,26 +28,10 @@ from src.iracingdataapi.models.members import (
     MemberProfileMemberInfo,
     MemberRecentEvent,
 )
-from src.iracingdataapi.models.results import (
-    HostedResult,
-    Result,
-    ResultEventLog,
-    SeasonResult,
-    SeriesResult,
-)
-from src.iracingdataapi.models.seasons import (
-    Schedule,
-    Season,
-    SeriesSeason,
-    SeriesSeasonsResponseItem,
-)
-from src.iracingdataapi.models.series import (
-    BaseSeries,
-    PastSeasonSeries,
-    SeriesAsset,
-    SeriesWithAsset,
-)
-from src.iracingdataapi.models.sessions import (
+from .results import HostedResult, Result, ResultEventLog, SeasonResult, SeriesResult
+from .seasons import Schedule, Season, SeriesSeason, SeriesSeasonsResponseItem
+from .series import BaseSeries, PastSeasonSeries, SeriesAsset, SeriesWithAsset
+from .sessions import (
     Entry,
     HostedCombinedSession,
     HostedSession,
@@ -73,7 +40,7 @@ from src.iracingdataapi.models.sessions import (
     RaceGuideSession,
     Subsession,
 )
-from src.iracingdataapi.models.stats import (
+from .stats import (
     Best,
     CareerStat,
     RecapStats,
@@ -88,11 +55,7 @@ from src.iracingdataapi.models.stats import (
     StatWorldRecord,
     YearStat,
 )
-from src.iracingdataapi.models.tracks import (
-    TrackAsset,
-    TrackGetResponseItem,
-    TrackWithAsset,
-)
+from .tracks import TrackAsset, TrackGetResponseItem, TrackWithAsset
 
 CarAssetsResponse = dict[str, CarAsset]
 

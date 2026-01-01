@@ -3,8 +3,8 @@ from typing import Any
 from pydantic import BaseModel, Field
 from typing_extensions import Literal
 
-from src.iracingdataapi.models.common import MemberWithHelmet, Suit
-from src.iracingdataapi.models.tracks import Track
+from .common import MemberWithHelmet, Suit
+from .tracks import Track
 
 
 class MemberAwardBase(BaseModel):

@@ -2,7 +2,7 @@ from typing import Any
 
 from pydantic import BaseModel
 
-from src.iracingdataapi.models.tracks import Track
+from .tracks import Track
 
 
 class LabelIntValuePair(BaseModel):
