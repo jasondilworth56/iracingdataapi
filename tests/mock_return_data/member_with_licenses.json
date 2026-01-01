@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "cust_ids": [
+    473030
+  ],
+  "members": [
+    {
+      "cust_id": 473030,
+      "display_name": "Lukas Schwenk",
+      "helmet": {
+        "pattern": 57,
+        "color1": "002bff",
+        "color2": "f7f7f7",
+        "color3": "33ff00",
+        "face_type": 0,
+        "helmet_type": 0
+      },
+      "last_login": "2025-12-30T14:42:17.88734704Z",
+      "member_since": "2020-04-10",
+      "flair_id": 77,
+      "flair_name": "Germany",
+      "flair_shortname": "DEU",
+      "ai": false,
+      "licenses": [
+        {
+          "category_id": 1,
+          "category": "oval",
+          "category_name": "Oval",
+          "license_level": 10,
+          "safety_rating": 2.39,
+          "cpi": 20.515774,
+          "irating": 1719,
+          "tt_rating": 1350,
+          "mpr_num_races": 2,
+          "color": "feec04",
+          "group_name": "Class C",
+          "group_id": 3,
+          "pro_promotable": false,
+          "seq": 1,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 5,
+          "category": "sports_car",
+          "category_name": "Sports Car",
+          "license_level": 15,
+          "safety_rating": 3.37,
+          "cpi": 42.273064,
+          "irating": 6260,
+          "tt_rating": 1350,
+          "mpr_num_races": 2,
+          "color": "00c702",
+          "group_name": "Class B",
+          "group_id": 4,
+          "pro_promotable": false,
+          "seq": 2,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 6,
+          "category": "formula_car",
+          "category_name": "Formula Car",
+          "license_level": 10,
+          "safety_rating": 2.15,
+          "cpi": 17.603167,
+          "irating": 3880,
+          "tt_rating": 1350,
+          "mpr_num_races": 2,
+          "color": "feec04",
+          "group_name": "Class C",
+          "group_id": 3,
+          "pro_promotable": false,
+          "seq": 3,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 3,
+          "category": "dirt_oval",
+          "category_name": "Dirt Oval",
+          "license_level": 2,
+          "safety_rating": 2.5,
+          "cpi": 10.10941,
+          "tt_rating": 1350,
+          "mpr_num_races": 0,
+          "color": "fc0706",
+          "group_name": "Rookie",
+          "group_id": 1,
+          "pro_promotable": false,
+          "seq": 4,
+          "mpr_num_tts": 0
+        },
+        {
+          "category_id": 4,
+          "category": "dirt_road",
+          "category_name": "Dirt Road",
+          "license_level": 8,
+          "safety_rating": 4.35,
+          "cpi": 28.93847,
+          "irating": 1888,
+          "tt_rating": 1229,
+          "mpr_num_races": 1,
+          "color": "fc8a27",
+          "group_name": "Class D",
+          "group_id": 2,
+          "pro_promotable": false,
+          "seq": 5,
+          "mpr_num_tts": 2
+        }
+      ]
+    }
+  ]
+}

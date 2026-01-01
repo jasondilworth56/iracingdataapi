@@ -1,0 +1,211 @@
+{
+  "cust_id": 209179,
+  "display_name": "Jason Dilworth",
+  "first_name": "Jason",
+  "last_name": "Dilworth",
+  "on_car_name": "Dilworth",
+  "member_since": "2015-09-22",
+  "flair_id": 222,
+  "flair_name": "United Kingdom",
+  "flair_shortname": "GBR",
+  "flair_country_code": "GB",
+  "last_login": "2025-12-31T14:58:37.129851Z",
+  "read_tc": "2024-09-25T19:45:10Z",
+  "read_pp": "2024-10-25T18:03:42Z",
+  "read_comp_rules": "2019-08-19T17:24:02Z",
+  "flags": 0,
+  "connection_type": "BROADBAND-4",
+  "download_server": "Default",
+  "account": {
+    "ir_dollars": -6.51,
+    "ir_credits": 0,
+    "status": "dont_renew",
+    "country_rules": null
+  },
+  "helmet": {
+    "pattern": 66,
+    "color1": "01606f",
+    "color2": "00dbc9",
+    "color3": "ffffff",
+    "face_type": 8,
+    "helmet_type": 0
+  },
+  "suit": {
+    "pattern": 13,
+    "color1": "194c5f",
+    "color2": "ffffff",
+    "color3": "ffd825",
+    "body_type": 0
+  },
+  "licenses": {
+    "oval": {
+      "category_id": 1,
+      "category": "oval",
+      "category_name": "Oval",
+      "license_level": 6,
+      "safety_rating": 2.43,
+      "cpi": 14.272879,
+      "irating": 1430,
+      "tt_rating": 1350,
+      "mpr_num_races": 0,
+      "color": "fc8a27",
+      "group_name": "Class D",
+      "group_id": 2,
+      "pro_promotable": false,
+      "seq": 1,
+      "mpr_num_tts": 0
+    },
+    "sports_car": {
+      "category_id": 5,
+      "category": "sports_car",
+      "category_name": "Sports Car",
+      "license_level": 20,
+      "safety_rating": 4.99,
+      "cpi": 232.04012,
+      "irating": 4201,
+      "tt_rating": 1350,
+      "mpr_num_races": 2,
+      "color": "0153db",
+      "group_name": "Class A",
+      "group_id": 5,
+      "pro_promotable": false,
+      "seq": 2,
+      "mpr_num_tts": 0
+    },
+    "formula_car": {
+      "category_id": 6,
+      "category": "formula_car",
+      "category_name": "Formula Car",
+      "license_level": 14,
+      "safety_rating": 2.04,
+      "cpi": 23.7156,
+      "irating": 4670,
+      "tt_rating": 1350,
+      "mpr_num_races": 0,
+      "color": "00c702",
+      "group_name": "Class B",
+      "group_id": 4,
+      "pro_promotable": false,
+      "seq": 3,
+      "mpr_num_tts": 0
+    },
+    "dirt_oval": {
+      "category_id": 3,
+      "category": "dirt_oval",
+      "category_name": "Dirt Oval",
+      "license_level": 2,
+      "safety_rating": 2.5,
+      "cpi": 10.10941,
+      "irating": 1350,
+      "tt_rating": 1350,
+      "mpr_num_races": 0,
+      "color": "fc0706",
+      "group_name": "Rookie",
+      "group_id": 1,
+      "pro_promotable": false,
+      "seq": 4,
+      "mpr_num_tts": 0
+    },
+    "dirt_road": {
+      "category_id": 4,
+      "category": "dirt_road",
+      "category_name": "Dirt Road",
+      "license_level": 2,
+      "safety_rating": 2.99,
+      "cpi": 13.976458,
+      "irating": 1407,
+      "tt_rating": 1350,
+      "mpr_num_races": 6,
+      "color": "fc0706",
+      "group_name": "Rookie",
+      "group_id": 1,
+      "pro_promotable": false,
+      "seq": 5,
+      "mpr_num_tts": 0
+    }
+  },
+  "car_packages": [
+    {
+      "package_id": 20,
+      "content_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "package_id": 21,
+      "content_ids": [
+        4
+      ]
+    },
+    {
+      "package_id": 22,
+      "content_ids": [
+        82,
+        5,
+        11
+      ]
+    },
+    {
+      "package_id": 29,
+      "content_ids": [
+        32,
+        53,
+        197,
+        136,
+        9,
+        90,
+        108
+      ]
+    }
+  ],
+  "track_packages": [
+    {
+      "package_id": 3,
+      "content_ids": [
+        15
+      ]
+    },
+    {
+      "package_id": 4,
+      "content_ids": [
+        293,
+        470,
+        471,
+        296
+      ]
+    },
+    {
+      "package_id": 533,
+      "content_ids": [
+        576,
+        577,
+        578,
+        572,
+        573,
+        574,
+        575
+      ]
+    }
+  ],
+  "other_owned_packages": [
+    513,
+    1,
+    257,
+    2
+  ],
+  "dev": false,
+  "alpha_tester": false,
+  "rain_tester": false,
+  "broadcaster": false,
+  "restrictions": {},
+  "has_read_comp_rules": true,
+  "has_read_nda": false,
+  "flags_hex": "0",
+  "hundred_pct_club": false,
+  "twenty_pct_discount": false,
+  "last_season": 5765,
+  "has_additional_content": true,
+  "has_read_tc": true,
+  "has_read_pp": true
+}

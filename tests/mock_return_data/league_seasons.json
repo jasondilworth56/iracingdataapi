@@ -1,0 +1,238 @@
+{
+  "subscribed": false,
+  "seasons": [
+    {
+      "league_id": 637,
+      "season_id": 114141,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 1",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 118952,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 2",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": 10,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 122233,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 3",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 125296,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2025 Season 4",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    },
+    {
+      "league_id": 637,
+      "season_id": 128114,
+      "points_system_id": 1077,
+      "season_name": "SFL - 2026 Season 1",
+      "active": true,
+      "hidden": false,
+      "num_drops": 2,
+      "no_drops_on_or_after_race_num": -1,
+      "points_cars": [
+        {
+          "car_id": 178,
+          "car_name": "Super Formula Lights"
+        }
+      ],
+      "driver_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            },
+            {
+              "car_id": 178,
+              "car_name": "Super Formula Lights"
+            }
+          ]
+        }
+      ],
+      "team_points_car_classes": [
+        {
+          "car_class_id": 0,
+          "name": "All Car Classes",
+          "cars_in_class": [
+            {
+              "car_id": 0,
+              "car_name": "All Cars"
+            }
+          ]
+        }
+      ],
+      "points_system_name": "Oval - iGPFun",
+      "points_system_desc": "43 points for 1st.  Each subsequent position gets one less point, all the way own to 43rd with 1 point.  44th and onward get 0 points."
+    }
+  ],
+  "success": true,
+  "retired": false,
+  "league_id": 637
+}

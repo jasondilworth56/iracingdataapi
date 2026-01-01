@@ -14,23 +14,6 @@ Ensure that you have marked your account with iRacing for legacy authentication 
 
 # Examples
 
-## Using username/password credentials
-
-```python
-from iracingdataapi.client import irDataClient
-
-idc = irDataClient(username=[YOUR iRACING USERNAME], password=[YOUR iRACING PASSWORD])
-
-# get the summary data of a member
-idc.stats_member_summary(cust_id=20979)
-
-# get latest results of a member
-idc.stats_member_recent_races(cust_id=209179)
-
-# get all laps for a specific driver in a race
-idc.result_lap_data(subsession_id=43720351, cust_id=209179)
-```
-
 ## Using Oauth2 access token
 
 When you have acquired an Oauth2 access token from iRacing, and have ensured that token is valid, you can
@@ -57,6 +40,14 @@ except AccessTokenInvalid:
 ```
 
 All available methods of `irDataClient` are included in `client.py`.
+
+## Enabling Pydantic type hinting
+
+You can opt-in to use of Pydantic model objects in the return of all method endpoints by initialising with `use_pydantic` like so:
+
+```python
+idc = irDataClient(access_token=[YOUR OAUTH2 TOKEN], use_pydantic=True)
+```
 
 # Contributing
 

@@ -1,0 +1,26 @@
+{
+  "year": 2025,
+  "stats": {
+    "starts": 80,
+    "wins": 6,
+    "top5": 29,
+    "avg_start_position": 9,
+    "avg_finish_position": 9,
+    "laps": 2376,
+    "laps_led": 82,
+    "favorite_car": {
+      "car_id": 67,
+      "car_name": "Global Mazda MX-5 Cup",
+      "car_image": "https://images-static.iracing.com/img/cars/globalmazdamx5cup/globalmazdamx5cup-small.jpg"
+    },
+    "favorite_track": {
+      "config_name": "Roval 2025",
+      "track_id": 554,
+      "track_logo": "https://images-static.iracing.com/img/logos/tracks/charlottemotorspeedway-logo.png",
+      "track_name": "Charlotte Motor Speedway "
+    }
+  },
+  "success": true,
+  "season": null,
+  "cust_id": 209179
+}

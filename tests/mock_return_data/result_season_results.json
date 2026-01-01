@@ -1,0 +1,292 @@
+{
+  "success": true,
+  "season_id": 5935,
+  "race_week_num": null,
+  "event_type": null,
+  "results_list": [
+    {
+      "session_id": 294553740,
+      "subsession_id": 81920196,
+      "race_week_num": 0,
+      "car_classes": [
+        {
+          "car_class_id": 4029,
+          "short_name": "GTP",
+          "name": "GTP",
+          "num_entries": 2,
+          "strength_of_field": 0
+        },
+        {
+          "car_class_id": 4011,
+          "short_name": "IMSA23",
+          "name": "IMSA23",
+          "num_entries": 5,
+          "strength_of_field": 2247
+        }
+      ],
+      "driver_changes": false,
+      "event_best_lap_time": 1025651,
+      "event_strength_of_field": -1,
+      "event_type": 2,
+      "event_type_name": "Practice",
+      "farm": {
+        "farm_id": 9,
+        "display_name": "AU-Syd",
+        "image_path": "/member_images/flags/au.png",
+        "displayed": true
+      },
+      "num_caution_laps": -1,
+      "num_cautions": -1,
+      "num_drivers": 7,
+      "num_lead_changes": -1,
+      "official_session": true,
+      "start_time": "2025-12-16T00:10:12Z",
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 572,
+        "track_name": "Aut\u00f3dromo Hermanos Rodr\u00edguez"
+      },
+      "winner_helmet": {
+        "pattern": 1,
+        "color1": "0f4d87",
+        "color2": "00619d",
+        "color3": "7ca1c2",
+        "face_type": 0,
+        "helmet_type": 0
+      },
+      "winner_id": 1227842,
+      "winner_license_level": 18,
+      "winner_name": "Logan Taylor7"
+    },
+    {
+      "session_id": 294553742,
+      "subsession_id": 81920198,
+      "race_week_num": 0,
+      "car_classes": [
+        {
+          "car_class_id": 4029,
+          "short_name": "GTP",
+          "name": "GTP",
+          "num_entries": 18,
+          "strength_of_field": 2623
+        },
+        {
+          "car_class_id": 2523,
+          "short_name": "Dallara P217",
+          "name": "Dallara P217",
+          "num_entries": 10,
+          "strength_of_field": 3351
+        },
+        {
+          "car_class_id": 4011,
+          "short_name": "IMSA23",
+          "name": "IMSA23",
+          "num_entries": 19,
+          "strength_of_field": 2148
+        }
+      ],
+      "driver_changes": false,
+      "event_best_lap_time": 920451,
+      "event_strength_of_field": -1,
+      "event_type": 2,
+      "event_type_name": "Practice",
+      "farm": {
+        "farm_id": 11,
+        "display_name": "DE-Fra",
+        "image_path": "/member_images/flags/de.png",
+        "displayed": true
+      },
+      "num_caution_laps": -1,
+      "num_cautions": -1,
+      "num_drivers": 42,
+      "num_lead_changes": -1,
+      "official_session": true,
+      "start_time": "2025-12-16T00:10:12Z",
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 572,
+        "track_name": "Aut\u00f3dromo Hermanos Rodr\u00edguez"
+      },
+      "winner_helmet": {
+        "pattern": 35,
+        "color1": "dbff00",
+        "color2": "ff0000",
+        "color3": "000000",
+        "face_type": 0,
+        "helmet_type": 0
+      },
+      "winner_id": 713998,
+      "winner_license_level": 19,
+      "winner_name": "Robin Schwanke"
+    },
+    {
+      "session_id": 294553745,
+      "subsession_id": 81920201,
+      "race_week_num": 0,
+      "car_classes": [
+        {
+          "car_class_id": 4029,
+          "short_name": "GTP",
+          "name": "GTP",
+          "num_entries": 16,
+          "strength_of_field": 2219
+        },
+        {
+          "car_class_id": 2523,
+          "short_name": "Dallara P217",
+          "name": "Dallara P217",
+          "num_entries": 7,
+          "strength_of_field": 2849
+        },
+        {
+          "car_class_id": 4011,
+          "short_name": "IMSA23",
+          "name": "IMSA23",
+          "num_entries": 28,
+          "strength_of_field": 2128
+        }
+      ],
+      "driver_changes": false,
+      "event_best_lap_time": 938189,
+      "event_strength_of_field": -1,
+      "event_type": 2,
+      "event_type_name": "Practice",
+      "farm": {
+        "farm_id": 117,
+        "display_name": "US-East-OH",
+        "image_path": "/member_images/flags/us-amazon.png",
+        "displayed": true
+      },
+      "num_caution_laps": -1,
+      "num_cautions": -1,
+      "num_drivers": 49,
+      "num_lead_changes": -1,
+      "official_session": true,
+      "start_time": "2025-12-16T00:10:13Z",
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 572,
+        "track_name": "Aut\u00f3dromo Hermanos Rodr\u00edguez"
+      },
+      "winner_helmet": {
+        "pattern": 58,
+        "color1": "040d58",
+        "color2": "f0eb2d",
+        "color3": "2a3795",
+        "face_type": 0,
+        "helmet_type": 0
+      },
+      "winner_id": 333471,
+      "winner_license_level": 18,
+      "winner_name": "Brandon Wilson5"
+    },
+    {
+      "session_id": 294553752,
+      "subsession_id": 81920208,
+      "race_week_num": 0,
+      "car_classes": [
+        {
+          "car_class_id": 4011,
+          "short_name": "IMSA23",
+          "name": "IMSA23",
+          "num_entries": 1,
+          "strength_of_field": 2001
+        }
+      ],
+      "driver_changes": false,
+      "event_best_lap_time": 1020985,
+      "event_strength_of_field": -1,
+      "event_type": 2,
+      "event_type_name": "Practice",
+      "farm": {
+        "farm_id": 9,
+        "display_name": "AU-Syd",
+        "image_path": "/member_images/flags/au.png",
+        "displayed": true
+      },
+      "num_caution_laps": -1,
+      "num_cautions": -1,
+      "num_drivers": 1,
+      "num_lead_changes": -1,
+      "official_session": true,
+      "start_time": "2025-12-16T00:10:43Z",
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 572,
+        "track_name": "Aut\u00f3dromo Hermanos Rodr\u00edguez"
+      },
+      "winner_helmet": {
+        "pattern": 37,
+        "color1": "922020",
+        "color2": "00e6ff",
+        "color3": "000000",
+        "face_type": 0,
+        "helmet_type": 0
+      },
+      "winner_id": 1095377,
+      "winner_license_level": 18,
+      "winner_name": "Riley Thomas"
+    },
+    {
+      "session_id": 294554171,
+      "subsession_id": 81920346,
+      "race_week_num": 0,
+      "car_classes": [
+        {
+          "car_class_id": 4029,
+          "short_name": "GTP",
+          "name": "GTP",
+          "num_entries": 20,
+          "strength_of_field": 2707
+        },
+        {
+          "car_class_id": 2523,
+          "short_name": "Dallara P217",
+          "name": "Dallara P217",
+          "num_entries": 6,
+          "strength_of_field": 2447
+        },
+        {
+          "car_class_id": 4011,
+          "short_name": "IMSA23",
+          "name": "IMSA23",
+          "num_entries": 24,
+          "strength_of_field": 2218
+        }
+      ],
+      "driver_changes": false,
+      "event_best_lap_time": 931191,
+      "event_strength_of_field": -1,
+      "event_type": 2,
+      "event_type_name": "Practice",
+      "farm": {
+        "farm_id": 117,
+        "display_name": "US-East-OH",
+        "image_path": "/member_images/flags/us-amazon.png",
+        "displayed": true
+      },
+      "num_caution_laps": -1,
+      "num_cautions": -1,
+      "num_drivers": 48,
+      "num_lead_changes": -1,
+      "official_session": true,
+      "start_time": "2025-12-16T00:17:57Z",
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 572,
+        "track_name": "Aut\u00f3dromo Hermanos Rodr\u00edguez"
+      },
+      "winner_helmet": {
+        "pattern": 14,
+        "color1": "001078",
+        "color2": "ffffff",
+        "color3": "ff0000",
+        "face_type": 0,
+        "helmet_type": 0
+      },
+      "winner_id": 1088280,
+      "winner_license_level": 20,
+      "winner_name": "JT Smeaton"
+    }
+  ]
+}

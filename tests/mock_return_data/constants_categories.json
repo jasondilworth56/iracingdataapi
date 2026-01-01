@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Oval",
+    "value": 1
+  },
+  {
+    "label": "Road",
+    "value": 2
+  },
+  {
+    "label": "Dirt oval",
+    "value": 3
+  },
+  {
+    "label": "Dirt road",
+    "value": 4
+  },
+  {
+    "label": "Sports car",
+    "value": 5
+  },
+  {
+    "label": "Formula car",
+    "value": 6
+  }
+]

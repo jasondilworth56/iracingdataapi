@@ -1,0 +1,1688 @@
+{
+  "flairs": [
+    {
+      "flair_id": 1,
+      "flair_name": "Unaffiliated",
+      "seq": 1
+    },
+    {
+      "flair_id": 2,
+      "flair_name": "iRacing",
+      "seq": 2
+    },
+    {
+      "flair_id": 3,
+      "flair_name": "Afghanistan",
+      "flair_shortname": "AFG",
+      "country_code": "AF",
+      "seq": 3
+    },
+    {
+      "flair_id": 5,
+      "flair_name": "Albania",
+      "flair_shortname": "ALB",
+      "country_code": "AL",
+      "seq": 4
+    },
+    {
+      "flair_id": 6,
+      "flair_name": "Algeria",
+      "flair_shortname": "DZA",
+      "country_code": "DZ",
+      "seq": 5
+    },
+    {
+      "flair_id": 7,
+      "flair_name": "American Samoa",
+      "flair_shortname": "ASM",
+      "country_code": "AS",
+      "seq": 6
+    },
+    {
+      "flair_id": 8,
+      "flair_name": "Andorra",
+      "flair_shortname": "AND",
+      "country_code": "AD",
+      "seq": 7
+    },
+    {
+      "flair_id": 9,
+      "flair_name": "Angola",
+      "flair_shortname": "AGO",
+      "country_code": "AO",
+      "seq": 8
+    },
+    {
+      "flair_id": 10,
+      "flair_name": "Anguilla",
+      "flair_shortname": "AIA",
+      "country_code": "AI",
+      "seq": 9
+    },
+    {
+      "flair_id": 11,
+      "flair_name": "Antarctica",
+      "flair_shortname": "ATA",
+      "country_code": "AQ",
+      "seq": 10
+    },
+    {
+      "flair_id": 12,
+      "flair_name": "Antigua and Barbuda",
+      "flair_shortname": "ATG",
+      "country_code": "AG",
+      "seq": 11
+    },
+    {
+      "flair_id": 13,
+      "flair_name": "Argentina",
+      "flair_shortname": "ARG",
+      "country_code": "AR",
+      "seq": 12
+    },
+    {
+      "flair_id": 14,
+      "flair_name": "Armenia",
+      "flair_shortname": "ARM",
+      "country_code": "AM",
+      "seq": 13
+    },
+    {
+      "flair_id": 15,
+      "flair_name": "Aruba",
+      "flair_shortname": "ABW",
+      "country_code": "AW",
+      "seq": 14
+    },
+    {
+      "flair_id": 16,
+      "flair_name": "Australia",
+      "flair_shortname": "AUS",
+      "country_code": "AU",
+      "seq": 15
+    },
+    {
+      "flair_id": 17,
+      "flair_name": "Austria",
+      "flair_shortname": "AUT",
+      "country_code": "AT",
+      "seq": 16
+    },
+    {
+      "flair_id": 18,
+      "flair_name": "Azerbaijan",
+      "flair_shortname": "AZE",
+      "country_code": "AZ",
+      "seq": 17
+    },
+    {
+      "flair_id": 19,
+      "flair_name": "Bahamas",
+      "flair_shortname": "BHS",
+      "country_code": "BS",
+      "seq": 18
+    },
+    {
+      "flair_id": 20,
+      "flair_name": "Bahrain",
+      "flair_shortname": "BHR",
+      "country_code": "BH",
+      "seq": 19
+    },
+    {
+      "flair_id": 21,
+      "flair_name": "Bangladesh",
+      "flair_shortname": "BGD",
+      "country_code": "BD",
+      "seq": 20
+    },
+    {
+      "flair_id": 22,
+      "flair_name": "Barbados",
+      "flair_shortname": "BRB",
+      "country_code": "BB",
+      "seq": 21
+    },
+    {
+      "flair_id": 23,
+      "flair_name": "Belgium",
+      "flair_shortname": "BEL",
+      "country_code": "BE",
+      "seq": 22
+    },
+    {
+      "flair_id": 24,
+      "flair_name": "Belize",
+      "flair_shortname": "BLZ",
+      "country_code": "BZ",
+      "seq": 23
+    },
+    {
+      "flair_id": 25,
+      "flair_name": "Benin",
+      "flair_shortname": "BEN",
+      "country_code": "BJ",
+      "seq": 24
+    },
+    {
+      "flair_id": 26,
+      "flair_name": "Bermuda",
+      "flair_shortname": "BMU",
+      "country_code": "BM",
+      "seq": 25
+    },
+    {
+      "flair_id": 27,
+      "flair_name": "Bhutan",
+      "flair_shortname": "BTN",
+      "country_code": "BT",
+      "seq": 26
+    },
+    {
+      "flair_id": 28,
+      "flair_name": "Bolivia",
+      "flair_shortname": "BES",
+      "country_code": "BO",
+      "seq": 27
+    },
+    {
+      "flair_id": 240,
+      "flair_name": "Bonaire, Sint Eustatius and Saba",
+      "flair_shortname": "BES",
+      "country_code": "BQ",
+      "seq": 28
+    },
+    {
+      "flair_id": 29,
+      "flair_name": "Bosnia and Herzegovina",
+      "flair_shortname": "BIH",
+      "country_code": "BA",
+      "seq": 29
+    },
+    {
+      "flair_id": 30,
+      "flair_name": "Botswana",
+      "flair_shortname": "BWA",
+      "country_code": "BW",
+      "seq": 30
+    },
+    {
+      "flair_id": 31,
+      "flair_name": "Brazil",
+      "flair_shortname": "BRA",
+      "country_code": "BR",
+      "seq": 31
+    },
+    {
+      "flair_id": 32,
+      "flair_name": "British Virgin Islands",
+      "flair_shortname": "VGB",
+      "country_code": "VG",
+      "seq": 32
+    },
+    {
+      "flair_id": 33,
+      "flair_name": "Brunei Darussalam",
+      "flair_shortname": "BRN",
+      "country_code": "BN",
+      "seq": 33
+    },
+    {
+      "flair_id": 34,
+      "flair_name": "Bulgaria",
+      "flair_shortname": "BGR",
+      "country_code": "BG",
+      "seq": 34
+    },
+    {
+      "flair_id": 35,
+      "flair_name": "Burkina Faso",
+      "flair_shortname": "BFA",
+      "country_code": "BF",
+      "seq": 35
+    },
+    {
+      "flair_id": 36,
+      "flair_name": "Burundi",
+      "flair_shortname": "BDI",
+      "country_code": "BI",
+      "seq": 36
+    },
+    {
+      "flair_id": 37,
+      "flair_name": "Cambodia",
+      "flair_shortname": "KHM",
+      "country_code": "KH",
+      "seq": 37
+    },
+    {
+      "flair_id": 38,
+      "flair_name": "Cameroon",
+      "flair_shortname": "CMR",
+      "country_code": "CM",
+      "seq": 38
+    },
+    {
+      "flair_id": 39,
+      "flair_name": "Canada",
+      "flair_shortname": "CAN",
+      "country_code": "CA",
+      "seq": 39
+    },
+    {
+      "flair_id": 40,
+      "flair_name": "Cape Verde",
+      "flair_shortname": "CPV",
+      "country_code": "CV",
+      "seq": 40
+    },
+    {
+      "flair_id": 41,
+      "flair_name": "Cayman Islands",
+      "flair_shortname": "CYM",
+      "country_code": "KY",
+      "seq": 41
+    },
+    {
+      "flair_id": 42,
+      "flair_name": "Central African Republic",
+      "flair_shortname": "CAF",
+      "country_code": "CF",
+      "seq": 42
+    },
+    {
+      "flair_id": 43,
+      "flair_name": "Chad",
+      "flair_shortname": "TCD",
+      "country_code": "TD",
+      "seq": 43
+    },
+    {
+      "flair_id": 44,
+      "flair_name": "Chile",
+      "flair_shortname": "CHL",
+      "country_code": "CL",
+      "seq": 44
+    },
+    {
+      "flair_id": 45,
+      "flair_name": "China",
+      "flair_shortname": "CHN",
+      "country_code": "CN",
+      "seq": 45
+    },
+    {
+      "flair_id": 46,
+      "flair_name": "Christmas Island",
+      "flair_shortname": "CXR",
+      "country_code": "CX",
+      "seq": 46
+    },
+    {
+      "flair_id": 47,
+      "flair_name": "Cocos (Keeling) Islands",
+      "flair_shortname": "CCK",
+      "country_code": "CC",
+      "seq": 47
+    },
+    {
+      "flair_id": 48,
+      "flair_name": "Colombia",
+      "flair_shortname": "COL",
+      "country_code": "CO",
+      "seq": 48
+    },
+    {
+      "flair_id": 49,
+      "flair_name": "Comoros",
+      "flair_shortname": "COM",
+      "country_code": "KM",
+      "seq": 49
+    },
+    {
+      "flair_id": 50,
+      "flair_name": "Cook Islands",
+      "flair_shortname": "COK",
+      "country_code": "CK",
+      "seq": 50
+    },
+    {
+      "flair_id": 51,
+      "flair_name": "Costa Rica",
+      "flair_shortname": "CRI",
+      "country_code": "CR",
+      "seq": 51
+    },
+    {
+      "flair_id": 52,
+      "flair_name": "Croatia",
+      "flair_shortname": "HRV",
+      "country_code": "HR",
+      "seq": 52
+    },
+    {
+      "flair_id": 241,
+      "flair_name": "Cura\u00e7ao",
+      "flair_shortname": "CUW",
+      "country_code": "CW",
+      "seq": 53
+    },
+    {
+      "flair_id": 53,
+      "flair_name": "Cyprus",
+      "flair_shortname": "CYP",
+      "country_code": "CY",
+      "seq": 54
+    },
+    {
+      "flair_id": 54,
+      "flair_name": "Czechia",
+      "flair_shortname": "CZE",
+      "country_code": "CZ",
+      "seq": 55
+    },
+    {
+      "flair_id": 55,
+      "flair_name": "Democratic Republic of the Congo",
+      "flair_shortname": "COD",
+      "country_code": "CD",
+      "seq": 56
+    },
+    {
+      "flair_id": 56,
+      "flair_name": "Denmark",
+      "flair_shortname": "DNK",
+      "country_code": "DK",
+      "seq": 57
+    },
+    {
+      "flair_id": 57,
+      "flair_name": "Djibouti",
+      "flair_shortname": "DJI",
+      "country_code": "DJ",
+      "seq": 58
+    },
+    {
+      "flair_id": 58,
+      "flair_name": "Dominica",
+      "flair_shortname": "DMA",
+      "country_code": "DM",
+      "seq": 59
+    },
+    {
+      "flair_id": 59,
+      "flair_name": "Dominican Republic",
+      "flair_shortname": "DOM",
+      "country_code": "DO",
+      "seq": 60
+    },
+    {
+      "flair_id": 60,
+      "flair_name": "Ecuador",
+      "flair_shortname": "ECU",
+      "country_code": "EC",
+      "seq": 61
+    },
+    {
+      "flair_id": 61,
+      "flair_name": "Egypt",
+      "flair_shortname": "EGY",
+      "country_code": "EG",
+      "seq": 62
+    },
+    {
+      "flair_id": 62,
+      "flair_name": "El Salvador",
+      "flair_shortname": "SLV",
+      "country_code": "SV",
+      "seq": 63
+    },
+    {
+      "flair_id": 236,
+      "flair_name": "England",
+      "flair_shortname": "ENG",
+      "country_code": "ENG",
+      "seq": 64
+    },
+    {
+      "flair_id": 63,
+      "flair_name": "Equatorial Guinea",
+      "flair_shortname": "GNQ",
+      "country_code": "GQ",
+      "seq": 65
+    },
+    {
+      "flair_id": 64,
+      "flair_name": "Eritrea",
+      "flair_shortname": "ERI",
+      "country_code": "ER",
+      "seq": 66
+    },
+    {
+      "flair_id": 65,
+      "flair_name": "Estonia",
+      "flair_shortname": "EST",
+      "country_code": "EE",
+      "seq": 67
+    },
+    {
+      "flair_id": 202,
+      "flair_name": "Eswatini",
+      "flair_shortname": "SWZ",
+      "country_code": "SZ",
+      "seq": 68
+    },
+    {
+      "flair_id": 66,
+      "flair_name": "Ethiopia",
+      "flair_shortname": "ETH",
+      "country_code": "ET",
+      "seq": 69
+    },
+    {
+      "flair_id": 67,
+      "flair_name": "Falkland Islands",
+      "flair_shortname": "FLK",
+      "country_code": "FK",
+      "seq": 70
+    },
+    {
+      "flair_id": 68,
+      "flair_name": "Faroe Islands",
+      "flair_shortname": "FRO",
+      "country_code": "FO",
+      "seq": 71
+    },
+    {
+      "flair_id": 69,
+      "flair_name": "Fiji",
+      "flair_shortname": "FJI",
+      "country_code": "FJ",
+      "seq": 72
+    },
+    {
+      "flair_id": 70,
+      "flair_name": "Finland",
+      "flair_shortname": "FIN",
+      "country_code": "FI",
+      "seq": 73
+    },
+    {
+      "flair_id": 71,
+      "flair_name": "France",
+      "flair_shortname": "FRA",
+      "country_code": "FR",
+      "seq": 74
+    },
+    {
+      "flair_id": 72,
+      "flair_name": "French Guiana",
+      "flair_shortname": "GUF",
+      "country_code": "GF",
+      "seq": 75
+    },
+    {
+      "flair_id": 73,
+      "flair_name": "French Polynesia",
+      "flair_shortname": "PYF",
+      "country_code": "PF",
+      "seq": 76
+    },
+    {
+      "flair_id": 74,
+      "flair_name": "Gabon",
+      "flair_shortname": "GAB",
+      "country_code": "GA",
+      "seq": 77
+    },
+    {
+      "flair_id": 75,
+      "flair_name": "Gambia",
+      "flair_shortname": "GMB",
+      "country_code": "GM",
+      "seq": 78
+    },
+    {
+      "flair_id": 76,
+      "flair_name": "Georgia",
+      "flair_shortname": "GEO",
+      "country_code": "GE",
+      "seq": 79
+    },
+    {
+      "flair_id": 77,
+      "flair_name": "Germany",
+      "flair_shortname": "DEU",
+      "country_code": "DE",
+      "seq": 80
+    },
+    {
+      "flair_id": 78,
+      "flair_name": "Ghana",
+      "flair_shortname": "GHA",
+      "country_code": "GH",
+      "seq": 81
+    },
+    {
+      "flair_id": 79,
+      "flair_name": "Gibraltar",
+      "flair_shortname": "GIB",
+      "country_code": "GI",
+      "seq": 82
+    },
+    {
+      "flair_id": 80,
+      "flair_name": "Greece",
+      "flair_shortname": "GRC",
+      "country_code": "GR",
+      "seq": 83
+    },
+    {
+      "flair_id": 81,
+      "flair_name": "Greenland",
+      "flair_shortname": "GRL",
+      "country_code": "GL",
+      "seq": 84
+    },
+    {
+      "flair_id": 82,
+      "flair_name": "Grenada",
+      "flair_shortname": "GRD",
+      "country_code": "GD",
+      "seq": 85
+    },
+    {
+      "flair_id": 83,
+      "flair_name": "Guadeloupe",
+      "flair_shortname": "GLP",
+      "country_code": "GP",
+      "seq": 86
+    },
+    {
+      "flair_id": 84,
+      "flair_name": "Guam",
+      "flair_shortname": "GUM",
+      "country_code": "GU",
+      "seq": 87
+    },
+    {
+      "flair_id": 85,
+      "flair_name": "Guatemala",
+      "flair_shortname": "GTM",
+      "country_code": "GT",
+      "seq": 88
+    },
+    {
+      "flair_id": 86,
+      "flair_name": "Guernsey",
+      "flair_shortname": "GGY",
+      "country_code": "GG",
+      "seq": 89
+    },
+    {
+      "flair_id": 87,
+      "flair_name": "Guinea",
+      "flair_shortname": "GIN",
+      "country_code": "GN",
+      "seq": 90
+    },
+    {
+      "flair_id": 88,
+      "flair_name": "Guinea-Bissau",
+      "flair_shortname": "GNB",
+      "country_code": "GW",
+      "seq": 91
+    },
+    {
+      "flair_id": 89,
+      "flair_name": "Guyana",
+      "flair_shortname": "GUY",
+      "country_code": "GY",
+      "seq": 92
+    },
+    {
+      "flair_id": 90,
+      "flair_name": "Haiti",
+      "flair_shortname": "HTI",
+      "country_code": "HT",
+      "seq": 93
+    },
+    {
+      "flair_id": 91,
+      "flair_name": "Honduras",
+      "flair_shortname": "HND",
+      "country_code": "HN",
+      "seq": 94
+    },
+    {
+      "flair_id": 92,
+      "flair_name": "Hong Kong",
+      "flair_shortname": "HKG",
+      "country_code": "HK",
+      "seq": 95
+    },
+    {
+      "flair_id": 93,
+      "flair_name": "Hungary",
+      "flair_shortname": "HUN",
+      "country_code": "HU",
+      "seq": 96
+    },
+    {
+      "flair_id": 94,
+      "flair_name": "Iceland",
+      "flair_shortname": "ISL",
+      "country_code": "IS",
+      "seq": 97
+    },
+    {
+      "flair_id": 95,
+      "flair_name": "India",
+      "flair_shortname": "IND",
+      "country_code": "IN",
+      "seq": 98
+    },
+    {
+      "flair_id": 96,
+      "flair_name": "Indonesia",
+      "flair_shortname": "IDN",
+      "country_code": "ID",
+      "seq": 99
+    },
+    {
+      "flair_id": 97,
+      "flair_name": "Iraq",
+      "flair_shortname": "IRQ",
+      "country_code": "IQ",
+      "seq": 100
+    },
+    {
+      "flair_id": 98,
+      "flair_name": "Ireland",
+      "flair_shortname": "IRL",
+      "country_code": "IE",
+      "seq": 101
+    },
+    {
+      "flair_id": 99,
+      "flair_name": "Isle of Man",
+      "flair_shortname": "IMN",
+      "country_code": "IM",
+      "seq": 102
+    },
+    {
+      "flair_id": 100,
+      "flair_name": "Israel",
+      "flair_shortname": "ISR",
+      "country_code": "IL",
+      "seq": 103
+    },
+    {
+      "flair_id": 101,
+      "flair_name": "Italy",
+      "flair_shortname": "ITA",
+      "country_code": "IT",
+      "seq": 104
+    },
+    {
+      "flair_id": 102,
+      "flair_name": "Ivory Coast",
+      "flair_shortname": "CIV",
+      "country_code": "CI",
+      "seq": 105
+    },
+    {
+      "flair_id": 103,
+      "flair_name": "Jamaica",
+      "flair_shortname": "JAM",
+      "country_code": "JM",
+      "seq": 106
+    },
+    {
+      "flair_id": 104,
+      "flair_name": "Japan",
+      "flair_shortname": "JPN",
+      "country_code": "JP",
+      "seq": 107
+    },
+    {
+      "flair_id": 105,
+      "flair_name": "Jersey",
+      "flair_shortname": "JEY",
+      "country_code": "JE",
+      "seq": 108
+    },
+    {
+      "flair_id": 106,
+      "flair_name": "Jordan",
+      "flair_shortname": "JOR",
+      "country_code": "JO",
+      "seq": 109
+    },
+    {
+      "flair_id": 107,
+      "flair_name": "Kazakhstan",
+      "flair_shortname": "KAZ",
+      "country_code": "KZ",
+      "seq": 110
+    },
+    {
+      "flair_id": 108,
+      "flair_name": "Kenya",
+      "flair_shortname": "KEN",
+      "country_code": "KE",
+      "seq": 111
+    },
+    {
+      "flair_id": 109,
+      "flair_name": "Kiribati",
+      "flair_shortname": "KIR",
+      "country_code": "KI",
+      "seq": 112
+    },
+    {
+      "flair_id": 110,
+      "flair_name": "Kuwait",
+      "flair_shortname": "KWT",
+      "country_code": "KW",
+      "seq": 113
+    },
+    {
+      "flair_id": 111,
+      "flair_name": "Kyrgyzstan",
+      "flair_shortname": "KGZ",
+      "country_code": "KG",
+      "seq": 114
+    },
+    {
+      "flair_id": 112,
+      "flair_name": "Laos",
+      "flair_shortname": "LAO",
+      "country_code": "LA",
+      "seq": 115
+    },
+    {
+      "flair_id": 113,
+      "flair_name": "Latvia",
+      "flair_shortname": "LVA",
+      "country_code": "LV",
+      "seq": 116
+    },
+    {
+      "flair_id": 114,
+      "flair_name": "Lebanon",
+      "flair_shortname": "LBN",
+      "country_code": "LB",
+      "seq": 117
+    },
+    {
+      "flair_id": 115,
+      "flair_name": "Lesotho",
+      "flair_shortname": "LSO",
+      "country_code": "LS",
+      "seq": 118
+    },
+    {
+      "flair_id": 116,
+      "flair_name": "Liberia",
+      "flair_shortname": "LBR",
+      "country_code": "LR",
+      "seq": 119
+    },
+    {
+      "flair_id": 117,
+      "flair_name": "Libya",
+      "flair_shortname": "LBY",
+      "country_code": "LY",
+      "seq": 120
+    },
+    {
+      "flair_id": 118,
+      "flair_name": "Liechtenstein",
+      "flair_shortname": "LIE",
+      "country_code": "LI",
+      "seq": 121
+    },
+    {
+      "flair_id": 119,
+      "flair_name": "Lithuania",
+      "flair_shortname": "LTU",
+      "country_code": "LT",
+      "seq": 122
+    },
+    {
+      "flair_id": 120,
+      "flair_name": "Luxembourg",
+      "flair_shortname": "LUX",
+      "country_code": "LU",
+      "seq": 123
+    },
+    {
+      "flair_id": 121,
+      "flair_name": "Macau",
+      "flair_shortname": "MAC",
+      "country_code": "MO",
+      "seq": 124
+    },
+    {
+      "flair_id": 122,
+      "flair_name": "Macedonia",
+      "flair_shortname": "MKD",
+      "country_code": "MK",
+      "seq": 125
+    },
+    {
+      "flair_id": 123,
+      "flair_name": "Madagascar",
+      "flair_shortname": "MDG",
+      "country_code": "MG",
+      "seq": 126
+    },
+    {
+      "flair_id": 124,
+      "flair_name": "Malawi",
+      "flair_shortname": "MWI",
+      "country_code": "MW",
+      "seq": 127
+    },
+    {
+      "flair_id": 125,
+      "flair_name": "Malaysia",
+      "flair_shortname": "MYS",
+      "country_code": "MY",
+      "seq": 128
+    },
+    {
+      "flair_id": 126,
+      "flair_name": "Maldives",
+      "flair_shortname": "MDV",
+      "country_code": "MV",
+      "seq": 129
+    },
+    {
+      "flair_id": 127,
+      "flair_name": "Mali",
+      "flair_shortname": "MLI",
+      "country_code": "ML",
+      "seq": 130
+    },
+    {
+      "flair_id": 128,
+      "flair_name": "Malta",
+      "flair_shortname": "MLT",
+      "country_code": "MT",
+      "seq": 131
+    },
+    {
+      "flair_id": 129,
+      "flair_name": "Marshall Islands",
+      "flair_shortname": "MHL",
+      "country_code": "MH",
+      "seq": 132
+    },
+    {
+      "flair_id": 130,
+      "flair_name": "Martinique",
+      "flair_shortname": "MTQ",
+      "country_code": "MQ",
+      "seq": 133
+    },
+    {
+      "flair_id": 131,
+      "flair_name": "Mauritania",
+      "flair_shortname": "MRT",
+      "country_code": "MR",
+      "seq": 134
+    },
+    {
+      "flair_id": 132,
+      "flair_name": "Mauritius",
+      "flair_shortname": "MUS",
+      "country_code": "MU",
+      "seq": 135
+    },
+    {
+      "flair_id": 133,
+      "flair_name": "Mayotte",
+      "flair_shortname": "MYT",
+      "country_code": "YT",
+      "seq": 136
+    },
+    {
+      "flair_id": 134,
+      "flair_name": "Mexico",
+      "flair_shortname": "MEX",
+      "country_code": "MX",
+      "seq": 137
+    },
+    {
+      "flair_id": 135,
+      "flair_name": "Micronesia",
+      "flair_shortname": "FSM",
+      "country_code": "FM",
+      "seq": 138
+    },
+    {
+      "flair_id": 136,
+      "flair_name": "Moldova",
+      "flair_shortname": "MDA",
+      "country_code": "MD",
+      "seq": 139
+    },
+    {
+      "flair_id": 137,
+      "flair_name": "Monaco",
+      "flair_shortname": "MCO",
+      "country_code": "MC",
+      "seq": 140
+    },
+    {
+      "flair_id": 138,
+      "flair_name": "Mongolia",
+      "flair_shortname": "MNG",
+      "country_code": "MN",
+      "seq": 141
+    },
+    {
+      "flair_id": 139,
+      "flair_name": "Montenegro",
+      "flair_shortname": "MNE",
+      "country_code": "ME",
+      "seq": 142
+    },
+    {
+      "flair_id": 140,
+      "flair_name": "Montserrat",
+      "flair_shortname": "MSR",
+      "country_code": "MS",
+      "seq": 143
+    },
+    {
+      "flair_id": 141,
+      "flair_name": "Morocco",
+      "flair_shortname": "MAR",
+      "country_code": "MA",
+      "seq": 144
+    },
+    {
+      "flair_id": 142,
+      "flair_name": "Mozambique",
+      "flair_shortname": "MOZ",
+      "country_code": "MZ",
+      "seq": 145
+    },
+    {
+      "flair_id": 143,
+      "flair_name": "Namibia",
+      "flair_shortname": "NAM",
+      "country_code": "NA",
+      "seq": 146
+    },
+    {
+      "flair_id": 144,
+      "flair_name": "Nauru",
+      "flair_shortname": "NRU",
+      "country_code": "NR",
+      "seq": 147
+    },
+    {
+      "flair_id": 145,
+      "flair_name": "Nepal",
+      "flair_shortname": "NPL",
+      "country_code": "NP",
+      "seq": 148
+    },
+    {
+      "flair_id": 146,
+      "flair_name": "Netherlands",
+      "flair_shortname": "NLD",
+      "country_code": "NL",
+      "seq": 149
+    },
+    {
+      "flair_id": 148,
+      "flair_name": "New Caledonia",
+      "flair_shortname": "NCL",
+      "country_code": "NC",
+      "seq": 151
+    },
+    {
+      "flair_id": 149,
+      "flair_name": "New Zealand",
+      "flair_shortname": "NZL",
+      "country_code": "NZ",
+      "seq": 152
+    },
+    {
+      "flair_id": 150,
+      "flair_name": "Nicaragua",
+      "flair_shortname": "NIC",
+      "country_code": "NI",
+      "seq": 153
+    },
+    {
+      "flair_id": 151,
+      "flair_name": "Niger",
+      "flair_shortname": "NER",
+      "country_code": "NE",
+      "seq": 154
+    },
+    {
+      "flair_id": 152,
+      "flair_name": "Nigeria",
+      "flair_shortname": "NGA",
+      "country_code": "NG",
+      "seq": 155
+    },
+    {
+      "flair_id": 153,
+      "flair_name": "Niue",
+      "flair_shortname": "NIU",
+      "country_code": "NU",
+      "seq": 156
+    },
+    {
+      "flair_id": 154,
+      "flair_name": "Norfolk Island",
+      "flair_shortname": "NFK",
+      "country_code": "NF",
+      "seq": 157
+    },
+    {
+      "flair_id": 239,
+      "flair_name": "Northern Ireland",
+      "flair_shortname": "NIR",
+      "country_code": "NIR",
+      "seq": 158
+    },
+    {
+      "flair_id": 155,
+      "flair_name": "Northern Mariana Islands",
+      "flair_shortname": "MNP",
+      "country_code": "MP",
+      "seq": 159
+    },
+    {
+      "flair_id": 156,
+      "flair_name": "Norway",
+      "flair_shortname": "NOR",
+      "country_code": "NO",
+      "seq": 160
+    },
+    {
+      "flair_id": 157,
+      "flair_name": "Oman",
+      "flair_shortname": "OMN",
+      "country_code": "OM",
+      "seq": 161
+    },
+    {
+      "flair_id": 158,
+      "flair_name": "Pakistan",
+      "flair_shortname": "PAK",
+      "country_code": "PK",
+      "seq": 162
+    },
+    {
+      "flair_id": 159,
+      "flair_name": "Palau",
+      "flair_shortname": "PLW",
+      "country_code": "PW",
+      "seq": 163
+    },
+    {
+      "flair_id": 160,
+      "flair_name": "Palestine",
+      "flair_shortname": "PSE",
+      "country_code": "PS",
+      "seq": 164
+    },
+    {
+      "flair_id": 161,
+      "flair_name": "Panama",
+      "flair_shortname": "PAN",
+      "country_code": "PA",
+      "seq": 165
+    },
+    {
+      "flair_id": 162,
+      "flair_name": "Papua New Guinea",
+      "flair_shortname": "PNG",
+      "country_code": "PG",
+      "seq": 166
+    },
+    {
+      "flair_id": 163,
+      "flair_name": "Paraguay",
+      "flair_shortname": "PRY",
+      "country_code": "PY",
+      "seq": 167
+    },
+    {
+      "flair_id": 164,
+      "flair_name": "Peru",
+      "flair_shortname": "PER",
+      "country_code": "PE",
+      "seq": 168
+    },
+    {
+      "flair_id": 165,
+      "flair_name": "Philippines",
+      "flair_shortname": "PHL",
+      "country_code": "PH",
+      "seq": 169
+    },
+    {
+      "flair_id": 166,
+      "flair_name": "Pitcairn Islands",
+      "flair_shortname": "PCN",
+      "country_code": "PN",
+      "seq": 170
+    },
+    {
+      "flair_id": 167,
+      "flair_name": "Poland",
+      "flair_shortname": "POL",
+      "country_code": "PL",
+      "seq": 171
+    },
+    {
+      "flair_id": 168,
+      "flair_name": "Portugal",
+      "flair_shortname": "PRT",
+      "country_code": "PT",
+      "seq": 172
+    },
+    {
+      "flair_id": 169,
+      "flair_name": "Puerto Rico",
+      "flair_shortname": "PRI",
+      "country_code": "PR",
+      "seq": 173
+    },
+    {
+      "flair_id": 170,
+      "flair_name": "Qatar",
+      "flair_shortname": "QAT",
+      "country_code": "QA",
+      "seq": 174
+    },
+    {
+      "flair_id": 171,
+      "flair_name": "Republic of the Congo",
+      "flair_shortname": "COG",
+      "country_code": "CG",
+      "seq": 175
+    },
+    {
+      "flair_id": 172,
+      "flair_name": "Reunion",
+      "flair_shortname": "REU",
+      "country_code": "RE",
+      "seq": 176
+    },
+    {
+      "flair_id": 173,
+      "flair_name": "Romania",
+      "flair_shortname": "ROU",
+      "country_code": "RO",
+      "seq": 177
+    },
+    {
+      "flair_id": 174,
+      "flair_name": "Rwanda",
+      "flair_shortname": "RWA",
+      "country_code": "RW",
+      "seq": 178
+    },
+    {
+      "flair_id": 175,
+      "flair_name": "Saint Helena",
+      "flair_shortname": "SHN",
+      "country_code": "SH",
+      "seq": 179
+    },
+    {
+      "flair_id": 176,
+      "flair_name": "Saint Kitts and Nevis",
+      "flair_shortname": "KNA",
+      "country_code": "KN",
+      "seq": 180
+    },
+    {
+      "flair_id": 177,
+      "flair_name": "Saint Lucia",
+      "flair_shortname": "LCA",
+      "country_code": "LC",
+      "seq": 181
+    },
+    {
+      "flair_id": 178,
+      "flair_name": "Saint Pierre & Miquelon",
+      "flair_shortname": "SPM",
+      "country_code": "PM",
+      "seq": 182
+    },
+    {
+      "flair_id": 179,
+      "flair_name": "Saint Vincent and the Grenadines",
+      "flair_shortname": "VCT",
+      "country_code": "VC",
+      "seq": 183
+    },
+    {
+      "flair_id": 180,
+      "flair_name": "Saint-Barth\u00e9lemy",
+      "flair_shortname": "BLM",
+      "country_code": "BL",
+      "seq": 184
+    },
+    {
+      "flair_id": 181,
+      "flair_name": "Saint-Martin",
+      "flair_shortname": "MAF",
+      "country_code": "MF",
+      "seq": 185
+    },
+    {
+      "flair_id": 182,
+      "flair_name": "Samoa",
+      "flair_shortname": "WSM",
+      "country_code": "WS",
+      "seq": 186
+    },
+    {
+      "flair_id": 183,
+      "flair_name": "San Marino",
+      "flair_shortname": "SMR",
+      "country_code": "SM",
+      "seq": 187
+    },
+    {
+      "flair_id": 184,
+      "flair_name": "Sao Tome and Principe",
+      "flair_shortname": "STP",
+      "country_code": "ST",
+      "seq": 188
+    },
+    {
+      "flair_id": 185,
+      "flair_name": "Saudi Arabia",
+      "flair_shortname": "SAU",
+      "country_code": "SA",
+      "seq": 189
+    },
+    {
+      "flair_id": 237,
+      "flair_name": "Scotland",
+      "flair_shortname": "SCT",
+      "country_code": "SCT",
+      "seq": 190
+    },
+    {
+      "flair_id": 186,
+      "flair_name": "Senegal",
+      "flair_shortname": "SEN",
+      "country_code": "SN",
+      "seq": 191
+    },
+    {
+      "flair_id": 187,
+      "flair_name": "Serbia",
+      "flair_shortname": "SRB",
+      "country_code": "RS",
+      "seq": 192
+    },
+    {
+      "flair_id": 188,
+      "flair_name": "Seychelles",
+      "flair_shortname": "SYC",
+      "country_code": "SC",
+      "seq": 193
+    },
+    {
+      "flair_id": 189,
+      "flair_name": "Sierra Leone",
+      "flair_shortname": "SLE",
+      "country_code": "SL",
+      "seq": 194
+    },
+    {
+      "flair_id": 190,
+      "flair_name": "Singapore",
+      "flair_shortname": "SGP",
+      "country_code": "SG",
+      "seq": 195
+    },
+    {
+      "flair_id": 242,
+      "flair_name": "Sint Maarten (Dutch part)",
+      "flair_shortname": "SXM",
+      "country_code": "SX",
+      "seq": 196
+    },
+    {
+      "flair_id": 191,
+      "flair_name": "Slovakia",
+      "flair_shortname": "SVK",
+      "country_code": "SK",
+      "seq": 197
+    },
+    {
+      "flair_id": 192,
+      "flair_name": "Slovenia",
+      "flair_shortname": "SVN",
+      "country_code": "SI",
+      "seq": 198
+    },
+    {
+      "flair_id": 193,
+      "flair_name": "Solomon Islands",
+      "flair_shortname": "SLB",
+      "country_code": "SB",
+      "seq": 199
+    },
+    {
+      "flair_id": 194,
+      "flair_name": "Somalia",
+      "flair_shortname": "SOM",
+      "country_code": "SO",
+      "seq": 200
+    },
+    {
+      "flair_id": 195,
+      "flair_name": "South Africa",
+      "flair_shortname": "ZAF",
+      "country_code": "ZA",
+      "seq": 201
+    },
+    {
+      "flair_id": 196,
+      "flair_name": "South Georgia & South Sandwich Islands",
+      "flair_shortname": "SGS",
+      "country_code": "GS",
+      "seq": 202
+    },
+    {
+      "flair_id": 197,
+      "flair_name": "South Korea",
+      "flair_shortname": "KOR",
+      "country_code": "KR",
+      "seq": 203
+    },
+    {
+      "flair_id": 198,
+      "flair_name": "Spain",
+      "flair_shortname": "ESP",
+      "country_code": "ES",
+      "seq": 204
+    },
+    {
+      "flair_id": 199,
+      "flair_name": "Sri Lanka",
+      "flair_shortname": "LKA",
+      "country_code": "LK",
+      "seq": 205
+    },
+    {
+      "flair_id": 200,
+      "flair_name": "Suriname",
+      "flair_shortname": "SUR",
+      "country_code": "SR",
+      "seq": 206
+    },
+    {
+      "flair_id": 201,
+      "flair_name": "Svalbard",
+      "flair_shortname": "SJM",
+      "country_code": "SJ",
+      "seq": 207
+    },
+    {
+      "flair_id": 203,
+      "flair_name": "Sweden",
+      "flair_shortname": "SWE",
+      "country_code": "SE",
+      "seq": 208
+    },
+    {
+      "flair_id": 204,
+      "flair_name": "Switzerland",
+      "flair_shortname": "CHE",
+      "country_code": "CH",
+      "seq": 209
+    },
+    {
+      "flair_id": 205,
+      "flair_name": "Taiwan",
+      "flair_shortname": "TWN",
+      "country_code": "TW",
+      "seq": 210
+    },
+    {
+      "flair_id": 206,
+      "flair_name": "Tajikistan",
+      "flair_shortname": "TJK",
+      "country_code": "TJ",
+      "seq": 211
+    },
+    {
+      "flair_id": 207,
+      "flair_name": "Tanzania",
+      "flair_shortname": "TZA",
+      "country_code": "TZ",
+      "seq": 212
+    },
+    {
+      "flair_id": 208,
+      "flair_name": "Thailand",
+      "flair_shortname": "THA",
+      "country_code": "TH",
+      "seq": 213
+    },
+    {
+      "flair_id": 209,
+      "flair_name": "Timor-Leste",
+      "flair_shortname": "TLS",
+      "country_code": "TL",
+      "seq": 214
+    },
+    {
+      "flair_id": 210,
+      "flair_name": "Togo",
+      "flair_shortname": "TGO",
+      "country_code": "TG",
+      "seq": 215
+    },
+    {
+      "flair_id": 211,
+      "flair_name": "Tokelau",
+      "flair_shortname": "TKL",
+      "country_code": "TK",
+      "seq": 216
+    },
+    {
+      "flair_id": 212,
+      "flair_name": "Tonga",
+      "flair_shortname": "TON",
+      "country_code": "TO",
+      "seq": 217
+    },
+    {
+      "flair_id": 213,
+      "flair_name": "Trinidad and Tobago",
+      "flair_shortname": "TTO",
+      "country_code": "TT",
+      "seq": 218
+    },
+    {
+      "flair_id": 214,
+      "flair_name": "Tunisia",
+      "flair_shortname": "TUN",
+      "country_code": "TN",
+      "seq": 219
+    },
+    {
+      "flair_id": 216,
+      "flair_name": "Turkmenistan",
+      "flair_shortname": "TKM",
+      "country_code": "TM",
+      "seq": 220
+    },
+    {
+      "flair_id": 217,
+      "flair_name": "Turks and Caicos Islands",
+      "flair_shortname": "TCA",
+      "country_code": "TC",
+      "seq": 221
+    },
+    {
+      "flair_id": 218,
+      "flair_name": "Tuvalu",
+      "flair_shortname": "TUV",
+      "country_code": "TV",
+      "seq": 222
+    },
+    {
+      "flair_id": 215,
+      "flair_name": "T\u00fcrkiye",
+      "flair_shortname": "TUR",
+      "country_code": "TR",
+      "seq": 223
+    },
+    {
+      "flair_id": 219,
+      "flair_name": "Uganda",
+      "flair_shortname": "UGA",
+      "country_code": "UG",
+      "seq": 224
+    },
+    {
+      "flair_id": 220,
+      "flair_name": "Ukraine",
+      "flair_shortname": "UKR",
+      "country_code": "UA",
+      "seq": 225
+    },
+    {
+      "flair_id": 221,
+      "flair_name": "United Arab Emirates",
+      "flair_shortname": "ARE",
+      "country_code": "AE",
+      "seq": 226
+    },
+    {
+      "flair_id": 222,
+      "flair_name": "United Kingdom",
+      "flair_shortname": "GBR",
+      "country_code": "GB",
+      "seq": 227
+    },
+    {
+      "flair_id": 223,
+      "flair_name": "United States",
+      "flair_shortname": "USA",
+      "country_code": "US",
+      "seq": 228
+    },
+    {
+      "flair_id": 224,
+      "flair_name": "Uruguay",
+      "flair_shortname": "URY",
+      "country_code": "UY",
+      "seq": 229
+    },
+    {
+      "flair_id": 225,
+      "flair_name": "Uzbekistan",
+      "flair_shortname": "UZB",
+      "country_code": "UZ",
+      "seq": 230
+    },
+    {
+      "flair_id": 226,
+      "flair_name": "Vanuatu",
+      "flair_shortname": "VUT",
+      "country_code": "VU",
+      "seq": 231
+    },
+    {
+      "flair_id": 227,
+      "flair_name": "Vatican City",
+      "flair_shortname": "VAT",
+      "country_code": "VA",
+      "seq": 232
+    },
+    {
+      "flair_id": 228,
+      "flair_name": "Venezuela",
+      "flair_shortname": "VEN",
+      "country_code": "VE",
+      "seq": 233
+    },
+    {
+      "flair_id": 229,
+      "flair_name": "Vietnam",
+      "flair_shortname": "VNM",
+      "country_code": "VN",
+      "seq": 234
+    },
+    {
+      "flair_id": 230,
+      "flair_name": "Virgin Islands",
+      "flair_shortname": "VIR",
+      "country_code": "VI",
+      "seq": 235
+    },
+    {
+      "flair_id": 238,
+      "flair_name": "Wales",
+      "flair_shortname": "WLS",
+      "country_code": "WLS",
+      "seq": 236
+    },
+    {
+      "flair_id": 231,
+      "flair_name": "Wallis and Futuna",
+      "flair_shortname": "WLF",
+      "country_code": "WF",
+      "seq": 237
+    },
+    {
+      "flair_id": 232,
+      "flair_name": "Western Sahara",
+      "flair_shortname": "ESH",
+      "country_code": "EH",
+      "seq": 238
+    },
+    {
+      "flair_id": 233,
+      "flair_name": "Yemen",
+      "flair_shortname": "YEM",
+      "country_code": "YE",
+      "seq": 239
+    },
+    {
+      "flair_id": 234,
+      "flair_name": "Zambia",
+      "flair_shortname": "ZMB",
+      "country_code": "ZM",
+      "seq": 240
+    },
+    {
+      "flair_id": 235,
+      "flair_name": "Zimbabwe",
+      "flair_shortname": "ZWE",
+      "country_code": "ZW",
+      "seq": 241
+    },
+    {
+      "flair_id": 4,
+      "flair_name": "\u00c5land Islands",
+      "flair_shortname": "ALA",
+      "country_code": "AX",
+      "seq": 242
+    }
+  ],
+  "success": true
+}

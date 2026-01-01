@@ -1,0 +1,148 @@
+{
+  "results_page": [
+    {
+      "league_id": 4607,
+      "owner_id": 247276,
+      "league_name": "WSL GT3 E.U Season 5",
+      "created": "2020-04-28T02:42:32Z",
+      "about": "&#8220;World Series Leagues&#8221; Race Anywhere - World Series - GT3 Championship",
+      "url": "https://www.worldseriesleagues.com",
+      "roster_count": 46,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": true,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 247276,
+        "display_name": "Harry Wills",
+        "helmet": {
+          "pattern": 67,
+          "color1": "000000",
+          "color2": "000000",
+          "color3": "000000",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 1820,
+      "owner_id": 95784,
+      "league_name": "UK&I Formula Renault 2.0",
+      "created": "2016-03-11T10:50:37Z",
+      "about": "The league is very simple. \n\n- 12 Rounds \n- Open Setup \n- 2 Drop Weeks \n- 1 Free Repair \n- Sporting Code in place \n- Open to all in the UK&I \n\nPoints will be tracked via Danlisa - http://danlisa.com/scoring/season_schedule.php?season_id=5551\n",
+      "url": "None",
+      "roster_count": 73,
+      "recruiting": false,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 95784,
+        "display_name": "Tom Stanley",
+        "helmet": {
+          "pattern": 59,
+          "color1": "fae914",
+          "color2": "fae914",
+          "color3": "000000",
+          "face_type": 6,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 5417,
+      "owner_id": 297161,
+      "league_name": "DoogleWitz Fun League",
+      "created": "2020-08-06T15:18:41Z",
+      "about": "&#8220;World Series Leagues&#8221; Race Anywhere - World Series - GT3 Championship",
+      "url": "www.worldseriesleagues.co.uk",
+      "roster_count": 2,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 297161,
+        "display_name": "Dean Timms",
+        "helmet": {
+          "pattern": 67,
+          "color1": "000000",
+          "color2": "000000",
+          "color3": "000000",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 12707,
+      "owner_id": 15426,
+      "league_name": "Stratus Racing",
+      "created": "2025-05-27T22:57:54Z",
+      "about": "The Official League for all Stratus Racing drivers and employees.",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "roster_count": 8,
+      "recruiting": true,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 15426,
+        "display_name": "Benjamin Waddell",
+        "helmet": {
+          "pattern": 28,
+          "color1": "000000",
+          "color2": "07b007",
+          "color3": "be0078",
+          "face_type": 6,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    },
+    {
+      "league_id": 1677,
+      "owner_id": 29095,
+      "league_name": "RaceConnect",
+      "created": "2015-10-29T17:37:29Z",
+      "about": "RaceConnect have been hosting competitive Sim-Racing events since 2007. The site is run by volunteers who offer their time freely & for the benefit of all members. We encourage competition and sportsmanship in a variety of different sim-racing championships, ranging from Modern day racing, to Historic Motorsport events.\n\nDue to limited numbers on the grid, we are looking at options for the future. ",
+      "url": "http://www.raceconnect.com",
+      "roster_count": 34,
+      "recruiting": false,
+      "is_admin": false,
+      "is_member": false,
+      "pending_application": false,
+      "pending_invitation": false,
+      "owner": {
+        "cust_id": 29095,
+        "display_name": "Ross Hawkey",
+        "helmet": {
+          "pattern": 17,
+          "color1": "ffffff",
+          "color2": "fc0706",
+          "color3": "000000",
+          "face_type": 0,
+          "helmet_type": 0
+        },
+        "car_number": null,
+        "nick_name": null
+      }
+    }
+  ],
+  "success": true,
+  "lowerbound": 1,
+  "upperbound": 5,
+  "row_count": 10692
+}
