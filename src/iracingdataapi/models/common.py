@@ -118,6 +118,12 @@ class CategorizedItem(BaseModel):
     tags: list[Tag]
 
 
+class PendingRequest(MemberWithHelmet):
+    initiated: str
+    revoked: bool
+    team_id: int
+
+
 class Tags(BaseModel):
     categorized: list[CategorizedItem]
-    not_categorized: list[Any]  # TODO: Define NotCategorizedItem model if needed
+    not_categorized: list[Tag]

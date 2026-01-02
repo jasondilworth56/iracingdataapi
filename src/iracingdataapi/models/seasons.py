@@ -237,9 +237,9 @@ class Schedule(
     event_sessions: list[EventSession]
     full_course_cautions: bool
     practice_length: int
-    qual_time_descriptors: list[Any]  # TODO: Correctly define
+    qual_time_descriptors: list[RaceTimeDescriptor]
     race_time_descriptors: list[RaceTimeDescriptor]
-    race_week_car_classes: list[Any]  # TODO: Correctly define
+    race_week_car_classes: list[RaceWeekCarClasses] | None = None
     track: Track
     track_state: SimpleTrackState
     warmup_length: int

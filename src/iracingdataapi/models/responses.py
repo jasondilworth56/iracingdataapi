@@ -3,7 +3,7 @@ from typing import Any, Optional
 from pydantic import BaseModel
 
 from .cars import Car, CarAsset, CarClass, CarInClass, CarWithAsset
-from .common import Owner, SimpleSuit, Tags, TeamMembership, ValueWhenPair
+from .common import Owner, PendingRequest, SimpleSuit, Tags, TeamMembership, ValueWhenPair
 from .constants import Category, Division, EventType
 from .laps import ChartLap, Lap
 from .leagues import (
@@ -165,7 +165,7 @@ class LookupFlairsResponse(BaseModel):
     success: bool
 
 
-LookupGetResponse = list[Any]  # TODO: Define correctly
+LookupGetResponse = list[dict[str, Any]]
 
 
 LookupLicensesResponse = list[LookupLicense]
@@ -209,7 +209,7 @@ class MemberGetResponse(BaseModel):
 MemberInfoResponse = MemberInfo
 
 
-MemberParticipationCreditsResponse = list[Any]  # TODO: Define correctly
+MemberParticipationCreditsResponse = list[dict[str, Any]]
 
 
 class MemberProfileResponse(BaseModel):
@@ -339,7 +339,7 @@ class StatsMemberDivisionResponse(BaseModel):
 
 class StatsMemberRecapResponse(BaseModel):
     cust_id: int
-    season: Any | None = None  # TODO: Define correctly
+    season: int | None = None
     stats: RecapStats
     success: bool
     year: int
@@ -395,14 +395,14 @@ class TeamGetResponse(BaseModel):
     message: str
     owner: Owner
     owner_id: int
-    pending_requests: list[Any]  # TODO: Define correctly
+    pending_requests: list[PendingRequest]
     private_wall: bool
     recruiting: bool
     roster: list[Owner]
     roster_count: int
     suit: SimpleSuit
     tags: Tags
-    team_applications: list[Any]  # TODO: Define correctly
+    team_applications: list[PendingRequest]
     team_id: int
     team_name: str
     url: str
@@ -411,7 +411,7 @@ class TeamGetResponse(BaseModel):
 TeamMembershipResponse = list[TeamMembership]
 
 
-TimeAttackMemberSeasonResultsResponse = list[Any]  # TODO: Define correctly
+TimeAttackMemberSeasonResultsResponse = list[dict[str, Any]]
 
 
 TrackAssetsResponse = dict[str, TrackAsset]

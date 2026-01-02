@@ -148,7 +148,7 @@ class MemberInfo(SimpleMemberInfo):
     read_comp_rules: str
     read_pp: str
     read_tc: str
-    restrictions: dict[str, Any]  # TODO: Define correctly
+    restrictions: dict[str, Any]
     suit: Suit
     track_packages: list[MemberPackage]
     twenty_pct_discount: bool

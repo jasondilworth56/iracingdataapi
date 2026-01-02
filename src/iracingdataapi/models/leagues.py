@@ -125,10 +125,25 @@ class DriverStanding(BaseModel):
     wins: int
 
 
+class TeamStanding(BaseModel):
+    average_finish: int
+    average_start: int
+    base_points: int
+    negative_adjustments: int
+    position: int
+    positive_adjustments: int
+    rownum: int
+    team_id: int
+    team_name: str
+    total_adjustments: int
+    total_points: int
+    wins: int
+
+
 class LeagueStandings(BaseModel):
     driver_standings: list[DriverStanding]
     driver_standings_csv_url: str
-    team_standings: list[Any]  # TODO: Define TeamStanding model if needed
+    team_standings: list[TeamStanding]
     team_standings_csv_url: str
 
 
