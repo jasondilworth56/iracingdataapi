@@ -268,7 +268,7 @@
             "color3": "000000"
           },
           "watched": false,
-          "weight_penalty_kg": -1
+          "weight_penalty_kg": -1.2
         },
         {
           "cust_id": 1009174,

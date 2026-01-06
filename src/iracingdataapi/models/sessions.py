@@ -30,14 +30,14 @@ class SessionCar(BaseModel):
     car_id: int
     car_name: str
     max_dry_tire_sets: int
-    max_pct_fuel_fill: int
+    max_pct_fuel_fill: float
     package_id: int
     power_adjust_pct: float
     qual_setup_filename: str | None = None
     qual_setup_id: int | None = None
     race_setup_filename: str | None = None
     race_setup_id: int | None = None
-    weight_penalty_kg: int
+    weight_penalty_kg: float
 
 
 class HeatInfo(BaseModel):

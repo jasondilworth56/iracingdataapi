@@ -108,7 +108,7 @@ class SessionResultDetailBase(BaseModel):
     license_change_oval: int
     license_change_road: int
     livery: Livery
-    max_pct_fuel_fill: int
+    max_pct_fuel_fill: float
     new_cpi: float
     new_license_level: int
     new_sub_level: int
@@ -128,7 +128,7 @@ class SessionResultDetailBase(BaseModel):
     starting_position_in_class: int
     suit: SimpleSuit
     watched: bool
-    weight_penalty_kg: int
+    weight_penalty_kg: float
 
 
 class SessionResultDetailDriver(SessionResultDetailBase):

@@ -291,7 +291,7 @@
           "car_class_id": 0,
           "car_class_name": "Hosted All Cars Class",
           "max_pct_fuel_fill": 22,
-          "weight_penalty_kg": 0,
+          "weight_penalty_kg": 1.2,
           "power_adjust_pct": 0,
           "max_dry_tire_sets": 0,
           "qual_setup_id": 257991,

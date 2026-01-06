@@ -16,9 +16,9 @@
         {
           "car_id": 132,
           "max_dry_tire_sets": 0,
-          "max_pct_fuel_fill": 50,
-          "power_adjust_pct": 0,
-          "weight_penalty_kg": 0
+          "max_pct_fuel_fill": 50.5,
+          "power_adjust_pct": -1.25,
+          "weight_penalty_kg": -1.0
         },
         {
           "car_id": 133,
