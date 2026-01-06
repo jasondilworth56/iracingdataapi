@@ -122,11 +122,11 @@ class Season(SimpleSeason, BaseSeasonIdentifiers):
 class CarRestriction(BaseModel):
     car_id: int
     max_dry_tire_sets: int
-    max_pct_fuel_fill: int
-    power_adjust_pct: int
+    max_pct_fuel_fill: float
+    power_adjust_pct: float
     qual_setup_id: int | None = None
     race_setup_id: int | None = None
-    weight_penalty_kg: int
+    weight_penalty_kg: float
 
 
 class CurrentWeekSched(BaseModel):

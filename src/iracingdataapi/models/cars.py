@@ -80,14 +80,14 @@ class LeagueSessionCar(BaseModel):
     car_id: int
     car_name: str
     max_dry_tire_sets: int
-    max_pct_fuel_fill: int
+    max_pct_fuel_fill: float
     package_id: int
     power_adjust_pct: float
     qual_setup_filename: str | None = None
     qual_setup_id: int | None = None
     race_setup_filename: str | None = None
     race_setup_id: int | None = None
-    weight_penalty_kg: int
+    weight_penalty_kg: float
 
 
 class HostedCombinedSessionCar(BaseModel):
@@ -124,9 +124,9 @@ class Car(SimpleCar):
     hp: int
     is_ps_purchasable: bool
     logo: str | None
-    max_power_adjust_pct: int
-    max_weight_penalty_kg: int
-    min_power_adjust_pct: int
+    max_power_adjust_pct: float
+    max_weight_penalty_kg: float
+    min_power_adjust_pct: float
     package_id: int
     paint_rules: dict[str, PaintRule] | RestrictedPaintRule | None = None
     patterns: int
