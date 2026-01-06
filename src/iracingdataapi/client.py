@@ -1920,8 +1920,10 @@ class irDataClient:
                 4: Time Trial
                 5: Race
 
+            season_ids (list[int] | None): A list of season IDs to filter the results. If None, all seasons are included.
+
         Returns:
-            list[Series] | list[dict]: a list containing all the official iRacing series.
+            SeasonSpectatorSubsessionidsDetailResponse | dict: a dict containing the matching subsession details
 
         """
         payload = {"event_types": ",".join([str(x) for x in event_types])}
@@ -1930,7 +1932,9 @@ class irDataClient:
 
         return self._validate_and_return(
             SeasonSpectatorSubsessionidsDetailResponse,
-            self._get_resource("/data/series/get", payload=payload),
+            self._get_resource(
+                "/data/season/spectator_subsessionids_detail", payload=payload
+            ),
         )
 
     def get_series(self) -> Union[SeriesGetResponse, list[Dict]]:
