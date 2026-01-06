@@ -58,10 +58,6 @@ class TrackAsset(BaseModel):
     track_map_layers: TrackMapLayers
 
 
-class TrackWithAsset(Track, TrackAsset):
-    pass
-
-
 class TrackType(BaseModel):
     track_type: str
 
@@ -127,3 +123,7 @@ class TrackGetResponseItem(BaseModel):
     track_type: int
     track_type_text: str
     track_types: list[TrackType]
+
+
+class TrackWithAsset(TrackGetResponseItem, TrackAsset):
+    pass
