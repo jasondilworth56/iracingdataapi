@@ -4,7 +4,7 @@ from pydantic import BaseModel
 class WeatherSummary(BaseModel):
     max_precip_rate: float | None = None
     max_precip_rate_desc: str
-    precip_chance: int
+    precip_chance: float
     skies_high: int | None = None
     skies_low: int | None = None
     temp_high: float | None = None
