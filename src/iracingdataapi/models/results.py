@@ -141,7 +141,7 @@ class SessionResultDetailDriver(SessionResultDetailBase):
 class SessionResultDetail(SessionResultDetailBase):
     cust_id: int | None = None
     division_name: str | None = None
-    driver_results: SessionResultDetailDriver | None = None
+    driver_results: list[SessionResultDetailDriver] | None = None
     flair_shortname: str | None = None
     helmet: Helmet | None = None
     team_id: int | None = None
