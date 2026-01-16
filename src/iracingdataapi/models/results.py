@@ -133,7 +133,7 @@ class SessionResultDetailBase(BaseModel):
 
 class SessionResultDetailDriver(SessionResultDetailBase):
     cust_id: int
-    flair_shortname: str
+    flair_shortname: str | None = None
     helmet: Helmet
     team_id: int
 
