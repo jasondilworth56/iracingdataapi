@@ -1182,6 +1182,18 @@ class TestIrDataClient(unittest.TestCase):
         )
 
     @patch.object(irDataClient, "_get_resource")
+    def test_member_profile_no_activity(self, mock_get_resource):
+        mock_get_resource.return_value = self._get_mock_data("member_profile_no_activity.json")
+        cust_id = 123
+        expected_payload = {"cust_id": cust_id}
+
+        self.client.member_profile(cust_id)
+
+        mock_get_resource.assert_called_once_with(
+            "/data/member/profile", payload=expected_payload
+        )
+
+    @patch.object(irDataClient, "_get_resource")
     def test_stats_member_bests(self, mock_get_resource):
         mock_get_resource.return_value = self._get_mock_data("stats_member_bests.json")
         cust_id = 123
