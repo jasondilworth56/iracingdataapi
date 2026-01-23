@@ -278,6 +278,26 @@ class TestIrDataClient(unittest.TestCase):
         self.assertEqual(response.subsession_id, 82263872)
 
     @patch.object(irDataClient, "_get_resource")
+    def test_result_with_parameters_and_team(self, mock_get_resource):
+        mock_get_resource.return_value = self._get_mock_data("result_with_team.json")
+
+        subsession_id = 12345
+        include_licenses = True
+        response = self.client.result(
+            subsession_id=subsession_id, include_licenses=include_licenses
+        )
+
+        mock_get_resource.assert_called_once_with(
+            "/data/results/get",
+            payload={
+                "subsession_id": subsession_id,
+                "include_licenses": include_licenses,
+            },
+        )
+        self.assertIsInstance(response, ResultsGetResponse)
+        self.assertEqual(response.subsession_id, 82799850)
+
+    @patch.object(irDataClient, "_get_resource")
     def test_result_without_optional_parameters(self, mock_get_resource):
         mock_get_resource.return_value = self._get_mock_data("result.json")
 
