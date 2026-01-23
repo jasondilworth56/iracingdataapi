@@ -213,7 +213,7 @@ MemberParticipationCreditsResponse = list[Any]  # TODO: Define correctly
 
 
 class MemberProfileResponse(BaseModel):
-    activity: MemberActivity | None = None
+    activity: MemberActivity
     cust_id: int
     disabled: bool
     follow_counts: MemberFollowCounts
