@@ -1,26 +1,26 @@
 {
-    "success": true,
-    "cust_ids": [
-        168966
-    ],
-    "members": [
-        {
-            "cust_id": 168966,
-            "display_name": "Max Verstappen",
-            "helmet": {
-                "pattern": 59,
-                "color1": "ffffff",
-                "color2": "ff8029",
-                "color3": "000000",
-                "face_type": 8,
-                "helmet_type": 0
-            },
-            "last_login": "2026-01-21T19:59:05.80965059Z",
-            "member_since": "2014-09-25",
-            "flair_id": 146,
-            "flair_name": "Netherlands",
-            "flair_shortname": "NLD",
-            "ai": false
-        }
-    ]
+  "success": true,
+  "cust_ids": [
+    473030
+  ],
+  "members": [
+    {
+      "cust_id": 473030,
+      "display_name": "Lukas Schwenk",
+      "helmet": {
+        "pattern": 57,
+        "color1": "002bff",
+        "color2": "f7f7f7",
+        "color3": "33ff00",
+        "face_type": 0,
+        "helmet_type": 0
+      },
+      "last_login": "2025-12-30T14:42:17.88734704Z",
+      "member_since": "2020-04-10",
+      "flair_id": 77,
+      "flair_name": "Germany",
+      "flair_shortname": "DEU",
+      "ai": false
+    }
+  ]
 }
