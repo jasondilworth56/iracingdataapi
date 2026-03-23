@@ -91,6 +91,13 @@ I welcome all pull requests for improvements or missing endpoints over time as t
 
 # Changelog
 
+**1.4.4**
+
+- Model updates: Allow float for pct
+- Fix track with asset
+- Fix subsession detail endpoint
+- Miscellaneous Pydantic response updates (thanks to @JDCodes)
+
 **1.4.0**
 
 - Feature: expose rate limit headers
