@@ -181,7 +181,7 @@ class RaceWeekCarClasses(BaseModel):
 
 class Livery(BaseModel):
     car_id: int
-    car_number: str
+    car_number: str | None = None
     color1: str
     color2: str
     color3: str
@@ -191,7 +191,7 @@ class Livery(BaseModel):
     number_font: int
     number_slant: int
     pattern: int
-    rim_type: int
+    rim_type: int | None = None
     sponsor1: int
     sponsor2: int
     wheel_color: str | None = None

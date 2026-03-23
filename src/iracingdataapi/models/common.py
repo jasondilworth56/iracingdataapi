@@ -89,7 +89,7 @@ class SimpleEligibility(BaseModel):
     own_track: bool
 
 
-class SessionEligibility(SimpleEligibility):
+class SessionEligibility(BaseModel):
     can_drive: bool
     can_spot: bool
     can_watch: bool
@@ -97,7 +97,7 @@ class SessionEligibility(SimpleEligibility):
     needs_purchase: bool
     purchase_skus: list[int]
     registered: bool
-    session_full: bool
+    session_full: bool | None = None
 
 
 class RaceWeek(BaseModel):
