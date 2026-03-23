@@ -208,7 +208,7 @@ class MemberRecentEvent(BaseModel):
     event_name: str
     event_type: str
     finish_position: int
-    logo_url: str
+    logo_url: str | None = None
     percent_rank: int
     simsession_type: int
     start_time: str
