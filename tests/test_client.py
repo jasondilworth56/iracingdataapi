@@ -1183,7 +1183,9 @@ class TestIrDataClient(unittest.TestCase):
 
     @patch.object(irDataClient, "_get_resource")
     def test_member_profile_no_activity(self, mock_get_resource):
-        mock_get_resource.return_value = self._get_mock_data("member_profile_no_activity.json")
+        mock_get_resource.return_value = self._get_mock_data(
+            "member_profile_no_activity.json"
+        )
         cust_id = 123
         expected_payload = {"cust_id": cust_id}
 
@@ -1584,6 +1586,18 @@ class TestIrDataClient(unittest.TestCase):
             self.access_token_client.result(
                 subsession_id=subsession_id, include_licenses=include_licenses
             )
+
+    @patch.object(irDataClient, "_get_resource")
+    def test_session_reg_drivers_list(self, mock_get_resource):
+        mock_get_resource.return_value = self._get_mock_data(
+            "session_reg_drivers_list.json"
+        )
+
+        self.client.session_reg_drivers_list(123)
+
+        mock_get_resource.assert_called_once_with(
+            "/data/session/reg_drivers_list", payload={"subsession_id": 123}
+        )
 
 
 if __name__ == "__main__":
