@@ -316,7 +316,7 @@ class Entry(BaseModel):
     farm_display_name: str
     flair_id: int
     flair_name: str
-    flair_shortname: str
+    flair_shortname: str | None = None
     helmet: Helmet
     license: MemberLicense
     license_order: int
