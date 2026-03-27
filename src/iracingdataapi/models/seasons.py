@@ -57,7 +57,7 @@ class BaseSeasonConfig(BaseModel):
     connection_black_flag: bool
     consec_caution_within_nlaps: int
     consec_cautions_single_file: bool
-    cross_license: bool
+    cross_license: bool = False
     distributed_matchmaking: bool
     driver_change_rule: int
     driver_changes: bool
@@ -92,7 +92,7 @@ class BaseSeasonConfig(BaseModel):
     race_week: int
     race_week_to_make_divisions: int
     reg_open_minutes: int | None = None
-    reg_user_count: int
+    reg_user_count: int | None = None
     region_competition: bool
     restrict_by_member: bool
     restrict_to_car: bool
@@ -285,8 +285,8 @@ class SeriesSeasonsResponseItemSchedule(
     full_course_cautions: bool
     practice_length: int | None = None
     race_time_descriptors: list[RaceTimeDescriptor]
-    race_week_car_class_ids: list[int]
-    race_week_cars: list[RaceWeekCar]
+    race_week_car_class_ids: list[int] = []
+    race_week_cars: list[RaceWeekCar] = []
     track: Track
     track_state: SimpleTrackState
     warmup_length: int | None = None

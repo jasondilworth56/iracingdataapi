@@ -149,8 +149,6 @@
         }
       ],
       "race_time_limit": 45,
-      "race_week_car_class_ids": [],
-      "race_week_cars": [],
       "restart_type": "Double-file Back",
       "schedule_name": "imsa - Races every 2 hours at 45 past - roll - time",
       "season_name": "IMSA iRacing Series - 2026 Season 1",
