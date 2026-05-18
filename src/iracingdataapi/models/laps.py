@@ -10,7 +10,7 @@ class Lap(BaseModel):
     display_name: str
     flags: int
     group_id: int
-    helmet: Helmet
+    helmet: Helmet | None = None
     incident: bool
     lap_events: list[str]
     lap_number: int
